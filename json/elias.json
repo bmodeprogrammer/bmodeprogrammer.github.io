@@ -62,19 +62,19 @@
   ],
   "education-timeline" : [
     {
-      "when" : "2016-NOW",
+      "when" : "2016 - NOW",
       "what" : "Mobile Computing - Master degree",
       "where": "Polytechnic Institute of Leiria",
       "desc" : "More information at: <a target=\"_blank\" href=\"https://www.ipleiria.pt/cursos/course/master-in-computer-engineering-mobile-computing/\">IPLeiria - Master Degree</a>"
     },
     {
-      "when" : "2012-2015",
+      "when" : "2012 - 2015",
       "what" : "Computer science - Bachelor degree",
       "where": "Polytechnic Institute of Leiria",
       "desc" : "I got the degree in the Information Systems core. More information at: <a target=\"_blank\" href=\"http://www.ipleiria.pt/cursos/course/undergraduate-in-computer-engineering/\">IPLeiria - Degree</a>"
     },
     {
-      "when" : "2009-2012",
+      "when" : "2009 - 2012",
       "what" : "Informatics and management technician",
       "where": "High School, Ourém, Portugal",
       "desc" : "I got bases in programing, economics and hardware."
@@ -82,22 +82,22 @@
   ],
   "experience-timeline" : [
     {
-      "when" : "2016-NOW",
+      "when" : "11/16 - NOW",
       "what" : "Salesforce Trainee",
       "where": "blue-infinity.com",
       "desc" : "Working on Salesforce back-end and Angular1/2 or Lightning Components front-end."
     },
     {
-      "when" : "2016-2016",
-      "what" : "Back End Developer and Data Miner 6 Months",
+      "when" : "05/16 - 09/16",
+      "what" : "Back End Developer and Data Miner",
       "where": "AMARMITA.PT",
-      "desc" : "I'm getting experience in data mining and back end developing(PHP, JavaScript, RazorflowJS, SQL)."
+      "desc" : "I got experience in data mining and back end developing(PHP (Open Cart), JavaScript, RazorflowJS, SQL)."
     },
     {
-      "when" : "2015-2015",
-      "what" : "Front-end developer - Internship 3 Months",
+      "when" : "09/15 - 11/15",
+      "what" : "Front-end developer - Internship",
       "where": "Interact Solutions, Lajeado, RS, Brasil",
-      "desc" : "I got experience in JavaScript, HTML, CSS and JavaEE."
+      "desc" : "I got experience in JavaScript, HTML, CSS and JavaEE. 3 Months"
     }
   ],
   "hire" : "Working at <a href=\"https://www.blue-infinity.com/\" target=\"_blank\">blue-infinity</a>",
