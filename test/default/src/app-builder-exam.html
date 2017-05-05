@@ -174,6 +174,8 @@
       const WRONG = 'wrong',
         RIGHT = 'right',
         NUMBER_OF_QUESTIONS = parseInt(prompt('Please, insert the number(10 - 110) of questions?', '40')) || 40;
+      let xDown = null,
+        yDown = null;
       Polymer({
         is: 'app-builder-exam',
 
@@ -207,6 +209,9 @@
         },
 
         handleResponse: function (e) {
+
+          document.addEventListener('touchstart', this._handleTouchStart.bind(this), false);
+          document.addEventListener('touchmove', this._handleTouchMove.bind(this), false);
           this.isSubmited = false;
           document.body.addEventListener('keyup', this.arrows.bind(this));
           this.currentQuestionIndex = 0;
@@ -319,6 +324,31 @@
           dlAnchorElem.setAttribute("href", dataStr);
           dlAnchorElem.setAttribute("download", "question.json");
           dlAnchorElem.click();
+        },
+        _handleTouchStart: function (evt) {
+          xDown = evt.originalEvent.touches[0].clientX;
+          yDown = evt.originalEvent.touches[0].clientY;
+        },
+
+        _handleTouchMove: function (evt) {
+          if (!xDown || !yDown) {
+            return;
+          }
+          var xUp = evt.originalEvent.touches[0].clientX;
+          var yUp = evt.originalEvent.touches[0].clientY;
+
+          var xDiff = xDown - xUp;
+          var yDiff = yDown - yUp;
+
+          if (Math.abs(xDiff) > Math.abs(yDiff)) { /*most significant*/
+            if (xDiff > 0) {
+              this.back();
+            } else {
+              this.next();
+            }
+          }
+          xDown = null;
+          yDown = null;
         }
 
       });
