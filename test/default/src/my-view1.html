@@ -10,13 +10,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../bower_components/iron-form/iron-form.html">
 <link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
-
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
-
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/paper-input/paper-textarea.html">
-
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="../bower_components/paper-radio-button/paper-radio-button.html">
+<link rel="import" href="../bower_components/paper-radio-group/paper-radio-group.html">
+
+
 
 
 
@@ -28,7 +30,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <style include="shared-styles">
        :host {
         display: block;
-
         padding: 10px;
       }
 
@@ -38,17 +39,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       pre {
-        max-width: 80%;
         color: black;
         font-size: 20px;
         font-family: 'Roboto', 'Times New Roman', Times, serif;
-        margin-bottom: 0;
+        margin: 0;
+        white-space: pre-wrap;
         word-wrap: break-word;
+        text-align: justify;
       }
 
       p {
-        max-width: 80%;
         word-wrap: break-word;
+        color: black;
+      }
+
+      pre p {
+        margin: 0;
       }
 
       .pagination {
@@ -67,27 +73,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         background-color: gray;
       }
     </style>
-    <iron-ajax auto="" url="appbuilder.json" handle-as="json" on-response="handleResponse"></iron-ajax>
+
+    <iron-ajax auto="" url="question.json" handle-as="json" on-response="handleResponse"></iron-ajax>
 
     <div class="card" hidden$="[[isSubmited]]">
       <div class="circle">[[currentQuestion.id]]</div>
       <h3>Question</h3>
-      <pre>          <p>[[currentQuestion.question.question]]</p>
-        </pre>
+      <pre>          <p>[[currentQuestion.question]]</p>
+      </pre>
 
       <div class="answer">
-        <template is="dom-if" if="[[currentQuestion.hasPossibleAnswers]]">
 
-          <template is="dom-repeat" items="[[currentQuestion.question.answers]]">
+        <template is="dom-if" if="[[currentQuestion.isRadioButton]]">
+          <paper-radio-group selected="{{currentQuestion.answers}}">
+            <paper-radio-button name="true">True</paper-radio-button>
+            <paper-radio-button name="false">False</paper-radio-button>
+          </paper-radio-group>
+        </template>
 
-            <paper-checkbox name="[[item.answer]]" checked="{{item.checked}}">[[item.answer]]</paper-checkbox>
-
+        <template is="dom-if" if="[[!currentQuestion.isRadioButton]]">
+          <template is="dom-repeat" items="[[currentQuestion.answers]]">
+            <div style="text-align: justify; padding: 10px 10px 10px 0;">
+              <paper-checkbox name="[[item.answer]]" checked="{{item.checked}}">[[item.answer]]</paper-checkbox>
+            </div>
           </template>
+        </template>
 
-        </template>
-        <template is="dom-if" if="[[!currentQuestion.hasPossibleAnswers]]">
-          <paper-textarea name="answer" label="Answer" bind-value="{{currentQuestion.question.answer}}" value="{{currentQuestion.question.answer::value-changed}}"></paper-textarea>
-        </template>
+
       </div>
       <div class="pagination">
 
@@ -106,26 +118,43 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <div class$="[[item.ball]]">[[item.id]]</div>
           <h3>Question</h3>
-          <pre>          <p>[[item.question.question]]</p>
+          <pre>          <p>[[item.question]]</p>
         </pre>
 
           <div class="answer">
-            <template is="dom-if" if="[[item.hasPossibleAnswers]]">
 
-              <template is="dom-repeat" items="[[item.question.answers]]" as="a">
-                [[a.checked]]
-                <paper-checkbox name="[[a.answer]]" checked$="[[a.checked]]" disabled="true">[[a.answer]]</paper-checkbox>
+            <template is="dom-if" if="[[item.isRadioButton]]">
+              <paper-radio-group selected="{{item.answers}}">
+                <paper-radio-button name="true" disabled="">True</paper-radio-button>
+                <paper-radio-button name="false" disabled="">False</paper-radio-button>
+              </paper-radio-group>
+            </template>
 
+            <template is="dom-if" if="[[!item.isRadioButton]]">
+
+              <template is="dom-repeat" items="[[item.answers]]" as="a">
+                <div style="text-align: justify; padding: 10px 10px 10px 0;">
+                  <paper-checkbox name="[[a.answer]]" checked$="[[a.checked]]" disabled="true">[[a.answer]]</paper-checkbox>
+                </div>
               </template>
-              <p>
-                Answer: [[item.answer]]
-              </p>
+            </template>
+            <p>
+              Answer: [[item.answer]]
+            </p>
 
+            <template is="dom-if" if="[[item.moreInformationLink]]">
+              <paper-dialog id="scrolling-[[item.id]]">
+                <h2>Scrolling</h2>
+                <paper-dialog-scrollable>
+                  <iframe src="[[item.moreInformationLink]]"></iframe>
+                </paper-dialog-scrollable>
+                <div class="buttons">
+                  <paper-button dialog-dismiss="">Ok</paper-button>
+                </div>
+              </paper-dialog>
+              <paper-button raised="" onclick="document.querySelector('scrolling-[[item.id]]').open()">More Information</paper-button>
             </template>
-            <template is="dom-if" if="[[!item.hasPossibleAnswers]]">
-              <span>Your answer: {{item.question.answer}}</span><br>
-              <span>Correct answer: {{item.answer}}</span>
-            </template>
+
           </div>
         </div>
       </template>
@@ -134,189 +163,160 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </template>
 
   <script>
-    Polymer({
-      is: 'my-view1',
+    (function () {
+      "use strict";
 
-      properties: {
-        questions: {
-          type: Array,
-          notify: true
-        },
-        questionsSubmited: {
-          type: Array,
-          notify: true
-        },
-        currentQuestion: Object,
-        currentQuestionIndex: Number,
-        totalQuestions: Number,
-        canNext: Boolean,
-        canBack: Boolean,
-        isSubmited: Boolean
-      },
-      arrows: function (e) {
-        switch (e.which) {
-          case 37: // left
-            this.back();
-            break;
-          case 39: // right
-            this.next();
-            break;
-          default:
-            return; // exit this handler for other keys
-        }
-      },
+      const WRONG = 'wrong',
+        RIGHT = 'right',
+        NUMBER_OF_QUESTIONS = parseInt(prompt('Please, insert the number(10 - 110) of questions?', '40')) || 40;
+      Polymer({
+        is: 'my-view1',
 
-      handleResponse: function (e) {
-        console.log("here");
-        this.isSubmited = false;
-        document.body.addEventListener('keyup', this.arrows.bind(this));
-        this.currentQuestionIndex = 0;
-        var _this = this;
-        this.questions = e.detail.response.map((obj, index) => {
-          obj.id = index;
-          obj.question.question = _this._stripHtml(obj.question.question.split('<br>').join('\n'));
-          obj.hasPossibleAnswers = false;
-          if (obj.question.answers) {
-            obj.hasPossibleAnswers = true;
-            obj.question.answers = obj.question.answers.map(a => {
-              let au = {};
-              au.answer = _this._stripHtml(a);
-              au.checked = false;
-              return au;
-            });
-          } else if (_this.isToHaveCheckBox(obj.answer)) {
-            obj.hasPossibleAnswers = true;
-            obj.question.answers = [];
-            obj.isToHaveCheckBox = true;
-            obj.question.answers = _this._splitAnswers(obj.question.question);
-            obj.question.question = obj.question.question.split('A. ')[0];
-            obj.question.answers = obj.question.answers.map(a => {
-              let au = {};
-              au.answer = a;
-              au.checked = false;
-              return au;
-            });
+        properties: {
+          questions: {
+            type: Array,
+            notify: true
+          },
+          questionsSubmited: {
+            type: Array,
+            notify: true
+          },
+          currentQuestion: Object,
+          currentQuestionIndex: Number,
+          totalQuestions: Number,
+          canNext: Boolean,
+          canBack: Boolean,
+          isSubmited: Boolean
+        },
+        arrows: function (e) {
+          switch (e.which) {
+            case 37: // left
+              this.back();
+              break;
+            case 39: // right
+              this.next();
+              break;
+            default:
+              return; // exit this handler for other keys
+          }
+        },
+
+        handleResponse: function (e) {
+          this.isSubmited = false;
+          document.body.addEventListener('keyup', this.arrows.bind(this));
+          this.currentQuestionIndex = 0;
+          this.questions = e.detail.response;
+
+          //this._downloadJson(this.questions);
+          this.questions = this.shuffle(this.questions);
+          this.questions = this.questions.slice(0, NUMBER_OF_QUESTIONS);
+          this.canBack = true;
+          this.totalQuestions = this.questions.length;
+          this.currentQuestion = this.questions[0];
+          this.canNext = this.questions.length < 1;
+        },
+
+        next: function () {
+          if ((this.currentQuestionIndex + 1) !== this.questions.length) {
+            this.currentQuestionIndex++;
+            this.currentQuestion = this.questions[this.currentQuestionIndex];
+            this.canNext = (this.currentQuestionIndex + 1) === this.questions.length;
+            this.canBack = this.currentQuestionIndex < 1;
+          }
+        },
+
+        back: function () {
+          if (this.currentQuestionIndex > 0) {
+            this.currentQuestionIndex--;
+            this.currentQuestion = this.questions[this.currentQuestionIndex];
+            this.canBack = this.currentQuestionIndex < 1;
+            this.canNext = (this.currentQuestionIndex + 1) === this.questions.length;
+          }
+        },
+
+        submit: function () {
+          let questionsAux = this.questions.slice(0);
+          const _this = this;
+          questionsAux = questionsAux.map(obj => {
+            obj.ball = 'circle ' + _this._isRightQuestion.bind(_this)(obj);
+            return obj;
+          });
+          this.questionsSubmited = questionsAux;
+          this.isSubmited = true;
+        },
+
+        shuffle: function (array) {
+          var currentIndex = array.length,
+            temporaryValue, randomIndex;
+
+          // While there remain elements to shuffle...
+          while (0 !== currentIndex) {
+
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+          }
+
+          return array;
+        },
+
+        _isRightQuestion: function (question) {
+          let q = question;
+          if (!q.answer && !q.answers) return WRONG;
+          if (q.isRadioButton) {
+            const isRight = (question.answer.startsWith('False') && q.answer.toLowerCase() === 'false') ||
+              (question.answer.startsWith('True') && q.answer.toLowerCase() === 'true');
+            return isRight ? RIGHT : WRONG;
           } else {
-            obj.question.answer = "";
+            let spplitedCorrectAnswer = this._splitAnswers(question.answer),
+              userAnwers = q.answers.filter(a => a.checked).map(a => a.answer);
+
+            if (spplitedCorrectAnswer.length !== userAnwers.length) return WRONG;
+
+            for (let i = 0; i < spplitedCorrectAnswer.length; i++)
+              if (userAnwers.indexOf(spplitedCorrectAnswer[i]) === -1)
+                return WRONG;
+
+            return RIGHT;
           }
-          return obj;
-        });
-        this.questions = this.shuffle(this.questions);
-        this.questions = this.questions.slice(0, 40);
-        this.canBack = true;
-        this.totalQuestions = this.questions.length;
-        this.currentQuestion = this.questions[0];
-        this.canNext = this.questions.length < 1;
-      },
-      _stripHtml(str) {
-        return str.replace(/<\/?[^>]+(>|$)/g, "");
-      },
+        },
 
-      next: function () {
-        if ((this.currentQuestionIndex + 1) !== this.questions.length) {
-          this.currentQuestionIndex++;
-          this.currentQuestion = this.questions[this.currentQuestionIndex];
-          this.canNext = (this.currentQuestionIndex + 1) === this.questions.length;
-          this.canBack = this.currentQuestionIndex < 1;
-        }
-      },
+        _addOneValue: function (value) {
+          return value + 1;
+        },
 
-      back: function () {
-        if (this.currentQuestionIndex > 0) {
-          this.currentQuestionIndex--;
-          this.currentQuestion = this.questions[this.currentQuestionIndex];
-          this.canBack = this.currentQuestionIndex < 1;
-          this.canNext = (this.currentQuestionIndex + 1) === this.questions.length;
-        }
-      },
+        _splitAnswers: function (q) {
+          const answers = [];
+          const qf = q.split('F. '),
+            qe = qf[0].split('E. '),
+            qd = qe[0].split('D. '),
+            qc = qd[0].split('C. '),
+            qb = qc[0].split('B. '),
+            qa = qb[0].split('A. ');
+          qf.length > 1 && answers.push('F. ' + qf[1]);
+          qe.length > 1 && answers.push('E. ' + qe[1]);
+          qd.length > 1 && answers.push('D. ' + qd[1]);
+          qc.length > 1 && answers.push('C. ' + qc[1]);
+          qb.length > 1 && answers.push('B. ' + qb[1]);
+          qa.length > 1 && answers.push('A. ' + qa[1]);
+          answers.reverse();
+          return answers;
+        },
 
-      submit: function () {
-        let questionsAux = this.questions.slice(0);
-        const _this = this;
-        questionsAux = questionsAux.map(obj => {
-          obj.ball = 'circle ' + _this._isRightQuestion.bind(_this)(obj);
-          return obj;
-        });
-        this.questionsSubmited = questionsAux;
-        this.isSubmited = true;
-      },
-
-      shuffle: function (array) {
-        var currentIndex = array.length,
-          temporaryValue, randomIndex;
-
-        // While there remain elements to shuffle...
-        while (0 !== currentIndex) {
-
-          // Pick a remaining element...
-          randomIndex = Math.floor(Math.random() * currentIndex);
-          currentIndex -= 1;
-
-          // And swap it with the current element.
-          temporaryValue = array[currentIndex];
-          array[currentIndex] = array[randomIndex];
-          array[randomIndex] = temporaryValue;
+        _downloadJson: function (jsonObj) {
+          var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(jsonObj));
+          var dlAnchorElem = document.createElement('a');
+          dlAnchorElem.setAttribute("href", dataStr);
+          dlAnchorElem.setAttribute("download", "question.json");
+          dlAnchorElem.click();
         }
 
-        return array;
-      },
-
-      isToHaveCheckBox: function (str) {
-        return str.startsWith('A. ') ||
-          str.startsWith('B. ') ||
-          str.startsWith('C. ') ||
-          str.startsWith('D. ') ||
-          str.startsWith('E. ') ||
-          str.startsWith('F. ');
-      },
-
-      _isRightQuestion: function (question) {
-        let q = question.question;
-        if (!q.answer && !q.answers) return 'wrong';
-        if (question.hasPossibleAnswers) {
-          let spplitedCorrectAnswer = this._splitAnswers(question.answer),
-            isRight = true,
-            userAnwers = q.answers.filter(a => a.checked).map(a => a.answer);
-          console.log('spplitedCorrectAnswer', spplitedCorrectAnswer, 'userAnwers', userAnwers);
-          if (spplitedCorrectAnswer.length !== userAnwers.length) return 'wrong';
-          for (let i = 0; i < spplitedCorrectAnswer.length; i++) {
-            if (userAnwers.indexOf(spplitedCorrectAnswer[i]) === -1) {
-              isRight = false;
-            }
-          }
-          return isRight ? 'right' : 'wrong';
-        } else if (q.question.toLowerCase().indexOf('t/f') >= 0) {
-          q.question = q.question + '\nWrite true or false!';
-          const isRight = (question.answer.startsWith('False') && q.answer.toLowerCase() === 'false') ||
-            (question.answer.startsWith('True') && q.answer.toLowerCase() === 'true');
-          return isRight ? 'right' : 'wrong';
-        } else {
-          return 'ind';
-        }
-      },
-
-      _addOneValue: function (value) {
-        return value + 1;
-      },
-
-      _splitAnswers: function (q) {
-        const answers = [];
-        const qf = q.split('F. '),
-          qe = qf[0].split('E. '),
-          qd = qe[0].split('D. '),
-          qc = qd[0].split('C. '),
-          qb = qc[0].split('B. '),
-          qa = qb[0].split('A. ');
-        qf.length > 1 && answers.push('F. ' + qf[1]);
-        qe.length > 1 && answers.push('E. ' + qe[1]);
-        qd.length > 1 && answers.push('D. ' + qd[1]);
-        qc.length > 1 && answers.push('C. ' + qc[1]);
-        qb.length > 1 && answers.push('B. ' + qb[1]);
-        qa.length > 1 && answers.push('A. ' + qa[1]);
-        answers.reverse();
-        return answers;
-      }
-
-    });
+      });
+    })();
   </script>
 </dom-module></body></html>
