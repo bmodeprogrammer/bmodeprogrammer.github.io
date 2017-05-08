@@ -1,3 +1,5 @@
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 /**
 @license
 Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
@@ -7,12 +9,12 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
-function MakePromise (asap) {
-  function Promise(fn) {
-		if (typeof this !== 'object' || typeof fn !== 'function') throw new TypeError();
+function MakePromise(asap) {
+	function Promise(fn) {
+		if (_typeof(this) !== 'object' || typeof fn !== 'function') throw new TypeError();
 		this._state = null;
 		this._value = null;
-		this._deferreds = []
+		this._deferreds = [];
 
 		doResolve(fn, resolve.bind(this), reject.bind(this));
 	}
@@ -21,10 +23,10 @@ function MakePromise (asap) {
 		var me = this;
 		if (this._state === null) {
 			this._deferreds.push(deferred);
-			return
+			return;
 		}
-		asap(function() {
-			var cb = me._state ? deferred.onFulfilled : deferred.onRejected
+		asap(function () {
+			var cb = me._state ? deferred.onFulfilled : deferred.onRejected;
 			if (typeof cb !== 'function') {
 				(me._state ? deferred.resolve : deferred.reject)(me._value);
 				return;
@@ -32,19 +34,19 @@ function MakePromise (asap) {
 			var ret;
 			try {
 				ret = cb(me._value);
-			}
-			catch (e) {
+			} catch (e) {
 				deferred.reject(e);
 				return;
 			}
 			deferred.resolve(ret);
-		})
+		});
 	}
 
 	function resolve(newValue) {
-		try { //Promise Resolution Procedure: https://github.com/promises-aplus/promises-spec#the-promise-resolution-procedure
+		try {
+			//Promise Resolution Procedure: https://github.com/promises-aplus/promises-spec#the-promise-resolution-procedure
 			if (newValue === this) throw new TypeError();
-			if (newValue && (typeof newValue === 'object' || typeof newValue === 'function')) {
+			if (newValue && ((typeof newValue === 'undefined' ? 'undefined' : _typeof(newValue)) === 'object' || typeof newValue === 'function')) {
 				var then = newValue.then;
 				if (typeof then === 'function') {
 					doResolve(then.bind(newValue), resolve.bind(this), reject.bind(this));
@@ -54,7 +56,9 @@ function MakePromise (asap) {
 			this._state = true;
 			this._value = newValue;
 			finale.call(this);
-		} catch (e) { reject.call(this, e); }
+		} catch (e) {
+			reject.call(this, e);
+		}
 	}
 
 	function reject(newValue) {
@@ -71,11 +75,11 @@ function MakePromise (asap) {
 	}
 
 	/**
-	 * Take a potentially misbehaving resolver function and make sure
-	 * onFulfilled and onRejected are only called once.
-	 *
-	 * Makes no guarantees about asynchrony.
-	 */
+  * Take a potentially misbehaving resolver function and make sure
+  * onFulfilled and onRejected are only called once.
+  *
+  * Makes no guarantees about asynchrony.
+  */
 	function doResolve(fn, onFulfilled, onRejected) {
 		var done = false;
 		try {
@@ -87,7 +91,7 @@ function MakePromise (asap) {
 				if (done) return;
 				done = true;
 				onRejected(reason);
-			})
+			});
 		} catch (ex) {
 			if (done) return;
 			done = true;
@@ -99,20 +103,20 @@ function MakePromise (asap) {
 		return this.then(null, onRejected);
 	};
 
-	Promise.prototype.then = function(onFulfilled, onRejected) {
+	Promise.prototype.then = function (onFulfilled, onRejected) {
 		var me = this;
-		return new Promise(function(resolve, reject) {
-      handle.call(me, {
-        onFulfilled: onFulfilled,
-        onRejected: onRejected,
-        resolve: resolve,
-        reject: reject
-      });
-		})
+		return new Promise(function (resolve, reject) {
+			handle.call(me, {
+				onFulfilled: onFulfilled,
+				onRejected: onRejected,
+				resolve: resolve,
+				reject: reject
+			});
+		});
 	};
 
 	Promise.resolve = function (value) {
-		if (value && typeof value === 'object' && value.constructor === Promise) {
+		if (value && (typeof value === 'undefined' ? 'undefined' : _typeof(value)) === 'object' && value.constructor === Promise) {
 			return value;
 		}
 
@@ -127,11 +131,9 @@ function MakePromise (asap) {
 		});
 	};
 
-	
-  return Promise;
+	return Promise;
 }
 
 if (typeof module !== 'undefined') {
-  module.exports = MakePromise;
+	module.exports = MakePromise;
 }
-
