@@ -82,7 +82,12 @@
     }
   ],
   "experience-timeline": [{
-      "when": "11/16 - NOW",
+      "when": "08/17 - NOW",
+      "what": "Salesforce Consultant",
+      "where": "blue-infinity.com",
+      "desc": "Developing Visualforce and Apex"
+    },{
+      "when": "11/16 - 07/17",
       "what": "Salesforce Trainee",
       "where": "blue-infinity.com",
       "desc": "Worked on Salesforce back-end and Lightning Components front-end.<br>Building web components with Polymer.js to be easier to construct material design web pages"
