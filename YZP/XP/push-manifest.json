@@ -1,0 +1,20 @@
+{
+  "src/my-app.html": {},
+  "src/my-home.html": {
+    "src/apps.html": {
+      "type": "document",
+      "weight": 1
+    }
+  },
+  "src/my-exams.html": {
+    "src/app-builder-exam.html": {
+      "type": "document",
+      "weight": 1
+    }
+  },
+  "src/my-config.html": {},
+  "src/my-view3.html": {},
+  "src/my-view404.html": {},
+  "src/apps.html": {},
+  "src/app-builder-exam.html": {}
+}
