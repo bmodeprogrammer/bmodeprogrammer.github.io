@@ -6694,7 +6694,7 @@
       { "ca": "C.", "checked": false, "answer": " Visual workflow\r\n" },
       { "ca": "D.", "checked": false, "answer": " Process Builder" }
     ],
-    "answer": "C. ",
+    "answer": "C. D. ",
     "moreInformationLinks": [
       {
         "label":
@@ -6702,8 +6702,7 @@
         "link": "#"
       }
     ],
-    "choose": "Choose 1",
-    "isRadioButton": true
+    "choose": "Choose 2"
   },
   {
     "id": 238,
