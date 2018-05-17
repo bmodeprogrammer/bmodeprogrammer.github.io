@@ -9034,6 +9034,7 @@
       }
     ],
     "choose": "Choose 1",
+    "noShuffle": true,
     "isRadioButton": true
   },
   {
@@ -9403,6 +9404,7 @@
       }
     ],
     "choose": "Choose 1",
+    "noShuffle": true,
     "isRadioButton": true
   },
   {
