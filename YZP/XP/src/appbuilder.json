@@ -1676,7 +1676,7 @@
       { "ca": "D.", "checked": false, "answer": " Image Field\r\n" },
       { "ca": "E.", "checked": false, "answer": " Bitmap Field" }
     ],
-    "answer": "A. ",
+    "answer": "B. ",
     "moreInformationLinks": [],
     "choose": "Choose 1",
     "isRadioButton": true
