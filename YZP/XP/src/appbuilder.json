@@ -10187,5 +10187,29 @@
     ],
     "choose": "Choose 1",
     "isRadioButton": true
+  },
+  {
+    "id": 344,
+    "question": "Where in an application can Lightning Components be added declaratively?",
+    "answers": [
+      {
+        "ca": "A.",
+        "checked": false,
+        "answer": "In a Lightning Experience Home Page"
+      },
+      {
+        "ca": "B.",
+        "checked": false,
+        "answer": " In a Lightning Experience Record Page"
+      },
+      { "ca": "C.", "checked": false, "answer": "In a Lightning Experience List View" },
+      {
+        "ca": "D.",
+        "checked": false,
+        "answer": "In a Lightning App Page"
+      }
+    ],
+    "answer": "A. B. D. ",
+    "choose": "Choose 3"
   }
 ]
