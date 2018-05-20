@@ -1,1 +1,764 @@
-<html><head></head><body><div hidden="" by-polymer-bundler=""><script>Polymer.IronCheckedElementBehaviorImpl={properties:{checked:{type:Boolean,value:!1,reflectToAttribute:!0,notify:!0,observer:'_checkedChanged'},toggles:{type:Boolean,value:!0,reflectToAttribute:!0},value:{type:String,value:'on',observer:'_valueChanged'}},observers:['_requiredChanged(required)'],created:function(){this._hasIronCheckedElementBehavior=!0},_getValidity:function(){return this.disabled||!this.required||this.checked},_requiredChanged:function(){this.required?this.setAttribute('aria-required','true'):this.removeAttribute('aria-required')},_checkedChanged:function(){this.active=this.checked,this.fire('iron-change')},_valueChanged:function(){(this.value===void 0||null===this.value)&&(this.value='on')}},Polymer.IronCheckedElementBehavior=[Polymer.IronFormElementBehavior,Polymer.IronValidatableBehavior,Polymer.IronCheckedElementBehaviorImpl];</script><script>Polymer.PaperCheckedElementBehaviorImpl={_checkedChanged:function(){Polymer.IronCheckedElementBehaviorImpl._checkedChanged.call(this),this.hasRipple()&&(this.checked?this._ripple.setAttribute('checked',''):this._ripple.removeAttribute('checked'))},_buttonStateChanged:function(){Polymer.PaperRippleBehavior._buttonStateChanged.call(this);this.disabled||this.isAttached&&(this.checked=this.active)}},Polymer.PaperCheckedElementBehavior=[Polymer.PaperInkyFocusBehavior,Polymer.IronCheckedElementBehavior,Polymer.PaperCheckedElementBehaviorImpl];</script><dom-module id="paper-checkbox" assetpath="../bower_components/paper-checkbox/"><template strip-whitespace=""><style>:host{display:inline-block;white-space:nowrap;cursor:pointer;--calculated-paper-checkbox-size:var(--paper-checkbox-size, 18px);--calculated-paper-checkbox-ink-size:var(--paper-checkbox-ink-size, -1px);@apply --paper-font-common-base;line-height:0;-webkit-tap-highlight-color:transparent;}:host([hidden]){display:none !important;}:host(:focus){outline:none;}.hidden{display:none;}#checkboxContainer{display:inline-block;position:relative;width:var(--calculated-paper-checkbox-size);height:var(--calculated-paper-checkbox-size);min-width:var(--calculated-paper-checkbox-size);margin:var(--paper-checkbox-margin, initial);vertical-align:var(--paper-checkbox-vertical-align, middle);background-color:var(--paper-checkbox-unchecked-background-color, transparent);}#ink{position:absolute;top:calc(0px - (var(--calculated-paper-checkbox-ink-size) - var(--calculated-paper-checkbox-size)) / 2);left:calc(0px - (var(--calculated-paper-checkbox-ink-size) - var(--calculated-paper-checkbox-size)) / 2);width:var(--calculated-paper-checkbox-ink-size);height:var(--calculated-paper-checkbox-ink-size);color:var(--paper-checkbox-unchecked-ink-color, var(--primary-text-color));opacity:0.6;pointer-events:none;}#ink:dir(rtl){right:calc(0px - (var(--calculated-paper-checkbox-ink-size) - var(--calculated-paper-checkbox-size)) / 2);left:auto;}#ink[checked]{color:var(--paper-checkbox-checked-ink-color, var(--primary-color));}#checkbox{position:relative;box-sizing:border-box;height:100%;border:solid 2px;border-color:var(--paper-checkbox-unchecked-color, var(--primary-text-color));border-radius:2px;pointer-events:none;-webkit-transition:background-color 140ms, border-color 140ms;transition:background-color 140ms, border-color 140ms;}#checkbox.checked #checkmark{-webkit-animation:checkmark-expand 140ms ease-out forwards;animation:checkmark-expand 140ms ease-out forwards;}@-webkit-keyframes checkmark-expand{0%{-webkit-transform:scale(0, 0) rotate(45deg);}100%{-webkit-transform:scale(1, 1) rotate(45deg);}}@keyframes checkmark-expand{0%{transform:scale(0, 0) rotate(45deg);}100%{transform:scale(1, 1) rotate(45deg);}}#checkbox.checked{background-color:var(--paper-checkbox-checked-color, var(--primary-color));border-color:var(--paper-checkbox-checked-color, var(--primary-color));}#checkmark{position:absolute;width:36%;height:70%;border-style:solid;border-top:none;border-left:none;border-right-width:calc(2/15 * var(--calculated-paper-checkbox-size));border-bottom-width:calc(2/15 * var(--calculated-paper-checkbox-size));border-color:var(--paper-checkbox-checkmark-color, white);-webkit-transform-origin:97% 86%;transform-origin:97% 86%;box-sizing:content-box;}#checkmark:dir(rtl){-webkit-transform-origin:50% 14%;transform-origin:50% 14%;}#checkboxLabel{position:relative;display:inline-block;vertical-align:middle;padding-left:var(--paper-checkbox-label-spacing, 8px);white-space:normal;line-height:normal;color:var(--paper-checkbox-label-color, var(--primary-text-color));@apply --paper-checkbox-label;}:host([checked]) #checkboxLabel{color:var(--paper-checkbox-label-checked-color, var(--paper-checkbox-label-color, var(--primary-text-color)));@apply --paper-checkbox-label-checked;}#checkboxLabel:dir(rtl){padding-right:var(--paper-checkbox-label-spacing, 8px);padding-left:0;}#checkboxLabel[hidden]{display:none;}:host([disabled]) #checkbox{opacity:0.5;border-color:var(--paper-checkbox-unchecked-color, var(--primary-text-color));}:host([disabled][checked]) #checkbox{background-color:var(--paper-checkbox-unchecked-color, var(--primary-text-color));opacity:0.5;}:host([disabled]) #checkboxLabel{opacity:0.65;}#checkbox.invalid:not(.checked){border-color:var(--paper-checkbox-error-color, var(--error-color));}</style><div id="checkboxContainer"><div id="checkbox" class$="[[_computeCheckboxClass(checked, invalid)]]"><div id="checkmark" class$="[[_computeCheckmarkClass(checked)]]"></div></div></div><div id="checkboxLabel"><slot></slot></div></template><script>Polymer({is:'paper-checkbox',behaviors:[Polymer.PaperCheckedElementBehavior],hostAttributes:{role:'checkbox',"aria-checked":!1,tabindex:0},properties:{ariaActiveAttribute:{type:String,value:'aria-checked'}},attached:function(){Polymer.RenderStatus.afterNextRender(this,function(){var a=this.getComputedStyleValue('--calculated-paper-checkbox-ink-size').trim();if('-1px'===a){var b=this.getComputedStyleValue('--calculated-paper-checkbox-size').trim(),c='px',d=b.match(/[A-Za-z]+$/);null!==d&&(c=d[0]);var e=parseFloat(b),f=8/3*e;'px'===c&&(f=Math.floor(f),f%2!==e%2&&f++),this.updateStyles({"--paper-checkbox-ink-size":f+c})}})},_computeCheckboxClass:function(a,b){var c='';return a&&(c+='checked '),b&&(c+='invalid'),c},_computeCheckmarkClass:function(a){return a?'':'hidden'},_createRipple:function(){return this._rippleContainer=this.$.checkboxContainer,Polymer.PaperInkyFocusBehaviorImpl._createRipple.call(this)}});</script></dom-module><dom-module id="paper-radio-button" assetpath="../bower_components/paper-radio-button/"><template strip-whitespace=""><style>:host{display:inline-block;line-height:0;white-space:nowrap;cursor:pointer;@apply --paper-font-common-base;--calculated-paper-radio-button-size:var(--paper-radio-button-size, 16px);--calculated-paper-radio-button-ink-size:var(--paper-radio-button-ink-size, -1px);}:host(:focus){outline:none;}#radioContainer{@apply --layout-inline;@apply --layout-center-center;position:relative;width:var(--calculated-paper-radio-button-size);height:var(--calculated-paper-radio-button-size);vertical-align:middle;@apply --paper-radio-button-radio-container;}#ink{position:absolute;top:50%;left:50%;right:auto;width:var(--calculated-paper-radio-button-ink-size);height:var(--calculated-paper-radio-button-ink-size);color:var(--paper-radio-button-unchecked-ink-color, var(--primary-text-color));opacity:0.6;pointer-events:none;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}#ink[checked]{color:var(--paper-radio-button-checked-ink-color, var(--primary-color));}#offRadio, #onRadio{position:absolute;box-sizing:border-box;top:0;left:0;width:100%;height:100%;border-radius:50%;}#offRadio{border:2px solid var(--paper-radio-button-unchecked-color, var(--primary-text-color));background-color:var(--paper-radio-button-unchecked-background-color, transparent);transition:border-color 0.28s;}#onRadio{background-color:var(--paper-radio-button-checked-color, var(--primary-color));-webkit-transform:scale(0);transform:scale(0);transition:-webkit-transform ease 0.28s;transition:transform ease 0.28s;will-change:transform;}:host([checked]) #offRadio{border-color:var(--paper-radio-button-checked-color, var(--primary-color));}:host([checked]) #onRadio{-webkit-transform:scale(0.5);transform:scale(0.5);}#radioLabel{line-height:normal;position:relative;display:inline-block;vertical-align:middle;margin-left:var(--paper-radio-button-label-spacing, 10px);white-space:normal;color:var(--paper-radio-button-label-color, var(--primary-text-color));@apply --paper-radio-button-label;}:host([checked]) #radioLabel{@apply --paper-radio-button-label-checked;}#radioLabel:dir(rtl){margin-left:0;margin-right:var(--paper-radio-button-label-spacing, 10px);}#radioLabel[hidden]{display:none;}:host([disabled]) #offRadio{border-color:var(--paper-radio-button-unchecked-color, var(--primary-text-color));opacity:0.5;}:host([disabled][checked]) #onRadio{background-color:var(--paper-radio-button-unchecked-color, var(--primary-text-color));opacity:0.5;}:host([disabled]) #radioLabel{opacity:0.65;}</style><div id="radioContainer"><div id="offRadio"></div><div id="onRadio"></div></div><div id="radioLabel"><slot></slot></div></template><script>Polymer({is:'paper-radio-button',behaviors:[Polymer.PaperCheckedElementBehavior],hostAttributes:{role:'radio',"aria-checked":!1,tabindex:0},properties:{ariaActiveAttribute:{type:String,value:'aria-checked'}},ready:function(){this._rippleContainer=this.$.radioContainer},attached:function(){Polymer.RenderStatus.afterNextRender(this,function(){var a=this.getComputedStyleValue('--calculated-paper-radio-button-ink-size').trim();if('-1px'===a){var b=parseFloat(this.getComputedStyleValue('--calculated-paper-radio-button-size').trim()),c=Math.floor(3*b);c%2!==b%2&&c++,this.updateStyles({"--paper-radio-button-ink-size":c+'px'})}})}});</script></dom-module><script>Polymer.IronMenuBehaviorImpl={properties:{focusedItem:{observer:'_focusedItemChanged',readOnly:!0,type:Object},attrForItemTitle:{type:String},disabled:{type:Boolean,value:!1,observer:'_disabledChanged'}},_MODIFIER_KEYS:['Alt','AltGraph','CapsLock','Control','Fn','FnLock','Hyper','Meta','NumLock','OS','ScrollLock','Shift','Super','Symbol','SymbolLock'],_SEARCH_RESET_TIMEOUT_MS:1e3,_previousTabIndex:0,hostAttributes:{role:'menu'},observers:['_updateMultiselectable(multi)'],listeners:{focus:'_onFocus',keydown:'_onKeydown',"iron-items-changed":'_onIronItemsChanged'},keyBindings:{up:'_onUpKey',down:'_onDownKey',esc:'_onEscKey',"shift+tab:keydown":'_onShiftTabDown'},attached:function(){this._resetTabindices()},select:function(a){this._defaultFocusAsync&&(this.cancelAsync(this._defaultFocusAsync),this._defaultFocusAsync=null);var b=this._valueToItem(a);b&&b.hasAttribute('disabled')||(this._setFocusedItem(b),Polymer.IronMultiSelectableBehaviorImpl.select.apply(this,arguments))},_resetTabindices:function(){var a=this.multi?this.selectedItems&&this.selectedItems[0]:this.selectedItem;this.items.forEach(function(b){b.setAttribute('tabindex',b===a?'0':'-1')},this)},_updateMultiselectable:function(a){a?this.setAttribute('aria-multiselectable','true'):this.removeAttribute('aria-multiselectable')},_focusWithKeyboardEvent:function(a){if(-1===this._MODIFIER_KEYS.indexOf(a.key)){this.cancelDebouncer('_clearSearchText');var b=this._searchText||'',c=a.key&&1==a.key.length?a.key:String.fromCharCode(a.keyCode);b+=c.toLocaleLowerCase();for(var d,e=b.length,f=0;d=this.items[f];f++)if(!d.hasAttribute('disabled')){var g=this.attrForItemTitle||'textContent',h=(d[g]||d.getAttribute(g)||'').trim();if(!(h.length<e)&&h.slice(0,e).toLocaleLowerCase()==b){this._setFocusedItem(d);break}}this._searchText=b,this.debounce('_clearSearchText',this._clearSearchText,this._SEARCH_RESET_TIMEOUT_MS)}},_clearSearchText:function(){this._searchText=''},_focusPrevious:function(){for(var a,b=this.items.length,c=+this.indexOf(this.focusedItem),d=1;d<b+1;d++)if(a=this.items[(c-d+b)%b],!a.hasAttribute('disabled')){var e=Polymer.dom(a).getOwnerRoot()||document;if(this._setFocusedItem(a),Polymer.dom(e).activeElement==a)return}},_focusNext:function(){for(var a,b=this.items.length,c=+this.indexOf(this.focusedItem),d=1;d<b+1;d++)if(a=this.items[(c+d)%b],!a.hasAttribute('disabled')){var e=Polymer.dom(a).getOwnerRoot()||document;if(this._setFocusedItem(a),Polymer.dom(e).activeElement==a)return}},_applySelection:function(a,b){b?a.setAttribute('aria-selected','true'):a.removeAttribute('aria-selected'),Polymer.IronSelectableBehavior._applySelection.apply(this,arguments)},_focusedItemChanged:function(a,b){b&&b.setAttribute('tabindex','-1'),!a||a.hasAttribute('disabled')||this.disabled||(a.setAttribute('tabindex','0'),a.focus())},_onIronItemsChanged:function(a){a.detail.addedNodes.length&&this._resetTabindices()},_onShiftTabDown:function(){var a=this.getAttribute('tabindex');Polymer.IronMenuBehaviorImpl._shiftTabPressed=!0,this._setFocusedItem(null),this.setAttribute('tabindex','-1'),this.async(function(){this.setAttribute('tabindex',a),Polymer.IronMenuBehaviorImpl._shiftTabPressed=!1},1)},_onFocus:function(a){if(!Polymer.IronMenuBehaviorImpl._shiftTabPressed){var b=Polymer.dom(a).rootTarget;(b===this||'undefined'===typeof b.tabIndex||this.isLightDescendant(b))&&(this._defaultFocusAsync=this.async(function(){var a=this.multi?this.selectedItems&&this.selectedItems[0]:this.selectedItem;this._setFocusedItem(null),a?this._setFocusedItem(a):this.items[0]&&this._focusNext()}))}},_onUpKey:function(a){this._focusPrevious(),a.detail.keyboardEvent.preventDefault()},_onDownKey:function(a){this._focusNext(),a.detail.keyboardEvent.preventDefault()},_onEscKey:function(){var a=this.focusedItem;a&&a.blur()},_onKeydown:function(a){this.keyboardEventMatchesKeys(a,'up down esc')||this._focusWithKeyboardEvent(a),a.stopPropagation()},_activateHandler:function(a){Polymer.IronSelectableBehavior._activateHandler.call(this,a),a.stopPropagation()},_disabledChanged:function(a){a?(this._previousTabIndex=this.hasAttribute('tabindex')?this.tabIndex:0,this.removeAttribute('tabindex')):!this.hasAttribute('tabindex')&&this.setAttribute('tabindex',this._previousTabIndex)}},Polymer.IronMenuBehaviorImpl._shiftTabPressed=!1,Polymer.IronMenuBehavior=[Polymer.IronMultiSelectableBehavior,Polymer.IronA11yKeysBehavior,Polymer.IronMenuBehaviorImpl];</script><script>Polymer.IronMenubarBehaviorImpl={hostAttributes:{role:'menubar'},keyBindings:{left:'_onLeftKey',right:'_onRightKey'},_onUpKey:function(a){this.focusedItem.click(),a.detail.keyboardEvent.preventDefault()},_onDownKey:function(a){this.focusedItem.click(),a.detail.keyboardEvent.preventDefault()},get _isRTL(){return'rtl'===window.getComputedStyle(this).direction},_onLeftKey:function(a){this._isRTL?this._focusNext():this._focusPrevious(),a.detail.keyboardEvent.preventDefault()},_onRightKey:function(a){this._isRTL?this._focusPrevious():this._focusNext(),a.detail.keyboardEvent.preventDefault()},_onKeydown:function(a){this.keyboardEventMatchesKeys(a,'up down left right esc')||this._focusWithKeyboardEvent(a)}},Polymer.IronMenubarBehavior=[Polymer.IronMenuBehavior,Polymer.IronMenubarBehaviorImpl];</script><dom-module id="paper-radio-group" assetpath="../bower_components/paper-radio-group/"><template><style>:host{display:inline-block;}:host ::slotted(*){padding:var(--paper-radio-group-item-padding, 12px);}</style><slot></slot></template></dom-module><script>Polymer({is:'paper-radio-group',behaviors:[Polymer.IronMenubarBehavior],hostAttributes:{role:'radiogroup'},properties:{attrForSelected:{type:String,value:'name'},selectedAttribute:{type:String,value:'checked'},selectable:{type:String,value:'paper-radio-button'},allowEmptySelection:{type:Boolean,value:!1}},select:function(a){var b=this._valueToItem(a);if(!(b&&b.hasAttribute('disabled'))){if(this.selected){var c=this._valueToItem(this.selected);if(this.selected==a)if(this.allowEmptySelection)a='';else return void(c&&(c.checked=!0));c&&(c.checked=!1)}Polymer.IronSelectableBehavior.select.apply(this,[a]),this.fire('paper-radio-group-changed')}},_activateFocusedItem:function(){this._itemActivate(this._valueForItem(this.focusedItem),this.focusedItem)},_onUpKey:function(a){this._focusPrevious(),a.preventDefault(),this._activateFocusedItem()},_onDownKey:function(a){this._focusNext(),a.preventDefault(),this._activateFocusedItem()},_onLeftKey:function(){Polymer.IronMenubarBehaviorImpl._onLeftKey.apply(this,arguments),this._activateFocusedItem()},_onRightKey:function(){Polymer.IronMenubarBehaviorImpl._onRightKey.apply(this,arguments),this._activateFocusedItem()}});</script></div><dom-module id="app-builder-exam"><template><style>:host{display:block;padding:10px;font-family:'Roboto', 'Times New Roman', Times, serif;}.card{margin:24px;padding:16px;color:#757575;border-radius:5px;background-color:#fff;box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);}@media screen and (max-width: 600px){.card{margin-left:0;margin-right:0;}}.circle{display:inline-block;width:64px;height:64px;text-align:center;color:#555;border-radius:50%;background:#ddd;font-size:30px;line-height:64px;margin-bottom:10px;}paper-checkbox{display:block;margin-top:5px;max-width:100%;}.question{color:black;font-size:20px;display:block;margin:0;white-space:pre-wrap;word-wrap:break-word;text-align:justify;}p{word-wrap:break-word;color:black;}pre p{margin:0;}.pagination{margin-top:20px;}.wrong{background-color:red;}.right{background-color:green;}.answer{margin-top:10px;}a{text-decoration:none;color:black;}paper-radio-button{display:block;text-align:justify;}.choose{font-size:17px;}.ca{font-size:17px;display:block;color:black;}.ca .title{margin-top:10px;}.imgContainer{overflow-x:auto;max-width:100%;}.p-answers{width:100%;white-space:normal;word-break:break-word;color:black;text-align:justify;}</style><iron-ajax auto="" url="[[url]]" handle-as="json" on-response="handleResponse"></iron-ajax><div class="card submitted" hidden$="[[isSubmited]]"><div class="circle">[[currentQuestion.id]]</div><div style="float:right;"><paper-icon-button id="flagButton" icon="flag" style="width: 50px; height: 50px;" on-click="flagQuestion"></paper-icon-button></div><span class="question">[[currentQuestion.question]]</span><div class="imgContainer" hidden$="[[!currentQuestion.imageUrl]]"><img id="imageQuestion" src="images/[[currentQuestion.imageUrl]]"></div><span class="question choose" hidden$="[[!currentQuestion.choose]]">[[currentQuestion.choose]]</span><div class="answer"><template is="dom-if" if="[[currentQuestion.isRadioButton]]"><paper-radio-group><template is="dom-repeat" items="[[currentQuestion.answers]]" as="a"><paper-radio-button name="[[a.answer]]" on-keydown="onRadioKeyDown" checked="{{a.checked}}"><span class="p-answers">[[a.answer]]</span></paper-radio-button></template></paper-radio-group></template><template is="dom-if" if="[[!currentQuestion.isRadioButton]]"><template is="dom-repeat" items="[[currentQuestion.answers]]"><div style="text-align: justify; padding: 10px 10px 10px 0;"><paper-checkbox checked="{{item.checked}}"><span class="p-answers">[[item.answer]]</span></paper-checkbox></div></template></template></div><div class="pagination"><template is="dom-if" if="[[!_isMobile()]]"><paper-icon-button icon="icons:arrow-back" disabled="[[canBack]]" on-click="back"></paper-icon-button><paper-icon-button icon="icons:arrow-forward" disabled="[[canNext]]" on-click="next"></paper-icon-button></template><span>[[_addOneValue(currentQuestionIndex)]] of [[totalQuestions]]</span></div></div><div hidden$="[[!isSubmited]]"><div class="submitted"><div class="card"><h3 style="margin: 0;">Filter</h3><paper-checkbox name="flaged" on-change="filterChanged">Flaged</paper-checkbox><paper-checkbox name="wrong" on-change="filterChanged">Wrong</paper-checkbox></div><template is="dom-repeat" items="{{filteredQuestionsSubmited}}" as="questionObj"><div class="card"><div class$="[[questionObj.ball]]">[[questionObj.id]]</div><div style="float:right;" hidden$="[[!questionObj.isFlaged]]"><paper-icon-button icon="flag" style="width: 50px; height: 50px; color: red;"></paper-icon-button></div><span class="question">[[questionObj.question]]</span><div class="imgContainer" hidden$="[[!questionObj.imageUrl]]"><img src="images/[[questionObj.imageUrl]]"></div><span class="question choose" hidden$="[[!currentQuestion.choose]]">[[questionObj.choose]]</span><div class="answer"><template is="dom-if" if="[[questionObj.isRadioButton]]"><paper-radio-group><template is="dom-repeat" items="[[questionObj.answers]]" as="a"><paper-radio-button name="[[a.ca]]" checked="[[a.checked]]" disabled=""><span class="p-answers">[[a.answer]]</span></paper-radio-button></template></paper-radio-group></template><template is="dom-if" if="[[!questionObj.isRadioButton]]"><template is="dom-repeat" items="[[questionObj.answers]]" as="a"><div style="text-align: justify; padding: 10px 10px 10px 0;"><paper-checkbox checked="[[a.checked]]" disabled="true"><span class="p-answers">[[a.answer]]</span></paper-checkbox></div></template></template><span class="ca title">Correct Answer</span><template is="dom-repeat" items="[[questionObj.answer]]" as="ca"><span class="ca">[[ca]]<span></span></span></template><template is="dom-if" if="[[questionObj.moreInformationLinks]]"><h2>More information At:</h2><template is="dom-repeat" items="[[questionObj.moreInformationLinks]]" as="link"><a href="[[link.link]]" target="_blank"><paper-button raised="">[[link.label]]</paper-button></a></template></template></div></div></template></div></div></template><script>(function(){'use strict';var a='wrong',b='right',c=null,d=null;Polymer({is:'app-builder-exam',properties:{url:String,questions:Array,rightPercentage:String,questionsSubmited:Array,filteredQuestionsSubmited:Array,progress:{type:Boolean,value:!0},currentQuestion:Object,currentQuestionIndex:Number,totalQuestions:Number,canNext:Boolean,canBack:Boolean,isSubmited:Boolean,submitExam:Function,flagColor:{type:String,value:'#757575'},filter:Array},ready:function(){this.fire('loading-exam'),this.submitExam=this.submit},detached:function(){this._removeEvents()},arrows:function(a){switch(a.stopPropagation(),a.which){case 37:this.back();break;case 39:this.next();break;default:}},onRadioKeyDown:function(a){if(-1!==[37,39].indexOf(a.which))return a.stopPropagation(),!1},handleResponse:function(a){console.log('handle response');var b,c=JSON.parse(localStorage.getItem(this.url));console.log('questionsAux',c),c?(b=a.detail.response.filter(function(a){return 0===c.filter(function(b){return b.id===a.id}).length}),b.length<(localStorage.getItem('numberOfQuestions')||40)&&(b=a.detail.response)):b=a.detail.response,this.fire('init-exam'),this.isSubmited=!1,this.currentQuestionIndex=0,this.questions=this._prepareQuestions.bind(this)(b),console.log('questions',this.questions),c?localStorage.setItem(this.url,JSON.stringify(b.concat(this.questions))):localStorage.setItem(this.url,JSON.stringify(this.questions)),this.canBack=!0,this.totalQuestions=this.questions.length,this.currentQuestion=this.questions[0],this._imageTouch.bind(this)(),this.canNext=1>this.questions.length,this.progress=!1,this._initializeEvent=this._initializeEvent.bind(this),this._removeEvents=this._removeEvents.bind(this),this._handleTouchStart=this._handleTouchStart.bind(this),this._handleTouchMove=this._handleTouchMove.bind(this),this.arrows=this.arrows.bind(this),this.flagQuestion=this.flagQuestion.bind(this),this.filterChanged=this.filterChanged.bind(this),this._initializeEvent()},flagQuestion:function(a){this.currentQuestion.isFlaged?(a.target.style.color='#757575',this.currentQuestion.isFlaged=!1):(a.target.style.color='red',this.currentQuestion.isFlaged=!0)},filterChanged:function(a){var b=a.target.name,c=a.target.checked,d=this;c?(this.filter.push(b),this.filteredQuestionsSubmited=this.questionsSubmited.filter(function(a){return 1<d.filter.length?!a.isRight||a.isFlaged:'wrong'===b?!a.isRight:a.isFlaged})):(this.filter.splice(this.filter.indexOf(b),1),this.filteredQuestionsSubmited=this.questionsSubmited.filter(function(a){return!(0<d.filter.length)||('flaged'===b?!a.isRight:a.isFlaged)}))},next:function(){this.currentQuestionIndex+1!==this.questions.length&&(this.currentQuestionIndex++,this.currentQuestion=this.questions[this.currentQuestionIndex],this.canNext=this.currentQuestionIndex+1===this.questions.length,this.canBack=1>this.currentQuestionIndex,this.$.flagButton.style.color=this.currentQuestion.isFlaged?'red':'#757575',this._imageTouch.bind(this)())},back:function(){0<this.currentQuestionIndex&&(this.currentQuestionIndex--,this.currentQuestion=this.questions[this.currentQuestionIndex],this.canBack=1>this.currentQuestionIndex,this.canNext=this.currentQuestionIndex+1===this.questions.length,this.$.flagButton.style.color=this.currentQuestion.isFlaged?'red':'#757575')},submit:function(){console.log('submit'),this.filter=[],this._removeEvents(),this.progress=!0;var a=this.questions.slice(0),b=this,c=0;console.log('questionsAux before mapping',a),a=a.map(function(a){if(a.ball='circle '+b._isRightQuestion.bind(b)(a),a.isRight&&c++,!a.isTrueFalseQuestion){for(var d=a.answer,e=0;e<a.answers.length;e++)0<=a.answer.indexOf(a.answers[e].ca)&&(d=d.replace(a.answers[e].ca,';'+a.answers[e].answer.slice(0,2)));d=d.replace(';','').split(';').sort(),a.answer=d}else a.answer=[a.answer];return a}),console.log('questionsAux after mapping',a),this.rightPercentage=(100*(c/a.length)).toFixed(2)+'%',this.fire('submitted-exam',{rightPercentage:this.rightPercentage}),this.questionsSubmited=a,this.filteredQuestionsSubmited=this.questionsSubmited.slice(0),this.isSubmited=!0,this.progress=!1},_imageTouch:function(){this.currentQuestion.imageUrl&&this.async(function(){this.$$('#imageQuestion').addEventListener('touchstart',function(a){return a.stopPropagation()}),this.$$('#imageQuestion').addEventListener('touchmove',function(a){return a.stopPropagation()})})},_shuffle:function(a){for(var b,c,d=a.length;0!==d;)c=Math.floor(Math.random()*d),d-=1,b=a[d],a[d]=a[c],a[c]=b;return a},_isMobile:function(){var b=!1;return function(c){(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(c)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(c.substr(0,4)))&&(b=!0)}(navigator.userAgent||navigator.vendor||window.opera),b},_prepareQuestions:function(a){var b=this;return a=b._shuffle(a),a=a.slice(0,localStorage.getItem('numberOfQuestions')||40),a.map(b._shuffleAnswers.bind(b))},_initializeEvent:function(){document.body.addEventListener('touchstart',this._handleTouchStart),document.body.addEventListener('touchmove',this._handleTouchMove),document.body.addEventListener('keyup',this.arrows)},_removeEvents:function(){document.body.removeEventListener('touchstart',this._handleTouchStart),document.body.removeEventListener('touchmove',this._handleTouchMove),document.body.removeEventListener('keyup',this.arrows)},_isRightQuestion:function(c){if(!c.answers)return a;if(c.isRadioButton){var d=c.answers.filter(function(b){return b.checked});return 1>d.length?a:(d=d[0],c.isTrueFalseQuestion?(c.isRight=c.answer.startsWith('False')&&'False'===d.ca||c.answer.startsWith('True')&&'True'===d.ca,c.isRight?b:a):(c.isRight=c.answer.slice(0,2)===d.ca,c.isRight?b:a))}var e=this._splitAnswers(c.answer).map(function(b){return b.slice(0,2)}),f=c.answers.filter(function(b){return b.checked}).map(function(b){return b.ca});if(e.length!==f.length||0===f.length)return c.isRight=!1,a;for(var g=0;g<e.length;g++)if(-1===f.indexOf(e[g]))return c.isRight=!1,a;return c.isRight=!0,b},_getLetter:function(a){return 0===a?'A.':1===a?'B.':2===a?'C.':3===a?'D.':4===a?'E.':5===a?'F.':void 0},_shuffleAnswers:function(a){if(a.answers){a.answers=!a.answers||a.isTrueFalseQuestion||a.noShuffle?a.answers:this._shuffle(a.answers);for(var b=-1,c=0;c<a.answers.length;c++)if('All of the above'===a.answers[c].answer){b=c;break}if(0<=b&&b!==a.answers.length-1){var d=a.answers[a.answers.length-1];a.answers[a.answers.length-1]=a.answers[b],a.answers[b]=d}for(var e=0;e<a.answers.length&&!a.isTrueFalseQuestion;e++)a.answers[e].answer=this._getLetter(e)+' '+a.answers[e].answer}return a},_addOneValue:function(a){return a+1},_splitAnswers:function(a){var b=[],c=a.split('F. '),d=c[0].split('E. '),e=d[0].split('D. '),f=e[0].split('C. '),g=f[0].split('B. '),h=g[0].split('A. ');return 1<c.length&&b.push('F. '+c[1]),1<d.length&&b.push('E. '+d[1]),1<e.length&&b.push('D. '+e[1]),1<f.length&&b.push('C. '+f[1]),1<g.length&&b.push('B. '+g[1]),1<h.length&&b.push('A. '+h[1]),b.reverse(),b},_downloadJson:function(a){var b='data:text/json;charset=utf-8,'+encodeURIComponent(JSON.stringify(a)),c=document.createElement('a');c.setAttribute('href',b),c.setAttribute('download','question.json'),c.click()},_handleTouchStart:function(a){c=a.touches[0].clientX,d=a.touches[0].clientY},_handleTouchMove:function(a){var b=Math.abs;if(c&&d){var e=a.touches[0].clientX,f=a.touches[0].clientY,g=c-e,h=d-f;b(g)>b(h)&&(0<g?this.next():this.back()),c=null,d=null}}})})();</script></dom-module></body></html>
+<div hidden="" by-polymer-bundler=""><!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+--><!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+--><!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+--><script>Polymer.IronCheckedElementBehaviorImpl={properties:{checked:{type:Boolean,value:!1,reflectToAttribute:!0,notify:!0,observer:'_checkedChanged'},toggles:{type:Boolean,value:!0,reflectToAttribute:!0},value:{type:String,value:'on',observer:'_valueChanged'}},observers:['_requiredChanged(required)'],created:function(){this._hasIronCheckedElementBehavior=!0},_getValidity:function(){return this.disabled||!this.required||this.checked},_requiredChanged:function(){this.required?this.setAttribute('aria-required','true'):this.removeAttribute('aria-required')},_checkedChanged:function(){this.active=this.checked,this.fire('iron-change')},_valueChanged:function(){(this.value===void 0||null===this.value)&&(this.value='on')}},Polymer.IronCheckedElementBehavior=[Polymer.IronFormElementBehavior,Polymer.IronValidatableBehavior,Polymer.IronCheckedElementBehaviorImpl];</script>
+<script>Polymer.PaperCheckedElementBehaviorImpl={_checkedChanged:function(){Polymer.IronCheckedElementBehaviorImpl._checkedChanged.call(this),this.hasRipple()&&(this.checked?this._ripple.setAttribute('checked',''):this._ripple.removeAttribute('checked'))},_buttonStateChanged:function(){Polymer.PaperRippleBehavior._buttonStateChanged.call(this);this.disabled||this.isAttached&&(this.checked=this.active)}},Polymer.PaperCheckedElementBehavior=[Polymer.PaperInkyFocusBehavior,Polymer.IronCheckedElementBehavior,Polymer.PaperCheckedElementBehaviorImpl];</script>
+<!--
+Material design: [Checkbox](https://www.google.com/design/spec/components/selection-controls.html#selection-controls-checkbox)
+
+`paper-checkbox` is a button that can be either checked or unchecked.  User
+can tap the checkbox to check or uncheck it.  Usually you use checkboxes
+to allow user to select multiple options from a set.  If you have a single
+ON/OFF option, avoid using a single checkbox and use `paper-toggle-button`
+instead.
+
+Example:
+
+    <paper-checkbox>label</paper-checkbox>
+
+    <paper-checkbox checked> label</paper-checkbox>
+
+### Styling
+
+The following custom properties and mixins are available for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--paper-checkbox-unchecked-background-color` | Checkbox background color when the input is not checked | `transparent`
+`--paper-checkbox-unchecked-color` | Checkbox border color when the input is not checked | `--primary-text-color`
+`--paper-checkbox-unchecked-ink-color` | Selected/focus ripple color when the input is not checked | `--primary-text-color`
+`--paper-checkbox-checked-color` | Checkbox color when the input is checked | `--primary-color`
+`--paper-checkbox-checked-ink-color` | Selected/focus ripple color when the input is checked | `--primary-color`
+`--paper-checkbox-checkmark-color` | Checkmark color | `white`
+`--paper-checkbox-label-color` | Label color | `--primary-text-color`
+`--paper-checkbox-label-checked-color` | Label color when the input is checked | `--paper-checkbox-label-color`
+`--paper-checkbox-label-spacing` | Spacing between the label and the checkbox | `8px`
+`--paper-checkbox-label` | Mixin applied to the label | `{}`
+`--paper-checkbox-label-checked` | Mixin applied to the label when the input is checked | `{}`
+`--paper-checkbox-error-color` | Checkbox color when invalid | `--error-color`
+`--paper-checkbox-size` | Size of the checkbox | `18px`
+`--paper-checkbox-ink-size` | Size of the ripple | `48px`
+`--paper-checkbox-margin` | Margin around the checkbox container | `initial`
+`--paper-checkbox-vertical-align` | Vertical alignment of the checkbox container | `middle`
+
+This element applies the mixin `--paper-font-common-base` but does not import `paper-styles/typography.html`.
+In order to apply the `Roboto` font to this element, make sure you've imported `paper-styles/typography.html`.
+
+@demo demo/index.html
+-->
+
+<dom-module id="paper-checkbox" assetpath="../bower_components/paper-checkbox/">
+  <template strip-whitespace="">
+    <style>
+      :host {
+        display: inline-block;
+        white-space: nowrap;
+        cursor: pointer;
+        --calculated-paper-checkbox-size: var(--paper-checkbox-size, 18px);
+        /* -1px is a sentinel for the default and is replaced in `attached`. */
+        --calculated-paper-checkbox-ink-size: var(--paper-checkbox-ink-size, -1px);
+        @apply --paper-font-common-base;
+        line-height: 0;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      :host([hidden]) {
+        display: none !important;
+      }
+
+      :host(:focus) {
+        outline: none;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      #checkboxContainer {
+        display: inline-block;
+        position: relative;
+        width: var(--calculated-paper-checkbox-size);
+        height: var(--calculated-paper-checkbox-size);
+        min-width: var(--calculated-paper-checkbox-size);
+        margin: var(--paper-checkbox-margin, initial);
+        vertical-align: var(--paper-checkbox-vertical-align, middle);
+        background-color: var(--paper-checkbox-unchecked-background-color, transparent);
+      }
+
+      #ink {
+        position: absolute;
+
+        /* Center the ripple in the checkbox by negative offsetting it by
+         * (inkWidth - rippleWidth) / 2 */
+        top: calc(0px - (var(--calculated-paper-checkbox-ink-size) - var(--calculated-paper-checkbox-size)) / 2);
+        left: calc(0px - (var(--calculated-paper-checkbox-ink-size) - var(--calculated-paper-checkbox-size)) / 2);
+        width: var(--calculated-paper-checkbox-ink-size);
+        height: var(--calculated-paper-checkbox-ink-size);
+        color: var(--paper-checkbox-unchecked-ink-color, var(--primary-text-color));
+        opacity: 0.6;
+        pointer-events: none;
+      }
+
+      #ink:dir(rtl) {
+        right: calc(0px - (var(--calculated-paper-checkbox-ink-size) - var(--calculated-paper-checkbox-size)) / 2);
+        left: auto;
+      }
+
+      #ink[checked] {
+        color: var(--paper-checkbox-checked-ink-color, var(--primary-color));
+      }
+
+      #checkbox {
+        position: relative;
+        box-sizing: border-box;
+        height: 100%;
+        border: solid 2px;
+        border-color: var(--paper-checkbox-unchecked-color, var(--primary-text-color));
+        border-radius: 2px;
+        pointer-events: none;
+        -webkit-transition: background-color 140ms, border-color 140ms;
+        transition: background-color 140ms, border-color 140ms;
+      }
+
+      /* checkbox checked animations */
+      #checkbox.checked #checkmark {
+        -webkit-animation: checkmark-expand 140ms ease-out forwards;
+        animation: checkmark-expand 140ms ease-out forwards;
+      }
+
+      @-webkit-keyframes checkmark-expand {
+        0% {
+          -webkit-transform: scale(0, 0) rotate(45deg);
+        }
+        100% {
+          -webkit-transform: scale(1, 1) rotate(45deg);
+        }
+      }
+
+      @keyframes checkmark-expand {
+        0% {
+          transform: scale(0, 0) rotate(45deg);
+        }
+        100% {
+          transform: scale(1, 1) rotate(45deg);
+        }
+      }
+
+      #checkbox.checked {
+        background-color: var(--paper-checkbox-checked-color, var(--primary-color));
+        border-color: var(--paper-checkbox-checked-color, var(--primary-color));
+      }
+
+      #checkmark {
+        position: absolute;
+        width: 36%;
+        height: 70%;
+        border-style: solid;
+        border-top: none;
+        border-left: none;
+        border-right-width: calc(2/15 * var(--calculated-paper-checkbox-size));
+        border-bottom-width: calc(2/15 * var(--calculated-paper-checkbox-size));
+        border-color: var(--paper-checkbox-checkmark-color, white);
+        -webkit-transform-origin: 97% 86%;
+        transform-origin: 97% 86%;
+        box-sizing: content-box; /* protect against page-level box-sizing */
+      }
+
+      #checkmark:dir(rtl) {
+        -webkit-transform-origin: 50% 14%;
+        transform-origin: 50% 14%;
+      }
+
+      /* label */
+      #checkboxLabel {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: var(--paper-checkbox-label-spacing, 8px);
+        white-space: normal;
+        line-height: normal;
+        color: var(--paper-checkbox-label-color, var(--primary-text-color));
+        @apply --paper-checkbox-label;
+      }
+
+      :host([checked]) #checkboxLabel {
+        color: var(--paper-checkbox-label-checked-color, var(--paper-checkbox-label-color, var(--primary-text-color)));
+        @apply --paper-checkbox-label-checked;
+      }
+
+      #checkboxLabel:dir(rtl) {
+        padding-right: var(--paper-checkbox-label-spacing, 8px);
+        padding-left: 0;
+      }
+
+      #checkboxLabel[hidden] {
+        display: none;
+      }
+
+      /* disabled state */
+
+      :host([disabled]) #checkbox {
+        opacity: 0.5;
+        border-color: var(--paper-checkbox-unchecked-color, var(--primary-text-color));
+      }
+
+      :host([disabled][checked]) #checkbox {
+        background-color: var(--paper-checkbox-unchecked-color, var(--primary-text-color));
+        opacity: 0.5;
+      }
+
+      :host([disabled]) #checkboxLabel  {
+        opacity: 0.65;
+      }
+
+      /* invalid state */
+      #checkbox.invalid:not(.checked) {
+        border-color: var(--paper-checkbox-error-color, var(--error-color));
+      }
+    </style>
+
+    <div id="checkboxContainer">
+      <div id="checkbox" class$="[[_computeCheckboxClass(checked, invalid)]]">
+        <div id="checkmark" class$="[[_computeCheckmarkClass(checked)]]"></div>
+      </div>
+    </div>
+
+    <div id="checkboxLabel"><slot></slot></div>
+  </template>
+
+  <script>Polymer({is:'paper-checkbox',behaviors:[Polymer.PaperCheckedElementBehavior],hostAttributes:{role:'checkbox',"aria-checked":!1,tabindex:0},properties:{ariaActiveAttribute:{type:String,value:'aria-checked'}},attached:function(){Polymer.RenderStatus.afterNextRender(this,function(){var a=this.getComputedStyleValue('--calculated-paper-checkbox-ink-size').trim();if('-1px'===a){var b=this.getComputedStyleValue('--calculated-paper-checkbox-size').trim(),c='px',d=b.match(/[A-Za-z]+$/);null!==d&&(c=d[0]);var e=parseFloat(b),f=8/3*e;'px'===c&&(f=Math.floor(f),f%2!==e%2&&f++),this.updateStyles({"--paper-checkbox-ink-size":f+c})}})},_computeCheckboxClass:function(a,b){var c='';return a&&(c+='checked '),b&&(c+='invalid'),c},_computeCheckmarkClass:function(a){return a?'':'hidden'},_createRipple:function(){return this._rippleContainer=this.$.checkboxContainer,Polymer.PaperInkyFocusBehaviorImpl._createRipple.call(this)}});</script>
+</dom-module>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+--><!--
+Material design: [Radio button](https://www.google.com/design/spec/components/selection-controls.html#selection-controls-radio-button)
+
+`paper-radio-button` is a button that can be either checked or unchecked.
+User can tap the radio button to check or uncheck it.
+
+Use a `<paper-radio-group>` to group a set of radio buttons.  When radio buttons
+are inside a radio group, exactly one radio button in the group can be checked
+at any time.
+
+Example:
+
+    <paper-radio-button></paper-radio-button>
+    <paper-radio-button>Item label</paper-radio-button>
+
+### Styling
+
+The following custom properties and mixins are available for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--paper-radio-button-unchecked-background-color` | Radio button background color when the input is not checked | `transparent`
+`--paper-radio-button-unchecked-color` | Radio button color when the input is not checked | `--primary-text-color`
+`--paper-radio-button-unchecked-ink-color` | Selected/focus ripple color when the input is not checked | `--primary-text-color`
+`--paper-radio-button-checked-color` | Radio button color when the input is checked | `--primary-color`
+`--paper-radio-button-checked-ink-color` | Selected/focus ripple color when the input is checked | `--primary-color`
+`--paper-radio-button-size` | Size of the radio button | `16px`
+`--paper-radio-button-ink-size` | Size of the ripple | `48px`
+`--paper-radio-button-label-color` | Label color | `--primary-text-color`
+`--paper-radio-button-label-spacing` | Spacing between the label and the button | `10px`
+`--paper-radio-button-radio-container` | A mixin applied to the internal radio container | `{}`
+`--paper-radio-button-label` | A mixin applied to the internal label | `{}`
+`--paper-radio-button-label-checked` | A mixin applied to the internal label when the radio button is checked | `{}`
+
+This element applies the mixin `--paper-font-common-base` but does not import `paper-styles/typography.html`.
+In order to apply the `Roboto` font to this element, make sure you've imported `paper-styles/typography.html`.
+
+@group Paper Elements
+@element paper-radio-button
+@hero hero.svg
+@demo demo/index.html
+-->
+
+<dom-module id="paper-radio-button" assetpath="../bower_components/paper-radio-button/">
+  <template strip-whitespace="">
+    <style>
+      :host {
+        display: inline-block;
+        line-height: 0;
+        white-space: nowrap;
+        cursor: pointer;
+        @apply --paper-font-common-base;
+        --calculated-paper-radio-button-size: var(--paper-radio-button-size, 16px);
+        /* -1px is a sentinel for the default and is replace in `attached`. */
+        --calculated-paper-radio-button-ink-size: var(--paper-radio-button-ink-size, -1px);
+      }
+
+      :host(:focus) {
+        outline: none;
+      }
+
+      #radioContainer {
+        @apply --layout-inline;
+        @apply --layout-center-center;
+        position: relative;
+        width: var(--calculated-paper-radio-button-size);
+        height: var(--calculated-paper-radio-button-size);
+        vertical-align: middle;
+
+        @apply --paper-radio-button-radio-container;
+      }
+
+      #ink {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        width: var(--calculated-paper-radio-button-ink-size);
+        height: var(--calculated-paper-radio-button-ink-size);
+        color: var(--paper-radio-button-unchecked-ink-color, var(--primary-text-color));
+        opacity: 0.6;
+        pointer-events: none;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      #ink[checked] {
+        color: var(--paper-radio-button-checked-ink-color, var(--primary-color));
+      }
+
+      #offRadio, #onRadio {
+        position: absolute;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      #offRadio {
+        border: 2px solid var(--paper-radio-button-unchecked-color, var(--primary-text-color));
+        background-color: var(--paper-radio-button-unchecked-background-color, transparent);
+        transition: border-color 0.28s;
+      }
+
+      #onRadio {
+        background-color: var(--paper-radio-button-checked-color, var(--primary-color));
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        transition: -webkit-transform ease 0.28s;
+        transition: transform ease 0.28s;
+        will-change: transform;
+      }
+
+      :host([checked]) #offRadio {
+        border-color: var(--paper-radio-button-checked-color, var(--primary-color));
+      }
+
+      :host([checked]) #onRadio {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+      }
+
+      #radioLabel {
+        line-height: normal;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: var(--paper-radio-button-label-spacing, 10px);
+        white-space: normal;
+        color: var(--paper-radio-button-label-color, var(--primary-text-color));
+
+        @apply --paper-radio-button-label;
+      }
+
+      :host([checked]) #radioLabel {
+        @apply --paper-radio-button-label-checked;
+      }
+
+      #radioLabel:dir(rtl) {
+        margin-left: 0;
+        margin-right: var(--paper-radio-button-label-spacing, 10px);
+      }
+
+      #radioLabel[hidden] {
+        display: none;
+      }
+
+      /* disabled state */
+
+      :host([disabled]) #offRadio {
+        border-color: var(--paper-radio-button-unchecked-color, var(--primary-text-color));
+        opacity: 0.5;
+      }
+
+      :host([disabled][checked]) #onRadio {
+        background-color: var(--paper-radio-button-unchecked-color, var(--primary-text-color));
+        opacity: 0.5;
+      }
+
+      :host([disabled]) #radioLabel {
+        /* slightly darker than the button, so that it's readable */
+        opacity: 0.65;
+      }
+    </style>
+
+    <div id="radioContainer">
+      <div id="offRadio"></div>
+      <div id="onRadio"></div>
+    </div>
+
+    <div id="radioLabel"><slot></slot></div>
+  </template>
+
+  <script>Polymer({is:'paper-radio-button',behaviors:[Polymer.PaperCheckedElementBehavior],hostAttributes:{role:'radio',"aria-checked":!1,tabindex:0},properties:{ariaActiveAttribute:{type:String,value:'aria-checked'}},ready:function(){this._rippleContainer=this.$.radioContainer},attached:function(){Polymer.RenderStatus.afterNextRender(this,function(){var a=this.getComputedStyleValue('--calculated-paper-radio-button-ink-size').trim();if('-1px'===a){var b=parseFloat(this.getComputedStyleValue('--calculated-paper-radio-button-size').trim()),c=Math.floor(3*b);c%2!==b%2&&c++,this.updateStyles({"--paper-radio-button-ink-size":c+'px'})}})}});</script>
+</dom-module>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+--><!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+--><!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+--><script>Polymer.IronMenuBehaviorImpl={properties:{focusedItem:{observer:'_focusedItemChanged',readOnly:!0,type:Object},attrForItemTitle:{type:String},disabled:{type:Boolean,value:!1,observer:'_disabledChanged'}},_MODIFIER_KEYS:['Alt','AltGraph','CapsLock','Control','Fn','FnLock','Hyper','Meta','NumLock','OS','ScrollLock','Shift','Super','Symbol','SymbolLock'],_SEARCH_RESET_TIMEOUT_MS:1e3,_previousTabIndex:0,hostAttributes:{role:'menu'},observers:['_updateMultiselectable(multi)'],listeners:{focus:'_onFocus',keydown:'_onKeydown',"iron-items-changed":'_onIronItemsChanged'},keyBindings:{up:'_onUpKey',down:'_onDownKey',esc:'_onEscKey',"shift+tab:keydown":'_onShiftTabDown'},attached:function(){this._resetTabindices()},select:function(a){this._defaultFocusAsync&&(this.cancelAsync(this._defaultFocusAsync),this._defaultFocusAsync=null);var b=this._valueToItem(a);b&&b.hasAttribute('disabled')||(this._setFocusedItem(b),Polymer.IronMultiSelectableBehaviorImpl.select.apply(this,arguments))},_resetTabindices:function(){var a=this.multi?this.selectedItems&&this.selectedItems[0]:this.selectedItem;this.items.forEach(function(b){b.setAttribute('tabindex',b===a?'0':'-1')},this)},_updateMultiselectable:function(a){a?this.setAttribute('aria-multiselectable','true'):this.removeAttribute('aria-multiselectable')},_focusWithKeyboardEvent:function(a){if(-1===this._MODIFIER_KEYS.indexOf(a.key)){this.cancelDebouncer('_clearSearchText');var b=this._searchText||'',c=a.key&&1==a.key.length?a.key:String.fromCharCode(a.keyCode);b+=c.toLocaleLowerCase();for(var d,e=b.length,f=0;d=this.items[f];f++)if(!d.hasAttribute('disabled')){var g=this.attrForItemTitle||'textContent',h=(d[g]||d.getAttribute(g)||'').trim();if(!(h.length<e)&&h.slice(0,e).toLocaleLowerCase()==b){this._setFocusedItem(d);break}}this._searchText=b,this.debounce('_clearSearchText',this._clearSearchText,this._SEARCH_RESET_TIMEOUT_MS)}},_clearSearchText:function(){this._searchText=''},_focusPrevious:function(){for(var a,b=this.items.length,c=+this.indexOf(this.focusedItem),d=1;d<b+1;d++)if(a=this.items[(c-d+b)%b],!a.hasAttribute('disabled')){var e=Polymer.dom(a).getOwnerRoot()||document;if(this._setFocusedItem(a),Polymer.dom(e).activeElement==a)return}},_focusNext:function(){for(var a,b=this.items.length,c=+this.indexOf(this.focusedItem),d=1;d<b+1;d++)if(a=this.items[(c+d)%b],!a.hasAttribute('disabled')){var e=Polymer.dom(a).getOwnerRoot()||document;if(this._setFocusedItem(a),Polymer.dom(e).activeElement==a)return}},_applySelection:function(a,b){b?a.setAttribute('aria-selected','true'):a.removeAttribute('aria-selected'),Polymer.IronSelectableBehavior._applySelection.apply(this,arguments)},_focusedItemChanged:function(a,b){b&&b.setAttribute('tabindex','-1'),!a||a.hasAttribute('disabled')||this.disabled||(a.setAttribute('tabindex','0'),a.focus())},_onIronItemsChanged:function(a){a.detail.addedNodes.length&&this._resetTabindices()},_onShiftTabDown:function(){var a=this.getAttribute('tabindex');Polymer.IronMenuBehaviorImpl._shiftTabPressed=!0,this._setFocusedItem(null),this.setAttribute('tabindex','-1'),this.async(function(){this.setAttribute('tabindex',a),Polymer.IronMenuBehaviorImpl._shiftTabPressed=!1},1)},_onFocus:function(a){if(!Polymer.IronMenuBehaviorImpl._shiftTabPressed){var b=Polymer.dom(a).rootTarget;(b===this||'undefined'===typeof b.tabIndex||this.isLightDescendant(b))&&(this._defaultFocusAsync=this.async(function(){var a=this.multi?this.selectedItems&&this.selectedItems[0]:this.selectedItem;this._setFocusedItem(null),a?this._setFocusedItem(a):this.items[0]&&this._focusNext()}))}},_onUpKey:function(a){this._focusPrevious(),a.detail.keyboardEvent.preventDefault()},_onDownKey:function(a){this._focusNext(),a.detail.keyboardEvent.preventDefault()},_onEscKey:function(){var a=this.focusedItem;a&&a.blur()},_onKeydown:function(a){this.keyboardEventMatchesKeys(a,'up down esc')||this._focusWithKeyboardEvent(a),a.stopPropagation()},_activateHandler:function(a){Polymer.IronSelectableBehavior._activateHandler.call(this,a),a.stopPropagation()},_disabledChanged:function(a){a?(this._previousTabIndex=this.hasAttribute('tabindex')?this.tabIndex:0,this.removeAttribute('tabindex')):!this.hasAttribute('tabindex')&&this.setAttribute('tabindex',this._previousTabIndex)}},Polymer.IronMenuBehaviorImpl._shiftTabPressed=!1,Polymer.IronMenuBehavior=[Polymer.IronMultiSelectableBehavior,Polymer.IronA11yKeysBehavior,Polymer.IronMenuBehaviorImpl];</script>
+<script>Polymer.IronMenubarBehaviorImpl={hostAttributes:{role:'menubar'},keyBindings:{left:'_onLeftKey',right:'_onRightKey'},_onUpKey:function(a){this.focusedItem.click(),a.detail.keyboardEvent.preventDefault()},_onDownKey:function(a){this.focusedItem.click(),a.detail.keyboardEvent.preventDefault()},get _isRTL(){return'rtl'===window.getComputedStyle(this).direction},_onLeftKey:function(a){this._isRTL?this._focusNext():this._focusPrevious(),a.detail.keyboardEvent.preventDefault()},_onRightKey:function(a){this._isRTL?this._focusPrevious():this._focusNext(),a.detail.keyboardEvent.preventDefault()},_onKeydown:function(a){this.keyboardEventMatchesKeys(a,'up down left right esc')||this._focusWithKeyboardEvent(a)}},Polymer.IronMenubarBehavior=[Polymer.IronMenuBehavior,Polymer.IronMenubarBehaviorImpl];</script>
+<!--
+Material design: [Radio button](https://www.google.com/design/spec/components/selection-controls.html#selection-controls-radio-button)
+
+`paper-radio-group` allows user to select at most one radio button from a set.
+Checking one radio button that belongs to a radio group unchecks any
+previously checked radio button within the same group. Use
+`selected` to get or set the selected radio button.
+
+The <paper-radio-buttons> inside the group must have the `name` attribute
+set.
+
+Example:
+
+    <paper-radio-group selected="small">
+      <paper-radio-button name="small">Small</paper-radio-button>
+      <paper-radio-button name="medium">Medium</paper-radio-button>
+      <paper-radio-button name="large">Large</paper-radio-button>
+    </paper-radio-group>
+
+Radio-button-groups can be made optional, and allow zero buttons to be selected:
+
+    <paper-radio-group selected="small" allow-empty-selection>
+      <paper-radio-button name="small">Small</paper-radio-button>
+      <paper-radio-button name="medium">Medium</paper-radio-button>
+      <paper-radio-button name="large">Large</paper-radio-button>
+    </paper-radio-group>
+
+See <a href="paper-radio-button">paper-radio-button</a> for more
+information about `paper-radio-button`.
+
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--paper-radio-group-item-padding` | The padding of the item | `12px`
+
+@group Paper Elements
+@element paper-radio-group
+@hero hero.svg
+@demo demo/index.html
+-->
+
+<dom-module id="paper-radio-group" assetpath="../bower_components/paper-radio-group/">
+  <template>
+    <style>
+      :host {
+        display: inline-block;
+      }
+
+      :host ::slotted(*) {
+        padding: var(--paper-radio-group-item-padding, 12px);
+      }
+    </style>
+
+    <slot></slot>
+  </template>
+</dom-module>
+
+<script>Polymer({is:'paper-radio-group',behaviors:[Polymer.IronMenubarBehavior],hostAttributes:{role:'radiogroup'},properties:{attrForSelected:{type:String,value:'name'},selectedAttribute:{type:String,value:'checked'},selectable:{type:String,value:'paper-radio-button'},allowEmptySelection:{type:Boolean,value:!1}},select:function(a){var b=this._valueToItem(a);if(!(b&&b.hasAttribute('disabled'))){if(this.selected){var c=this._valueToItem(this.selected);if(this.selected==a)if(this.allowEmptySelection)a='';else return void(c&&(c.checked=!0));c&&(c.checked=!1)}Polymer.IronSelectableBehavior.select.apply(this,[a]),this.fire('paper-radio-group-changed')}},_activateFocusedItem:function(){this._itemActivate(this._valueForItem(this.focusedItem),this.focusedItem)},_onUpKey:function(a){this._focusPrevious(),a.preventDefault(),this._activateFocusedItem()},_onDownKey:function(a){this._focusNext(),a.preventDefault(),this._activateFocusedItem()},_onLeftKey:function(){Polymer.IronMenubarBehaviorImpl._onLeftKey.apply(this,arguments),this._activateFocusedItem()},_onRightKey:function(){Polymer.IronMenubarBehaviorImpl._onRightKey.apply(this,arguments),this._activateFocusedItem()}});</script>
+</div><dom-module id="app-builder-exam">
+  <template>
+    <style>
+       :host {
+        display: block;
+        padding: 10px;
+        font-family: 'Roboto', 'Times New Roman', Times, serif;
+      }
+
+      .card {
+        margin: 24px;
+        padding: 16px;
+        color: #757575;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      }
+
+      @media screen and (max-width: 600px) {
+        .card {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      .circle {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        text-align: center;
+        color: #555;
+        border-radius: 50%;
+        background: #ddd;
+        font-size: 30px;
+        line-height: 64px;
+        margin-bottom: 10px;
+      }
+
+      paper-checkbox {
+        display: block;
+        margin-top: 5px;
+        max-width: 100%;
+      }
+
+      .question {
+        color: black;
+        font-size: 20px;
+        display: block;
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        text-align: justify;
+      }
+
+      p {
+        word-wrap: break-word;
+        color: black;
+      }
+
+      pre p {
+        margin: 0;
+      }
+
+      .pagination {
+        margin-top: 20px;
+      }
+
+      .wrong {
+        background-color: red;
+      }
+
+      .right {
+        background-color: green;
+      }
+
+      .answer {
+        margin-top: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      paper-radio-button {
+        display: block;
+        text-align: justify;
+      }
+
+      .choose {
+        font-size: 17px;
+      }
+
+      .ca {
+        font-size: 17px;
+        display: block;
+        color: black;
+      }
+
+      .ca .title {
+        margin-top: 10px;
+      }
+
+      .imgContainer {
+        overflow-x: auto;
+        max-width: 100%;
+      }
+
+      .p-answers {
+        width: 100%;
+        white-space: normal;
+        word-break: break-word;
+        color: black;
+        text-align: justify;
+      }
+
+      .yellow-button {
+        text-transform: none;
+        color: #eeff41;
+      }
+    </style>
+
+    <iron-ajax auto="" url="[[url]]" handle-as="json" on-response="handleResponse"></iron-ajax>
+    <paper-toast id="toast" class="fit-bottom">
+      <paper-button on-click="closeToast" class="yellow-button">Close now!</paper-button>
+    </paper-toast>
+    
+    <div class="card submitted" hidden$="[[isSubmited]]">
+      <div class="circle">[[currentQuestion.id]]</div>
+      <div style="float:right;">
+        <paper-icon-button id="flagButton" icon="flag" style="width: 50px; height: 50px;" on-click="flagQuestion"></paper-icon-button>
+      </div>
+      <span class="question">[[currentQuestion.question]]</span>
+
+
+      <div class="imgContainer" hidden$="[[!currentQuestion.imageUrl]]">
+        <img id="imageQuestion" src="images/[[currentQuestion.imageUrl]]">
+      </div>
+
+      <span class="question choose" hidden$="[[!currentQuestion.choose]]">[[currentQuestion.choose]]</span>
+
+      <div class="answer">
+
+        <template is="dom-if" if="[[currentQuestion.isRadioButton]]">
+          <paper-radio-group>
+            <template is="dom-repeat" items="[[currentQuestion.answers]]" as="a">
+              <paper-radio-button name="[[a.answer]]" on-keydown="onRadioKeyDown" checked="{{a.checked}}"><span class="p-answers">[[a.answer]]</span></paper-radio-button>
+            </template>
+          </paper-radio-group>
+        </template>
+
+        <template is="dom-if" if="[[!currentQuestion.isRadioButton]]">
+          <template is="dom-repeat" items="[[currentQuestion.answers]]">
+            <div style="text-align: justify; padding: 10px 10px 10px 0;">
+              <paper-checkbox checked="{{item.checked}}"><span class="p-answers">[[item.answer]]</span></paper-checkbox>
+            </div>
+          </template>
+        </template>
+
+
+      </div>
+      <div class="pagination">
+
+        <template is="dom-if" if="[[!_isMobile()]]">
+          <paper-icon-button icon="icons:arrow-back" disabled="[[canBack]]" on-click="back"></paper-icon-button>
+          <paper-icon-button icon="icons:arrow-forward" disabled="[[canNext]]" on-click="next"></paper-icon-button>
+        </template>
+
+        <span>[[_addOneValue(currentQuestionIndex)]] of [[totalQuestions]]</span>
+
+      </div>
+    </div>
+
+    <div hidden$="[[!isSubmited]]">
+      <div class="submitted">
+        <div class="card">
+          <h3 style="margin: 0;">Filter</h3>
+          <paper-checkbox name="flaged" on-change="filterChanged">Flaged</paper-checkbox>
+          <paper-checkbox name="wrong" on-change="filterChanged">Wrong</paper-checkbox>
+        </div>
+        <template is="dom-repeat" items="{{filteredQuestionsSubmited}}" as="questionObj">
+          <div class="card">
+
+            <div class$="[[questionObj.ball]]">[[questionObj.id]]</div>
+
+            <div style="float:right;" hidden$="[[!questionObj.isFlaged]]">
+              <paper-icon-button icon="flag" style="width: 50px; height: 50px; color: red;"></paper-icon-button>
+            </div>
+
+            <span class="question">[[questionObj.question]]</span>
+            <div class="imgContainer" hidden$="[[!questionObj.imageUrl]]">
+              <img src="images/[[questionObj.imageUrl]]">
+            </div>
+            <span class="question choose" hidden$="[[!currentQuestion.choose]]">[[questionObj.choose]]</span>
+
+            <div class="answer">
+
+              <template is="dom-if" if="[[questionObj.isRadioButton]]">
+
+                <paper-radio-group>
+                  <template is="dom-repeat" items="[[questionObj.answers]]" as="a">
+                    <paper-radio-button name="[[a.ca]]" checked="[[a.checked]]" disabled=""><span class="p-answers">[[a.answer]]</span></paper-radio-button>
+                  </template>
+                </paper-radio-group>
+
+              </template>
+
+              <template is="dom-if" if="[[!questionObj.isRadioButton]]">
+
+                <template is="dom-repeat" items="[[questionObj.answers]]" as="a">
+                  <div style="text-align: justify; padding: 10px 10px 10px 0;">
+                    <paper-checkbox checked="[[a.checked]]" disabled="true"><span class="p-answers">[[a.answer]]</span></paper-checkbox>
+                  </div>
+                </template>
+              </template>
+              <span class="ca title">
+                Correct Answer
+              </span>
+              <template is="dom-repeat" items="[[questionObj.answer]]" as="ca">
+                <span class="ca">[[ca]]<span>
+              </span></span></template>
+
+
+
+              <template is="dom-if" if="[[questionObj.moreInformationLinks]]">
+                <h2>More information At:</h2>
+                <template is="dom-repeat" items="[[questionObj.moreInformationLinks]]" as="link">
+                  <a href="[[link.link]]" target="_blank">
+                    <paper-button raised="">[[link.label]]</paper-button>
+                  </a>
+                </template>
+              </template>
+
+            </div>
+          </div>
+        </template>
+      </div>
+
+    </div>
+
+  </template>
+
+  <script>(function(){'use strict';const a='wrong',b='right';let c=null,d=null;Polymer({is:'app-builder-exam',properties:{url:String,questions:Array,rightPercentage:String,questionsSubmited:Array,filteredQuestionsSubmited:Array,progress:{type:Boolean,value:!0},currentQuestion:Object,currentQuestionIndex:Number,totalQuestions:Number,canNext:Boolean,canBack:Boolean,isSubmited:Boolean,submitExam:Function,flagColor:{type:String,value:'#757575'},filter:Array},ready:function(){this.fire('loading-exam'),this.submitExam=this.submit},detached:function(){this._removeEvents()},arrows:function(a){switch(a.stopPropagation(),a.which){case 37:this.back();break;case 39:this.next();break;default:}},onRadioKeyDown:function(a){if(-1!==[37,39].indexOf(a.which))return a.stopPropagation(),!1},closeToast:function(){this.$.toast.toggle()},handleResponse:function(a){let b,c=JSON.parse(localStorage.getItem(this.url));const d=parseInt(localStorage.getItem('numberOfQuestions')||40),e=a.detail.response;if(c&&0<c.length){b=e.filter((a)=>0===c.filter((b)=>b.id===a.id).length);var f=d+c.length;b.length<=d?(0===b.length?(b=e,this.$.toast.show({text:'You are doing '+d+' of '+e.length+' questions',duration:3e3})):(this.$.toast.show({text:'After this test, you completely reviewed all the disponible questions!!',duration:0}),b=b.concat(e.filter((a)=>0===b.filter((b)=>a.id===b.id).length).slice(0,d-b.length))),localStorage.removeItem(this.url),c=null):this.$.toast.show({text:'You are doing '+f+' of '+e.length+' questions',duration:3e3})}else b=e,this.$.toast.show({text:'You are doing '+d+' of '+e.length+' questions',duration:3e3});this.fire('init-exam'),this.isSubmited=!1,this.currentQuestionIndex=0,this.questions=this._prepareQuestions.bind(this)(b),c?localStorage.setItem(this.url,JSON.stringify(c.concat(this.questions))):localStorage.setItem(this.url,JSON.stringify(this.questions)),this.canBack=!0,this.totalQuestions=this.questions.length,this.currentQuestion=this.questions[0],this._imageTouch.bind(this)(),this.canNext=1>this.questions.length,this.progress=!1,this._initializeEvent=this._initializeEvent.bind(this),this._removeEvents=this._removeEvents.bind(this),this._handleTouchStart=this._handleTouchStart.bind(this),this._handleTouchMove=this._handleTouchMove.bind(this),this.arrows=this.arrows.bind(this),this.flagQuestion=this.flagQuestion.bind(this),this.filterChanged=this.filterChanged.bind(this),this._initializeEvent()},flagQuestion:function(a){this.currentQuestion.isFlaged?(a.target.style.color='#757575',this.currentQuestion.isFlaged=!1):(a.target.style.color='red',this.currentQuestion.isFlaged=!0)},filterChanged:function(a){const b=a.target.name,c=a.target.checked,d=this;c?(this.filter.push(b),this.filteredQuestionsSubmited=this.questionsSubmited.filter((a)=>1<d.filter.length?!a.isRight||a.isFlaged:'wrong'===b?!a.isRight:a.isFlaged)):(this.filter.splice(this.filter.indexOf(b),1),this.filteredQuestionsSubmited=this.questionsSubmited.filter((a)=>!(0<d.filter.length)||('flaged'===b?!a.isRight:a.isFlaged)))},next:function(){this.currentQuestionIndex+1!==this.questions.length&&(this.currentQuestionIndex++,this.currentQuestion=this.questions[this.currentQuestionIndex],this.canNext=this.currentQuestionIndex+1===this.questions.length,this.canBack=1>this.currentQuestionIndex,this.$.flagButton.style.color=this.currentQuestion.isFlaged?'red':'#757575',this._imageTouch.bind(this)())},back:function(){0<this.currentQuestionIndex&&(this.currentQuestionIndex--,this.currentQuestion=this.questions[this.currentQuestionIndex],this.canBack=1>this.currentQuestionIndex,this.canNext=this.currentQuestionIndex+1===this.questions.length,this.$.flagButton.style.color=this.currentQuestion.isFlaged?'red':'#757575')},submit:function(){this.filter=[],this._removeEvents(),this.progress=!0;let a=this.questions.slice(0);const b=this;let c=0;a=a.map((a)=>{if(a.ball='circle '+b._isRightQuestion.bind(b)(a),a.isRight&&c++,!a.isTrueFalseQuestion){let b=a.answer;for(let c=0;c<a.answers.length;c++)0<=a.answer.indexOf(a.answers[c].ca)&&(b=b.replace(a.answers[c].ca,';'+a.answers[c].answer.slice(0,2)));b=b.replace(';','').split(';').sort(),a.answer=b}else a.answer=[a.answer];return a}),this.rightPercentage=(100*(c/a.length)).toFixed(2)+'%',this.fire('submitted-exam',{rightPercentage:this.rightPercentage}),this.questionsSubmited=a,this.filteredQuestionsSubmited=this.questionsSubmited.slice(0),this.isSubmited=!0,this.progress=!1},_imageTouch:function(){this.currentQuestion.imageUrl&&this.async(function(){this.$$('#imageQuestion').addEventListener('touchstart',(a)=>a.stopPropagation()),this.$$('#imageQuestion').addEventListener('touchmove',(a)=>a.stopPropagation())})},_shuffle:function(a){for(var b,c,d=a.length;0!==d;)c=Math.floor(Math.random()*d),d-=1,b=a[d],a[d]=a[c],a[c]=b;return a},_isMobile:function(){var b=!1;return function(c){(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(c)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(c.substr(0,4)))&&(b=!0)}(navigator.userAgent||navigator.vendor||window.opera),b},_prepareQuestions:function(a){const b=this;return a=b._shuffle(a),a=a.slice(0,localStorage.getItem('numberOfQuestions')||40),a.map(b._shuffleAnswers.bind(b))},_initializeEvent:function(){document.body.addEventListener('touchstart',this._handleTouchStart),document.body.addEventListener('touchmove',this._handleTouchMove),document.body.addEventListener('keyup',this.arrows)},_removeEvents:function(){document.body.removeEventListener('touchstart',this._handleTouchStart),document.body.removeEventListener('touchmove',this._handleTouchMove),document.body.removeEventListener('keyup',this.arrows)},_isRightQuestion:function(c){if(!c.answers)return a;if(c.isRadioButton){var d=c.answers.filter((b)=>b.checked);return 1>d.length?a:(d=d[0],c.isTrueFalseQuestion?(c.isRight=c.answer.startsWith('False')&&'False'===d.ca||c.answer.startsWith('True')&&'True'===d.ca,c.isRight?b:a):(c.isRight=c.answer.slice(0,2)===d.ca,c.isRight?b:a))}else{let d=this._splitAnswers(c.answer).map((b)=>b.slice(0,2)),e=c.answers.filter((b)=>b.checked).map((b)=>b.ca);if(d.length!==e.length||0===e.length)return c.isRight=!1,a;for(let b=0;b<d.length;b++)if(-1===e.indexOf(d[b]))return c.isRight=!1,a;return c.isRight=!0,b}},_getLetter:function(a){return 0===a?'A.':1===a?'B.':2===a?'C.':3===a?'D.':4===a?'E.':5===a?'F.':void 0},_shuffleAnswers:function(a){if(a.answers){a.answers=!a.answers||a.isTrueFalseQuestion||a.noShuffle?a.answers:this._shuffle(a.answers);let b=-1;for(let c=0;c<a.answers.length;c++)if('All of the above'===a.answers[c].answer){b=c;break}if(0<=b&&b!==a.answers.length-1){let c=a.answers[a.answers.length-1];a.answers[a.answers.length-1]=a.answers[b],a.answers[b]=c}for(let b=0;b<a.answers.length&&!a.isTrueFalseQuestion;b++)a.answers[b].answer=this._getLetter(b)+' '+a.answers[b].answer}return a},_addOneValue:function(a){return a+1},_splitAnswers:function(a){const b=[],c=a.split('F. '),d=c[0].split('E. '),e=d[0].split('D. '),f=e[0].split('C. '),g=f[0].split('B. '),h=g[0].split('A. ');return 1<c.length&&b.push('F. '+c[1]),1<d.length&&b.push('E. '+d[1]),1<e.length&&b.push('D. '+e[1]),1<f.length&&b.push('C. '+f[1]),1<g.length&&b.push('B. '+g[1]),1<h.length&&b.push('A. '+h[1]),b.reverse(),b},_downloadJson:function(a){var b='data:text/json;charset=utf-8,'+encodeURIComponent(JSON.stringify(a)),c=document.createElement('a');c.setAttribute('href',b),c.setAttribute('download','question.json'),c.click()},_handleTouchStart:function(a){c=a.touches[0].clientX,d=a.touches[0].clientY},_handleTouchMove:function(a){var b=Math.abs;if(c&&d){var e=a.touches[0].clientX,f=a.touches[0].clientY,g=c-e,h=d-f;b(g)>b(h)&&(0<g?this.next():this.back()),c=null,d=null}}})})();</script>
+</dom-module>
