@@ -10320,5 +10320,34 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true
+  },
+  {
+    "id": 349,
+    "question": "What can be configured to be included on the related information page for a record in the Salesforce App?",
+    "answers": [
+      {
+        "ca": "A.",
+        "checked": false,
+        "answer": "Expanded Lookups"
+      },
+      {
+        "ca": "B.",
+        "checked": false,
+        "answer": " Chatter Feed"
+      },
+      { "ca": "C.", "checked": false, "answer": "Quick Actions" },
+      {
+        "ca": "D.",
+        "checked": false,
+        "answer": "Visualforce Pages"
+      },
+      {
+        "ca": "E.",
+        "checked": false,
+        "answer": "Related Lists"
+      }
+    ],
+    "answer": "A. D. E. ",
+    "choose": "Choose 3"
   }
 ]
