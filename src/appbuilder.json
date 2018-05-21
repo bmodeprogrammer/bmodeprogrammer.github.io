@@ -10211,5 +10211,34 @@
     ],
     "answer": "A. B. D. ",
     "choose": "Choose 3"
+  },
+  {
+    "id": 345,
+    "question": "What types of items can be included in the Salesforce App Navigation Menu?",
+    "answers": [
+      {
+        "ca": "A.",
+        "checked": false,
+        "answer": "Visualforce Page Tabs"
+      },
+      {
+        "ca": "B.",
+        "checked": false,
+        "answer": " Object List Views"
+      },
+      { "ca": "C.", "checked": false, "answer": "Dashboards" },
+      {
+        "ca": "D.",
+        "checked": false,
+        "answer": "Approval Requests"
+      },
+      {
+        "ca": "E.",
+        "checked": false,
+        "answer": "Quick Search Items"
+      }
+    ],
+    "answer": "A. C. D. ",
+    "choose": "Choose 3"
   }
 ]
