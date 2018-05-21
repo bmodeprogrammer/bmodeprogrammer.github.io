@@ -10295,5 +10295,30 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true
+  },
+  {
+    "id": 348,
+    "question": "The executive dashboard of Global Containers needs to show the number of leads that are over a year old but not yet converted. The company goal is to keep this number below 40 and never above 60. Which dashboard component would you recommend for this?",
+    "answers": [
+      {
+        "ca": "A.",
+        "checked": false,
+        "answer": "Gauge"
+      },
+      {
+        "ca": "B.",
+        "checked": false,
+        "answer": " Charts"
+      },
+      { "ca": "C.", "checked": false, "answer": "Metrics" },
+      {
+        "ca": "D.",
+        "checked": false,
+        "answer": "Tables"
+      }
+    ],
+    "answer": "A. ",
+    "choose": "Choose 1",
+    "isRadioButton": true
   }
 ]
