@@ -10268,6 +10268,32 @@
       }
     ],
     "answer": "E. ",
-    "choose": "Choose 1"
+    "choose": "Choose 1",
+    "isRadioButton": true
+  },
+  {
+    "id": 347,
+    "question": "Global Sales Corp. wants to use Salesforce to track Expenses, and would like to ensure that no proxy Expenses are submitted for approval. They want to ensure that only the creator of an Expense record is able to submit it for approval. How can they achieve this use case?",
+    "answers": [
+      {
+        "ca": "A.",
+        "checked": false,
+        "answer": "Validation Rule on Owner Field"
+      },
+      {
+        "ca": "B.",
+        "checked": false,
+        "answer": " Custom Submit for Approval button"
+      },
+      { "ca": "C.", "checked": false, "answer": "Control Submit for Approval visibility on Page Layout" },
+      {
+        "ca": "D.",
+        "checked": false,
+        "answer": "Specify initial submitters while configuring the approval process"
+      }
+    ],
+    "answer": "D. ",
+    "choose": "Choose 1",
+    "isRadioButton": true
   }
 ]
