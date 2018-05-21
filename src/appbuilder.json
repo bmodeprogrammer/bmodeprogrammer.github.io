@@ -10240,5 +10240,34 @@
     ],
     "answer": "A. C. D. ",
     "choose": "Choose 3"
+  },
+  {
+    "id": 346,
+    "question": "Global Containers plans to start using Case Management in Salesforce. Which of the following capabilities is not a feature of Case Management?",
+    "answers": [
+      {
+        "ca": "A.",
+        "checked": false,
+        "answer": "Email-to-Case"
+      },
+      {
+        "ca": "B.",
+        "checked": false,
+        "answer": " Web-to-Case"
+      },
+      { "ca": "C.", "checked": false, "answer": "Escalation Rules" },
+      {
+        "ca": "D.",
+        "checked": false,
+        "answer": "Case Queues"
+      },
+      {
+        "ca": "E.",
+        "checked": false,
+        "answer": "Case Monitoring"
+      }
+    ],
+    "answer": "E. ",
+    "choose": "Choose 1"
   }
 ]
