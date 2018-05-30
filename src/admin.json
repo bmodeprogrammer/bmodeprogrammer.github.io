@@ -1739,7 +1739,7 @@
     "isRadioButton": false
 }, {
     "id": 75,
-    "question": "Which accounts are automatically synchronized on Salesforce classic",
+    "question": "Which accounts are automatically synchronized on Salesforce classic lite",
     "answers": [{
         "ca": "A.",
         "checked": false,
