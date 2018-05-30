@@ -419,8 +419,8 @@
         "answer": "The user will be able to log in after answering the security question."
     }],
     "answer": "A. \r\n",
-    "choose": "choose 2",
-    "isRadioButton": false
+    "choose": "choose 1",
+    "isRadioButton": true
 }, {
     "id": 19,
     "question": "When importing data, what happens if some records do NOT met the data validation criteria",
