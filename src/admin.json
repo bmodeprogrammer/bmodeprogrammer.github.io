@@ -1945,9 +1945,9 @@
         "checked": false,
         "answer": "Move the opportunity reports into a folder with restricted access"
     }],
-    "answer": "A.\r\n",
-    "choose": "choose 0",
-    "isRadioButton": false
+    "answer": "A. \r\n",
+    "choose": "choose 1",
+    "isRadioButton": true
 }, {
     "id": 84,
     "question": "Which functionality is available when enhanced lists are enabled",
