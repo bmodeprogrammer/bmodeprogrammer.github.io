@@ -262,11 +262,11 @@
     "isRadioButton": true
 }, {
     "id": 12,
-    "question": "What type of record access can an administrator grant",
+    "question": "What type of record access can an administrator grant through sharing rules",
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "Read/Write only"
+        "answer": "Read/Write"
     }, {
         "ca": "B.",
         "checked": false,
