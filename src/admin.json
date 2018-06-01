@@ -6996,33 +6996,73 @@
     "answer": "A. B. C. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Criteria-based sharing rules can be created for which objects?\r\n**Choose 3 answers**\r\n\r\na) Opportunities\r\nB) Contacts\r\nC) Accounts\r\nD) Users\r\nE) Campaign Members",
+    "question": "Criteria-based sharing rules can be created for which objects?",
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "undefined"
+        "answer": "Opportunities"
+    },{
+        "ca": "B.",
+        "checked": false,
+        "answer": "Contacts"
+    },{
+        "ca": "C.",
+        "checked": false,
+        "answer": "Accounts"
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "Users"
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "Campaign Members"
     }]
 }, {
     "id": 305,
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What will occur when a system administrator creates a dynamic dashboard?\r\n\r\na) The data displayed varies based on the user viewing the dashboard\r\nb) The dashboard component resize based on the device used to view the \r\nc) The dashboard automatically sends an email when the underlying data.\r\nd) The dashboard refreshes automatically whenever the underlying data",
+    "question": "What will occur when a system administrator creates a dynamic dashboard?",
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "undefined"
+        "answer": "The data displayed varies based on the user viewing the dashboard"
+    },{
+        "ca": "B.",
+        "checked": false,
+        "answer": "The dashboard component resize based on the device used to view the"
+    },{
+        "ca": "C.",
+        "checked": false,
+        "answer": "The dashboard automatically sends an email when the underlying data."
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "The dashboard refreshes automatically whenever the underlying data"
     }]
 }, {
     "id": 306,
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which feature license can be assigned to a user record in salesforce?\r\n**Choose 2 answers**\r\n\r\na) Opportunity user\r\nb) Console user\r\nc) Service cloud user\r\nd) Knowledge user",
+    "question": "Which feature license can be assigned to a user record in salesforce?",
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "undefined"
+        "answer": "Opportunity user"
+    },{
+        "ca": "B.",
+        "checked": false,
+        "answer": "Console user"
+    },{
+        "ca": "C.",
+        "checked": false,
+        "answer": "Service cloud user"
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "Knowledge user"
     }]
 }, {
     "id": 307,
@@ -7213,11 +7253,23 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What can a marketing user do using the Manage Members button on a campaign record?\r\n**Choose 2 answers**\r\n\r\na) Create a custom report including all campaign members\r\nb) Import new leads and associate them with the campaign\r\nc) Associate existing opportunities with the campaign \r\nd) Associate existing contacts with the campaign",
+    "question": "What can a marketing user do using the Manage Members button on a campaign record?",
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "undefined"
+        "answer": "Create a custom report including all campaign members"
+    },{
+        "ca": "B.",
+        "checked": false,
+        "answer": "Import new leads and associate them with the campaign"
+    },{
+        "ca": "C.",
+        "checked": false,
+        "answer": "Associate existing opportunities with the campaign"
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "Associate existing contacts with the campaign"
     }]
 }, {
     "id": 316,
