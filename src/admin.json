@@ -6916,11 +6916,23 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Universal Containers wants to capture the invoice number and account credit score for billing cases. How would an administrator accomplish this?\r\n**Choose 2 answers**\r\n\r\na) Create a validation rule.\r\nb) Create a support process.\r\nc) Create custom fields\r\nd) Create a page layout.",
+    "question": "Universal Containers wants to capture the invoice number and account credit score for billing cases. How would an administrator accomplish this?",
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "undefined"
+        "answer": "Create a validation rule."
+    },{
+        "ca": "B.",
+        "checked": false,
+        "answer": "Create a support process."
+    },{
+        "ca": "C.",
+        "checked": false,
+        "answer": "Create custom fields"
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "Create a page layout."
     }]
 }, {
     "id": 301,
@@ -7556,11 +7568,23 @@
     "answer": "B. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What is the purpose of the AppExchange?\r\n**Choose 2 answers**\r\n\r\na) Support users can install the Service cloud console custom app.\r\nB) Customers can share and install apps published by Salesforce partners.\r\nC) Administrators can downloaded and customize pre-built reports and dashboards.\r\nD) Partners can download accounts and contacts to collaborate on sales deals.",
+    "question": "What is the purpose of the AppExchange?",
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "undefined"
+        "answer": "Support users can install the Service cloud console custom app."
+    },{
+        "ca": "B.",
+        "checked": false,
+        "answer": "Customers can share and install apps published by Salesforce partners."
+    },{
+        "ca": "C.",
+        "checked": false,
+        "answer": "Administrators can downloaded and customize pre-built reports and dashboards."
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "Partners can download accounts and contacts to collaborate on sales deals."
     }]
 }, {
     "id": 329,
@@ -8058,44 +8082,77 @@
     "answer": "A. B. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "What can be transferred from one user to another user during mass transfer of account records?\r\n**Choose 3 answers**\r\n\r\na) Closed cases\r\nb) Open cases\r\nc) Closed activities\r\nd) Open activities\r\ne) Related custom object records",
+    "question": "What can be transferred from one user to another user during mass transfer of account records?",
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "undefined"
+        "answer": "Closed cases"
+    },{
+        "ca": "B.",
+        "checked": false,
+        "answer": "Open cases"
+    },{
+        "ca": "C.",
+        "checked": false,
+        "answer": "Closed activities"
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "Open activities"
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "Related custom object records"
     }]
 }, {
     "id": 351,
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A sales executive at Universal containers wants to be notified whenever high-value opportunities are created for hot accounts.\r\nHow should an administrator meet this requirement?\r\n\r\na) Create the workflow rule on opportunity object\r\nb) Create an escalation rules based on the opportunity amount\r\nc) Create an auto-response rule based on the opportunity amount\r\nd) Create a validation rule that evaluates the account rating",
+    "question": "A sales executive at Universal containers wants to be notified whenever high-value opportunities are created for hot accounts.\r\nHow should an administrator meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "undefined"
+        "answer": "Create the workflow rule on opportunity object"
+    },{
+        "ca": "B.",
+        "checked": false,
+        "answer": "Create an escalation rules based on the opportunity amount"
+    },{
+        "ca": "C.",
+        "checked": false,
+        "answer": "Create an auto-response rule based on the opportunity amount"
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "Create a validation rule that evaluates the account rating"
     }]
 }, {
     "id": 352,
     "answer": "A. B. C. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Universal Containers needs to use cases to manage both customer support issue and internal change requests.\r\nWhich functionality should a system admin use to meet this requirement?\r\n**Choose 3 answers**\r\n\r\na) Support Process\r\nb) Page Layouts \r\nc) Record Types \r\nd) Validation Rules \r\ne) Delegated Administration",
+    "question": "Universal Containers needs to use cases to manage both customer support issue and internal change requests.\r\nWhich functionality should a system admin use to meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "undefined"
-    }]
-}, {
-    "id": 353,
-    "answer": "D. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "An opportunity record created with a close date of July 30, meets the criteria of time -dependent workflow rule. The time dependent action is scheduled for July 23.\r\nWhat happens if the opportunity is edited before July 23 and no longer meets the criteria?\r\n\r\na) The time dependent action will execute on July 30\r\nb) The time dependent action is put on hold.\r\nc) The Time dependent action will execute on July 23\r\nd) The time dependent action is automatically removed from the queue.",
-    "answers": [{
-        "ca": "A.",
+        "answer": "Support Process"
+    },{
+        "ca": "B.",
         "checked": false,
-        "answer": "undefined"
+        "answer": "Page Layouts"
+    },{
+        "ca": "C.",
+        "checked": false,
+        "answer": "Record Types"
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "Validation Rules"
+    },{
+        "ca": "D.",
+        "checked": false,
+        "answer": "Delegated Administration"
     }]
 }, {
     "id": 354,
@@ -8587,39 +8644,6 @@
         "ca": "E.",
         "checked": false,
         "answer": "Feature license assignment."
-    }]
-}, {
-    "id": 375,
-    "answer": "C. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "What relationship can be selected in a custom report type where Accounts is the primary object and Contacts is a related object?\r\n\r\na) Each account must not have related contacts\r\nb) Each contact must have a related account \r\nc) Each account may or may not have related contacts\r\nd) Each contact may or may not have related account",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "undefined"
-    }]
-}, {
-    "id": 376,
-    "answer": "B. C. ",
-    "choose": "Choose 2",
-    "isRadioButton": false,
-    "question": "Where can the multilingual solution search feature be enabled? \r\n**Choose 2 answers**\r\n\r\na) Salesforce Content\r\nb) Public Knowledge Base\r\nc) Self Service Portal \r\nd) Solution Tab Search",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "undefined"
-    }]
-}, {
-    "id": 377,
-    "answer": "D. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Universal Containers uses a custom field on the account object to capture the account credit status. The sales team wants to display the account credit status on opportunities.\r\nWhich feature should a system admin use this meet this requirement?\r\n\r\na) Roll Up Summary Field.\r\nb) Workflow Field Update.\r\nc) Lookup Field\r\nd) Cross-object formula field",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "undefined"
     }]
 }, {
     "id": 378,
