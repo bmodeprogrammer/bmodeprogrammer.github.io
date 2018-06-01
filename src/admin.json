@@ -4248,35 +4248,19 @@
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "Yes, the Automobile Manufacturer is a controller picklist, and Automobile Model is a"
-    }, {
+        "answer": "Yes, the Automobile Manufacturer is a controller picklist, and Automobile Model is a dependent picklist"
+    },  {
         "ca": "B.",
         "checked": false,
-        "answer": "pendent picklist"
+        "answer": "Yes, the Automobile Manufacturer is a dependent picklist, and Automobile Model is a controlling picklist"
     }, {
         "ca": "C.",
         "checked": false,
-        "answer": "Yes, the Automobile Manufacturer is a dependent picklist, and Automobile Model is a"
+        "answer": "No, a relationship between the two fields is NOT possible because they are both custom fields"
     }, {
         "ca": "D.",
         "checked": false,
-        "answer": "ntrolling picklist"
-    }, {
-        "ca": "E.",
-        "checked": false,
-        "answer": "No, a relationship between the two fields is NOT possible because they are both custom"
-    }, {
-        "ca": "E.",
-        "checked": false,
-        "answer": "elds"
-    }, {
-        "ca": "E.",
-        "checked": false,
-        "answer": "No, a relationship between the two fields is NOT possible because they are both picklist"
-    }, {
-        "ca": "E.",
-        "checked": false,
-        "answer": "elds"
+        "answer": "No, a relationship between the two fields is NOT possible because they are both picklist fields"
     }]
 }, {
     "id": 185,
@@ -6907,7 +6891,7 @@
         "checked": false,
         "answer": "Content Library"
     }, {
-        "ca": "E.",
+        "ca": "F.",
         "checked": false,
         "answer": "Opportunities and Quotes"
     }]
