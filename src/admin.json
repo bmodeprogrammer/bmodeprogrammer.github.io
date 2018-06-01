@@ -2232,21 +2232,6 @@
         "answer": "All of the above"
     }]
 }, {
-    "id": 96,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "The user interface (UI) settings are \"global,\" and therefore apply to all users in an org. \r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
     "id": 97,
     "answer": "A. B. C. ",
     "choose": "Choose 3",
@@ -2324,21 +2309,6 @@
         "answer": "All of the above"
     }]
 }, {
-    "id": 100,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "It is possible to switch to a standard fiscal year from a custom fiscal year.\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
     "id": 101,
     "answer": "C. ",
     "choose": "Choose 1",
@@ -2364,36 +2334,6 @@
         "ca": "E.",
         "checked": false,
         "answer": "Lightning Experience"
-    }]
-}, {
-    "id": 102,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "By default, all Salesforce orgs are set to a single currency.\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
-    "id": 103,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "A pre-built App from the AppExchange is always the first approach you should take when you're looking to add functionality to your Salesforce instance.\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
     }]
 }, {
     "id": 104,
@@ -2467,21 +2407,6 @@
         "ca": "D.",
         "checked": false,
         "answer": "Chatter profiles are not editable"
-    }]
-}, {
-    "id": 107,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Chatter external users can only interact in public or private Chatter groups that they belong to. \r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
     }]
 }, {
     "id": 108,
@@ -2697,21 +2622,6 @@
         "ca": "E.",
         "checked": false,
         "answer": "Profile Login Hours"
-    }]
-}, {
-    "id": 117,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Sharing rules can be used to restrict data access. \r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
     }]
 }, {
     "id": 118,
@@ -2968,21 +2878,6 @@
         "answer": "Data Loading Wizard"
     }]
 }, {
-    "id": 128,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "You must include universally required fields in your import files or the import will fail.\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
     "id": 129,
     "answer": "B. C. D. ",
     "choose": "Choose 3",
@@ -3027,51 +2922,6 @@
         "ca": "D.",
         "checked": false,
         "answer": "Manage Public Templates permissions"
-    }]
-}, {
-    "id": 131,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "As a System Administrator, you can edit unfiled and personal folders.\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
-    "id": 132,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "When you share a folder with a group, managers of the group members (above the members in the role hierarchy) have no access to the folder unless those managers are also members of the group. \r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
-    "id": 133,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "You cannot cancel an import after it has started processing.\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
     }]
 }, {
     "id": 134,
@@ -5671,21 +5521,6 @@
         "answer": "Visual Force Page"
     }]
 }, {
-    "id": 245,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "You can set the Tab as a Landing Tab while creating the Tab for the Object?\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
     "id": 246,
     "answer": "C. ",
     "choose": "Choose 1",
@@ -5809,21 +5644,6 @@
         "answer": "Yes and everyone will be able to see it regardless of access to dashboard"
     }]
 }, {
-    "id": 251,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Inline Editing is available in visual force pages?\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
     "id": 252,
     "answer": "B. ",
     "choose": "Choose 1",
@@ -5887,21 +5707,6 @@
         "ca": "D.",
         "checked": false,
         "answer": "Outbound messages"
-    }]
-}, {
-    "id": 255,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Field Sets works on both Standard as well as Custom Objects?\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
     }]
 }, {
     "id": 256,
@@ -6089,21 +5894,6 @@
         "answer": "Contact Manager"
     }]
 }, {
-    "id": 263,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "The account owner, opportunity owners, and case owners may or may not be the same user.\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
     "id": 264,
     "answer": "B. C. ",
     "choose": "Choose 2",
@@ -6181,21 +5971,6 @@
         "answer": "Enable Drag-and-drop scheduling on List Views"
     }]
 }, {
-    "id": 267,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "The Report Builder is different from the Report Wizard.\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
     "id": 268,
     "answer": "B. C. E. ",
     "choose": "Choose 3",
@@ -6244,36 +6019,6 @@
         "ca": "D.",
         "checked": false,
         "answer": "Pickli st_fie ld(VALUE)"
-    }]
-}, {
-    "id": 270,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "At this click path Setup > App Setup > Customize > Tab Names and Labels > Rename Tabs and Labels you can\r\nrename the Tab Names of standard objects.\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
-    "id": 271,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Is identity confirmation necessary if a user's IP address is known and browser cookie exists?\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
     }]
 }, {
     "id": 272,
@@ -6347,36 +6092,6 @@
         "ca": "E.",
         "checked": false,
         "answer": "Fiscal Years"
-    }]
-}, {
-    "id": 275,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Custom Report Types (CRT) allows you to build a framework from which users can create and customize\r\nreports in the report wizard but not in report builder.\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
-    "id": 276,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "A Profile is a collection of settings and permissions that determine what the user can do with records they have\r\naccess to and how they view those records.\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
     }]
 }, {
     "id": 277,
@@ -6465,36 +6180,6 @@
         "ca": "C.",
         "checked": false,
         "answer": "Setup I Profiles I Customize"
-    }]
-}, {
-    "id": 281,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Custom formula fields can reference other custom formula fields including themselves.\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
-    "id": 282,
-    "answer": "A. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "You must run the report before you can print or export it because the Printable View and Export details buttons are not available in the report builder.\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
     }]
 }, {
     "id": 283,
@@ -6685,21 +6370,6 @@
         "answer": "Tabular"
     }]
 }, {
-    "id": 291,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Every profile, including profiles associated with Customer Portal users must have at least one visible app.\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
     "id": 292,
     "answer": "B. C. E. ",
     "choose": "Choose 3",
@@ -6739,21 +6409,6 @@
         "answer": "oud Scheduler quick setup method."
     }]
 }, {
-    "id": 293,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Clients do not have to enable Customizable forecasting before they can ask salesforce to activate Territory\r\nManagement.\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
-    }]
-}, {
     "id": 294,
     "answer": "C. ",
     "choose": "Choose 1",
@@ -6779,21 +6434,6 @@
         "ca": "E.",
         "checked": false,
         "answer": "The conversion will fail."
-    }]
-}, {
-    "id": 295,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "You can not use the browser's print function to print reports.\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "True"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "False"
     }]
 }, {
     "id": 296,
