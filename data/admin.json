@@ -7586,32 +7586,6 @@
         "answer": "assignment rule"
     }]
 }, {
-    "id": 374,
-    "answer": "B. C. D. ",
-    "choose": "Choose 3",
-        "question": "What setting is controlled by a user's profile?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "Locale settings"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "Assigned apps"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "Record type assignment"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "Field-level security"
-    }, {
-        "ca": "E.",
-        "checked": false,
-        "answer": "Feature license assignment."
-    }]
-}, {
     "id": 378,
     "answer": "B. C. D. ",
     "choose": "Choose 3",
