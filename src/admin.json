@@ -5952,25 +5952,6 @@
         "answer": "200"
     }]
 }, {
-    "id": 273,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Are custom object reports accessible when you add a custom object tab?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "Yes"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "No"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "Only if the Object is not related to any other object"
-    }]
-}, {
     "id": 274,
     "answer": "B. ",
     "choose": "Choose 1",
