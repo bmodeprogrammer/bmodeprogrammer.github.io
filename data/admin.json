@@ -7064,28 +7064,6 @@
         "answer": "The field-level-security for the dependent field"
     }]
 }, {
-    "id": 349,
-    "answer": "B. ",
-    "choose": "Choose 1",
-        "question": "What will happen when a user attempts to log in to salesforce from an IP address that is outside the login IP range on the User's profile within the organization-wide trusted IP range?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "The user will not be able to log in at all"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "The user will be able to log in after the computer is activated."
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "The user will be able to log in without activating the computer"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "The user will be able to log in after answering a security question."
-    }]
-}, {
     "id": 350,
     "answer": "A. B. D. ",
     "choose": "Choose 3",
