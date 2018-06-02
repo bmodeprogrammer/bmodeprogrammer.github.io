@@ -6396,28 +6396,6 @@
         "answer": "\"Read\" for opportunities."
     }]
 }, {
-    "id": 317,
-    "answer": "B. D. ",
-    "choose": "Choose 2",
-        "question": "What can users do with Mobile Lite?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "View campaigns and manage campaign members."
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "View, create, edit and delete accounts, contacts and opportunities."
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "View, create, edit and delete custom objects."
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "Search for records that were not previously downloaded to a mobile device"
-    }]
-}, {
     "id": 318,
     "answer": "B. C. E. ",
     "choose": "Choose 3",
