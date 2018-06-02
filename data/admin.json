@@ -5090,28 +5090,6 @@
         "answer": "Create on solution"
     }]
 }, {
-    "id": 237,
-    "answer": "A. C. ",
-    "choose": "Choose 2",
-        "question": "Which function is available with standard fields?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "Adding context‐sensitive help"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "Deleting fields"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "Adding or removing non‐required fields from a page layout"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "Changing field labels"
-    }]
-}, {
     "id": 238,
     "answer": "A. B. ",
     "choose": "Choose 2",
