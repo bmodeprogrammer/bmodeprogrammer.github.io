@@ -5644,25 +5644,6 @@
         "answer": "Yes and everyone will be able to see it regardless of access to dashboard"
     }]
 }, {
-    "id": 252,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "With Spring' 11 release now you can have Photos in Dashboard components?\r\n\r\n",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "No"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "Yes but only in Tables"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "Yes in every type of Chart"
-    }]
-}, {
     "id": 253,
     "answer": "D. ",
     "choose": "Choose 1",
