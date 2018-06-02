@@ -1103,7 +1103,7 @@
         "answer": "Edit the criteria used to trigger the approval process"
     }],
     "answer": "A. B. ",
-    "choose": "choose 15"
+    "choose": "choose 2"
 }, {
     "id": 49,
     "question": "A user is having trouble logging into Salesforce. The users login history shows that this person has attempted to log in multiple times and has been locked out of the organization.How can the system administrator help the user log into Salesforce?",
@@ -2478,7 +2478,7 @@
         "answer": "CRED Settings"
     }]
 }, {
-    "id": 115,
+    "id": 1f,
     "answer": "E. ",
     "choose": "Choose 1",
         "question": "2. Which of the following can be used to grant full access to a user?",
