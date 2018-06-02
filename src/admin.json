@@ -8347,29 +8347,6 @@
         "answer": "place the U.S. sales director in a queue with the U.S. sales representatives"
     }]
 }, {
-    "id": 382,
-    "answer": "A. D. ",
-    "choose": "Choose 2",
-    "isRadioButton": false,
-    "question": "What is the capability of Service Cloud \\ Customer portal?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "customers can log, view, edit, and close their own cases"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "the portal can be customized with corporate branding"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "customers can view and edit contacts related to their own accounts"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "the portal and its users can be created without additional licensing"
-    }]
-}, {
     "id": 383,
     "answer": "B. ",
     "choose": "Choose 1",
