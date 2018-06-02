@@ -4892,28 +4892,6 @@
         "answer": "Page layouts"
     }]
 }, {
-    "id": 226,
-    "answer": "D. ",
-    "choose": "Choose 1",
-        "question": "Which statement about multi‐day and all‐day events is TRUE",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "All‐Day Events have a start and end time"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "Multi‐Day Event cannot be set as All‐Day Event"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "All‐Day Events have a check box for flagging as Multi‐Day Events"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "Multi‐Day Events have a start and end time"
-    }]
-}, {
     "id": 227,
     "answer": "A. ",
     "choose": "Choose 1",
