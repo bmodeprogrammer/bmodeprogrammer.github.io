@@ -2927,29 +2927,7 @@
         "checked": false,
         "answer": "Import new leads and associate them with the campaign"
     }]
-}, {
-    "id": 138,
-    "answer": "C. D. ",
-    "choose": "Choose 2",
-        "question": "What level of access can be set when sharing a document folder with users?(Choose 2)",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "Read/Write/Create"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "Read/Write/Create/Delete"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "Read-only"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "Read/Write"
-    }]
-}, {
+},  {
     "id": 139,
     "answer": "C. ",
     "choose": "Choose 1",
@@ -6286,28 +6264,6 @@
         "answer": "Campaign Members"
     }]
 }, {
-    "id": 305,
-    "answer": "A. ",
-    "choose": "Choose 1",
-        "question": "What will occur when a system administrator creates a dynamic dashboard?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "The data displayed varies based on the user viewing the dashboard"
-    },{
-        "ca": "B.",
-        "checked": false,
-        "answer": "The dashboard component resize based on the device used to view the"
-    },{
-        "ca": "C.",
-        "checked": false,
-        "answer": "The dashboard automatically sends an email when the underlying data."
-    },{
-        "ca": "D.",
-        "checked": false,
-        "answer": "The dashboard refreshes automatically whenever the underlying data"
-    }]
-}, {
     "id": 306,
     "answer": "C. D. ",
     "choose": "Choose 2",
@@ -6440,50 +6396,6 @@
         "answer": "Custom lead fields can be mapped to custom object field"
     }]
 }, {
-    "id": 312,
-    "answer": "B. ",
-    "choose": "Choose 1",
-        "question": "Universal Containers requires that its Salesforce account data, including attachments, be backed up weekly. Which tool should a system administrator use to accomplish this?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "Account report export"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "data export service"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "Account analytic snapshot"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "Data loader"
-    }]
-}, {
-    "id": 313,
-    "answer": "C. ",
-    "choose": "Choose 1",
-        "question": "A user profile has login hour restrictions set to Monday through Friday 8:00 AM to 5:00 Pm. It is Tuesday and the user has logged in at 4:30PM and it is now 5:01PM Which behaviour of the application should the user expect? ",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "The user will be able to continue working and start new sessions."
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "The user will be logged out and any unsaved work-in-progress will be saved"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "The user will be able to continue working, but will not be unable to start a new sessions."
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "The user will be logged out and any unsaved work-in-progress will be lost"
-    }]
-}, {
     "id": 314,
     "answer": "A. ",
     "choose": "Choose 1",
@@ -6504,28 +6416,6 @@
         "ca": "D.",
         "checked": false,
         "answer": "The dashboard refreshes automatically whenever the underlying data"
-    }]
-}, {
-    "id": 315,
-    "answer": "B. D. ",
-    "choose": "Choose 2",
-        "question": "What can a marketing user do using the Manage Members button on a campaign record?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "Create a custom report including all campaign members"
-    },{
-        "ca": "B.",
-        "checked": false,
-        "answer": "Import new leads and associate them with the campaign"
-    },{
-        "ca": "C.",
-        "checked": false,
-        "answer": "Associate existing opportunities with the campaign"
-    },{
-        "ca": "D.",
-        "checked": false,
-        "answer": "Associate existing contacts with the campaign"
     }]
 }, {
     "id": 316,
