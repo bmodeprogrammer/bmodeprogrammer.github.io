@@ -4301,13 +4301,9 @@
     }, {
         "ca": "C.",
         "checked": false,
-        "answer": "The opportunity and account name, including the close date defaulting to the end of the"
-    }, {
+        "answer": "The opportunity and account name, including the close date defaulting to the end of the year."
+    },{
         "ca": "D.",
-        "checked": false,
-        "answer": "ar."
-    }, {
-        "ca": "E.",
         "checked": false,
         "answer": "The opportunity and account name, including the close date defaulting to the last day of the quarter and Stage field defaulting to the first value"
     }]
