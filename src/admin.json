@@ -6870,29 +6870,6 @@
         "answer": "Dashboards components."
     }]
 }, {
-    "id": 319,
-    "answer": "B. D. ",
-    "choose": "Choose 2",
-    "isRadioButton": false,
-    "question": "How can Knowledge articles be used?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "To display salesforce answers"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "To resolve customer cases"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "To display Salesforce solutions"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "To display customer self service"
-    }]
-}, {
     "id": 320,
     "answer": "B. ",
     "choose": "Choose 1",
