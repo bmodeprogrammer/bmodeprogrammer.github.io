@@ -1,6 +1,6 @@
 [{
     "id": 1,
-    "question": "Universal Containers uses a custom field on the account object to capture the account credit status. The sales team wants to display the account credit status on opportunities\r\nWhich feature should a system administrator use to meet the requirements?",
+    "question": "Universal Containers uses a custom field on the account object to capture the account credit status. The sales team wants to display the account credit status on opportunitiesWhich feature should a system administrator use to meet the requirements?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -18,7 +18,7 @@
         "checked": false,
         "answer": "Cross-object formula field"
     }],
-    "answer": "D. \r\n",
+    "answer": "D. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -41,12 +41,12 @@
         "checked": false,
         "answer": "The time dependent action will execute on July 23."
     }],
-    "answer": "A. \r\n",
+    "answer": "A. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 3,
-    "question": "Universal container has two sales groups; each group has its own unique sales process.\r\nWhat is the best way to ensure that sales representatives have access to only the stages relevant to their sales process when working on opportunities?",
+    "question": "Universal container has two sales groups; each group has its own unique sales process.What is the best way to ensure that sales representatives have access to only the stages relevant to their sales process when working on opportunities?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -64,12 +64,12 @@
         "checked": false,
         "answer": "Roles"
     }],
-    "answer": "A. \r\n",
+    "answer": "A. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 4,
-    "question": "A marketing user needs to create a new campaign, but the New Button is NOT visible from the campaign home page. The system administrator has verified that the user has the “Create” profile permission for the campaign object.\r\nHow should the system administrator resolve the issue?",
+    "question": "A marketing user needs to create a new campaign, but the New Button is NOT visible from the campaign home page. The system administrator has verified that the user has the “Create” profile permission for the campaign object.How should the system administrator resolve the issue?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -87,7 +87,7 @@
         "checked": false,
         "answer": "Add the New button to the page layout using the page layout ________"
     }],
-    "answer": "A. \r\n",
+    "answer": "A. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -114,7 +114,7 @@
         "checked": false,
         "answer": "Columns displayed for each object."
     }],
-    "answer": "C. D. E. \r\n",
+    "answer": "C. D. E. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -137,12 +137,12 @@
         "checked": false,
         "answer": "Enhanced profile list views"
     }],
-    "answer": "A. C. \r\n",
+    "answer": "A. C. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
     "id": 7,
-    "question": "The support group at universal container wants agents to capture different information for product support and inquiry cases. In addition, the lifecycle for product support cases should have more steps than the lifecycle for inquiry cases\r\nWhat feature should an administrator use to meet the requirement?",
+    "question": "The support group at universal container wants agents to capture different information for product support and inquiry cases. In addition, the lifecycle for product support cases should have more steps than the lifecycle for inquiry casesWhat feature should an administrator use to meet the requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -164,12 +164,12 @@
         "checked": false,
         "answer": "Field-level Security"
     }],
-    "answer": "B. C. D. \r\n",
+    "answer": "B. C. D. ",
     "choose": "choose 3",
     "isRadioButton": false
 }, {
     "id": 8,
-    "question": "Sales management at universal containers needs to display the information listed below in each account record\r\n- Amount of all closed won opportunities\r\n- Amount of all open opportunities\r\nWhich feature should a system administrator use to meet this requirement?",
+    "question": "Sales management at universal containers needs to display the information listed below in each account record- Amount of all closed won opportunities- Amount of all open opportunitiesWhich feature should a system administrator use to meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -187,7 +187,7 @@
         "checked": false,
         "answer": "Workflow rules with field updates"
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -210,7 +210,7 @@
         "checked": false,
         "answer": "Text area (rich)"
     }],
-    "answer": "D. \r\n",
+    "answer": "D. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -233,7 +233,7 @@
         "checked": false,
         "answer": "Contact"
     }],
-    "answer": "A. B. \r\n",
+    "answer": "A. B. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -256,7 +256,7 @@
         "checked": false,
         "answer": "Chatter Feed tracking must be enabled for the case object."
     }],
-    "answer": "D. \r\n",
+    "answer": "D. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -279,7 +279,7 @@
         "checked": false,
         "answer": "Read/Write/Transfer"
     }],
-    "answer": "A. B. \r\n",
+    "answer": "A. B. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -302,12 +302,12 @@
         "checked": false,
         "answer": "The custom fiscal year setting CANNOT be disabled"
     }],
-    "answer": "B. D. \r\n",
+    "answer": "B. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
     "id": 14,
-    "question": "A system administrator at Universal Containers needs to transfer records from one user to another.\r\nWhat object can be transferred using the mass transfer tool?",
+    "question": "A system administrator at Universal Containers needs to transfer records from one user to another.What object can be transferred using the mass transfer tool?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -325,7 +325,7 @@
         "checked": false,
         "answer": "Accounts"
     }],
-    "answer": "A. D. \r\n",
+    "answer": "A. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -348,12 +348,12 @@
         "checked": false,
         "answer": "Add the record type to the required user records"
     }],
-    "answer": "C. \r\n",
+    "answer": "C. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 16,
-    "question": "A system administrator at universal containers created a new account record type. However, sales users are unable to select record type when creating new account records.\r\nWhat is a possible reason for this?",
+    "question": "A system administrator at universal containers created a new account record type. However, sales users are unable to select record type when creating new account records.What is a possible reason for this?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -371,7 +371,7 @@
         "checked": false,
         "answer": "The record type has not been activated."
     }],
-    "answer": "B. D. \r\n",
+    "answer": "B. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -388,13 +388,13 @@
     }, {
         "ca": "C.",
         "checked": false,
-        "answer": "Use the campaign influence related list on the opportunity.**"
+        "answer": "Use the campaign influence related list on the opportunity."
     }, {
         "ca": "D.",
         "checked": false,
         "answer": "Select the campaign record type when creating the opportunity."
     }],
-    "answer": "B. C. \r\n",
+    "answer": "B. C. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -417,7 +417,7 @@
         "checked": false,
         "answer": "The user will be able to log in after answering the security question."
     }],
-    "answer": "A. \r\n",
+    "answer": "A. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -440,7 +440,7 @@
         "checked": false,
         "answer": "Import process requires user authorization to import the invalid records"
     }],
-    "answer": "C. \r\n",
+    "answer": "C. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -467,7 +467,7 @@
         "checked": false,
         "answer": "Picklist Values"
     }],
-    "answer": "B. D. E. \r\n",
+    "answer": "B. D. E. ",
     "choose": "choose 3",
     "isRadioButton": false
 }, {
@@ -490,7 +490,7 @@
         "checked": false,
         "answer": "To allow partners to access contact records for case collaboration."
     }],
-    "answer": "B. C. \r\n",
+    "answer": "B. C. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -513,7 +513,7 @@
         "checked": false,
         "answer": "The portal can be customized with corporate branding."
     }],
-    "answer": "C. D. \r\n",
+    "answer": "C. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -536,7 +536,7 @@
         "checked": false,
         "answer": "Public Read/Write/Delete"
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -563,7 +563,7 @@
         "checked": false,
         "answer": "Case"
     }],
-    "answer": "B. D. E. \r\n",
+    "answer": "B. D. E. ",
     "choose": "choose 3",
     "isRadioButton": false
 }, {
@@ -586,7 +586,7 @@
         "checked": false,
         "answer": "Import Wizard"
     }],
-    "answer": "D. \r\n",
+    "answer": "D. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -609,7 +609,7 @@
         "checked": false,
         "answer": "Remove the field from reports and list views"
     }],
-    "answer": "C. \r\n",
+    "answer": "C. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -632,12 +632,12 @@
         "checked": false,
         "answer": "Update the value of a field on a child object."
     }],
-    "answer": "A. C. \r\n",
+    "answer": "A. C. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
     "id": 28,
-    "question": "Universal containers is using a private sharing model. The US sales director needs full access to all records of the US sales representatives.\r\nHow can this be accomplished?",
+    "question": "Universal containers is using a private sharing model. The US sales director needs full access to all records of the US sales representatives.How can this be accomplished?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -655,7 +655,7 @@
         "checked": false,
         "answer": "Define a role hierarchy where the US sales director rolls up to the CEO"
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -682,7 +682,7 @@
         "checked": false,
         "answer": "Object Permissions"
     }],
-    "answer": "A. D. E. \r\n",
+    "answer": "A. D. E. ",
     "choose": "choose 3",
     "isRadioButton": false
 }, {
@@ -709,7 +709,7 @@
         "checked": false,
         "answer": "Assigned apps"
     }],
-    "answer": "A. C. E. \r\n",
+    "answer": "A. C. E. ",
     "choose": "choose 3",
     "isRadioButton": false
 }, {
@@ -732,12 +732,12 @@
         "checked": false,
         "answer": "Tab Hidden"
     }],
-    "answer": "D. \r\n",
+    "answer": "D. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 32,
-    "question": "A sales executive at Universal containers wants to be notified whenever high-value opportunities are created for hot accounts.\r\nHow should an administrator meet this requirement?",
+    "question": "A sales executive at Universal containers wants to be notified whenever high-value opportunities are created for hot accounts.How should an administrator meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -755,12 +755,12 @@
         "checked": false,
         "answer": "Create a validation rule that evaluates the account rating"
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 33,
-    "question": "Universal Containers has a marketing team set up as a public group. A sales representative would like to engage the marketing team on one opportunity.\r\nWhat should the sales representative do to ensure the marketing team can access the opportunity?",
+    "question": "Universal Containers has a marketing team set up as a public group. A sales representative would like to engage the marketing team on one opportunity.What should the sales representative do to ensure the marketing team can access the opportunity?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -778,7 +778,7 @@
         "checked": false,
         "answer": "Add the public group to the opportunity team."
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -801,12 +801,12 @@
         "checked": false,
         "answer": "Rule actions can take place immediately or on a specific date"
     }],
-    "answer": "A. D. \r\n",
+    "answer": "A. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
     "id": 35,
-    "question": "The support team at Universal Containers wants to be more proactive about renewing support plans with customers. They would like the support representative dedicated to each account to be notified a month before the account`s support plan expires\r\nWhat should an administrator configure to meet this requirement?",
+    "question": "The support team at Universal Containers wants to be more proactive about renewing support plans with customers. They would like the support representative dedicated to each account to be notified a month before the account`s support plan expiresWhat should an administrator configure to meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -824,7 +824,7 @@
         "checked": false,
         "answer": "Escalation rule"
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -847,12 +847,12 @@
         "checked": false,
         "answer": "The approval history related list can be used to track the process"
     }],
-    "answer": "B. D. \r\n",
+    "answer": "B. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
     "id": 37,
-    "question": "The sales team at universal containers wants an easy solution to gather customer requirements and share presentations with their customers\r\nWhat should an administrator do to help the sales team achieve this?",
+    "question": "The sales team at universal containers wants an easy solution to gather customer requirements and share presentations with their customersWhat should an administrator do to help the sales team achieve this?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -870,7 +870,7 @@
         "checked": false,
         "answer": "Add customers to private Chatter groups."
     }],
-    "answer": "A. D. \r\n",
+    "answer": "A. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -893,12 +893,12 @@
         "checked": false,
         "answer": "Custom Lead fields can be mapped to account, contact and opportunity fields"
     }],
-    "answer": "A. D. \r\n",
+    "answer": "A. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
     "id": 39,
-    "question": "A time dependent action is placed in the work flow queue when the record is created.\r\nWhen will the action be removed from the queue?",
+    "question": "A time dependent action is placed in the work flow queue when the record is created.When will the action be removed from the queue?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -916,12 +916,12 @@
         "checked": false,
         "answer": "When another record triggers the same workflow rule"
     }],
-    "answer": "A. B. \r\n",
+    "answer": "A. B. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
     "id": 40,
-    "question": "Universal Containers needs to synchronize data between salesforce and an external financial system.\r\nHow can a system administrator accomplish this?",
+    "question": "Universal Containers needs to synchronize data between salesforce and an external financial system.How can a system administrator accomplish this?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -939,12 +939,12 @@
         "checked": false,
         "answer": "Use the data loader to upsert Salesforce records into the financial system"
     }],
-    "answer": "A. \r\n",
+    "answer": "A. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 41,
-    "question": "A user at Universal container reports an error message when attempting to log in. the administrator checks the user’s login history, but there is no record of the attempted login.\r\nWhat could be cause of this issue?",
+    "question": "A user at Universal container reports an error message when attempting to log in. the administrator checks the user’s login history, but there is no record of the attempted login.What could be cause of this issue?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -962,7 +962,7 @@
         "checked": false,
         "answer": "The user is attempting to log in with wrong password"
     }],
-    "answer": "C. \r\n",
+    "answer": "C. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -985,7 +985,7 @@
         "checked": false,
         "answer": "Child field"
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -1008,12 +1008,12 @@
         "checked": false,
         "answer": "Map custom lead fields to custom contact fields"
     }],
-    "answer": "D. \r\n",
+    "answer": "D. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 44,
-    "question": "Universal container uses a private sharing model for opportunities. The sales team wants sales engineers to be involved in specific Opportunities to help sales representatives close deals faster.\r\nHow can an administrator meet this requirement?",
+    "question": "Universal container uses a private sharing model for opportunities. The sales team wants sales engineers to be involved in specific Opportunities to help sales representatives close deals faster.How can an administrator meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1031,12 +1031,12 @@
         "checked": false,
         "answer": "Add sales engineers to opportunity teams."
     }],
-    "answer": "D. \r\n",
+    "answer": "D. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 45,
-    "question": "The administrator at universal containers will create a custom field to track a specific Tier 2 support user on a case record.\r\nWhat data type should be used while creating this custom field?",
+    "question": "The administrator at universal containers will create a custom field to track a specific Tier 2 support user on a case record.What data type should be used while creating this custom field?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1054,12 +1054,12 @@
         "checked": false,
         "answer": "Lookup Filter"
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 46,
-    "question": "A user profile has a login hour restrictions set to Monday through A user profile has login hour restrictions set to Monday through Friday 8am to 5pm. It is Tuesday and it is now 5.01 PM.\r\nWhich behavior of the application should the user expect?",
+    "question": "A user profile has a login hour restrictions set to Monday through A user profile has login hour restrictions set to Monday through Friday 8am to 5pm. It is Tuesday and it is now 5.01 PM.Which behavior of the application should the user expect?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1077,7 +1077,7 @@
         "checked": false,
         "answer": "The user will be able to continue working, but will be unable to start any new sessions"
     }],
-    "answer": "A. \r\n",
+    "answer": "A. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -1100,7 +1100,7 @@
         "checked": false,
         "answer": "Record currency"
     }],
-    "answer": "C. \r\n",
+    "answer": "C. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -1123,12 +1123,12 @@
         "checked": false,
         "answer": "Edit the criteria used to trigger the approval process"
     }],
-    "answer": "A. B. \r\n",
+    "answer": "A. B. ",
     "choose": "choose 15",
     "isRadioButton": false
 }, {
     "id": 49,
-    "question": "A user is having trouble logging into Salesforce. The users login history shows that this person has attempted to log in multiple times and has been locked out of the organization.\r\nHow can the system administrator help the user log into Salesforce?",
+    "question": "A user is having trouble logging into Salesforce. The users login history shows that this person has attempted to log in multiple times and has been locked out of the organization.How can the system administrator help the user log into Salesforce?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1146,7 +1146,7 @@
         "checked": false,
         "answer": "Click unlock on the users record detail page"
     }],
-    "answer": "A. D. \r\n",
+    "answer": "A. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1169,12 +1169,12 @@
         "checked": false,
         "answer": "To resolve customer cases"
     }],
-    "answer": "C. D. \r\n",
+    "answer": "C. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
     "id": 51,
-    "question": "Sales representatives at universal containers should not be able to create leads, delete their own accounts, or send mass emails\r\nHow can an administrator meet these requirements?",
+    "question": "Sales representatives at universal containers should not be able to create leads, delete their own accounts, or send mass emailsHow can an administrator meet these requirements?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1192,12 +1192,12 @@
         "checked": false,
         "answer": "Create a sharing rule."
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 52,
-    "question": "The marketing team at universal containers wants to send an email to each lead received from its website. The country of the incoming lead should determine the language of the email that will be sentto the lead.\r\nHow can the system administrator automate this process?",
+    "question": "The marketing team at universal containers wants to send an email to each lead received from its website. The country of the incoming lead should determine the language of the email that will be sentto the lead.How can the system administrator automate this process?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1215,12 +1215,12 @@
         "checked": false,
         "answer": "Create a single email template and use the translation workbench to translate and send the appropriate template"
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 53,
-    "question": "The VP of sales at universal containers requested that \"Verbal Agreement\" be added as a new opportunity stage. The Administrator added this new picklist value to the stage field, but found that the new value was not available to users.\r\nWhat should the administrator do?",
+    "question": "The VP of sales at universal containers requested that \"Verbal Agreement\" be added as a new opportunity stage. The Administrator added this new picklist value to the stage field, but found that the new value was not available to users.What should the administrator do?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1238,12 +1238,12 @@
         "checked": false,
         "answer": "Add the new value to the appropriate sales process"
     }],
-    "answer": "D. \r\n",
+    "answer": "D. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 54,
-    "question": "Universal Containers currently assigns its users from the facilities and IT teams to the same profile. Universal container recently created a custom object to track company cars and wants only usersfrom the facilities team to have access to this new object.\r\nHow can an administrator meet this requirement?",
+    "question": "Universal Containers currently assigns its users from the facilities and IT teams to the same profile. Universal container recently created a custom object to track company cars and wants only usersfrom the facilities team to have access to this new object.How can an administrator meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1261,12 +1261,12 @@
         "checked": false,
         "answer": "Create a custom profile for users on the facilities team."
     }],
-    "answer": "D. \r\n",
+    "answer": "D. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 55,
-    "question": "Universal Containers has two business groups, products and services.Both groups will be using to track deals, but different fields are required by each group.\r\nHow should a system administrator meet this requirement?",
+    "question": "Universal Containers has two business groups, products and services.Both groups will be using to track deals, but different fields are required by each group.How should a system administrator meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1284,12 +1284,12 @@
         "checked": false,
         "answer": "Create two sales processes."
     }],
-    "answer": "A. C. \r\n",
+    "answer": "A. C. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
     "id": 56,
-    "question": "Universal containers set the organization-wide defaults for cases to private. When a case is escalated, case ownership changes to Tier 2 support agent.\r\nHow can a system administrator give the sales operation team read/write access to all escalated cases?",
+    "question": "Universal containers set the organization-wide defaults for cases to private. When a case is escalated, case ownership changes to Tier 2 support agent.How can a system administrator give the sales operation team read/write access to all escalated cases?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1307,12 +1307,12 @@
         "checked": false,
         "answer": "Create an ownership-based sharing rule."
     }],
-    "answer": "D. \r\n",
+    "answer": "D. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 57,
-    "question": "Universal Containers uses Web-to-Case to convert support requestssubmitted through its website into cases. The support team would like Salesforce to automatically send an email containingpassword reset instructions to the customer when the case subject contains the words \"forgot\" and \"password\".\r\nWhat does the administrator need to configure to meet this requirement?",
+    "question": "Universal Containers uses Web-to-Case to convert support requestssubmitted through its website into cases. The support team would like Salesforce to automatically send an email containingpassword reset instructions to the customer when the case subject contains the words \"forgot\" and \"password\".What does the administrator need to configure to meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1330,12 +1330,12 @@
         "checked": false,
         "answer": "Support settings"
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 58,
-    "question": "Universal Containers wants to automatically back up all the Salesforce data on a monthly basis.\r\nWhich tool can a system administrator use to meet this requirement?",
+    "question": "Universal Containers wants to automatically back up all the Salesforce data on a monthly basis.Which tool can a system administrator use to meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1353,12 +1353,12 @@
         "checked": false,
         "answer": "Scheduled report."
     }],
-    "answer": "A. \r\n",
+    "answer": "A. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
     "id": 59,
-    "question": "Universal Containers wants to create a custom object to capture account survey data. Users must be able to select an account from the survey record. Users also need the ability to view relatedsurveys on the account record.\r\nHow should the system administrator meet this requirement?",
+    "question": "Universal Containers wants to create a custom object to capture account survey data. Users must be able to select an account from the survey record. Users also need the ability to view relatedsurveys on the account record.How should the system administrator meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1376,12 +1376,12 @@
         "checked": false,
         "answer": "Add the survey related list to the account page layout."
     }],
-    "answer": "C. D. \r\n",
+    "answer": "C. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
     "id": 60,
-    "question": "Universal Container wants to ensure that users complete the standard industry field when creating a new account record. To address the concern the administrator set the Industry field as required. However, some users are still able to create a new account record without completing the Industry Field.\r\nWhat should an administrator do to troubleshoot the issues?",
+    "question": "Universal Container wants to ensure that users complete the standard industry field when creating a new account record. To address the concern the administrator set the Industry field as required. However, some users are still able to create a new account record without completing the Industry Field.What should an administrator do to troubleshoot the issues?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1399,7 +1399,7 @@
         "checked": false,
         "answer": "Verify the users have the “Edit” permission for accounts on their profiles"
     }],
-    "answer": "A. B. \r\n",
+    "answer": "A. B. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1426,7 +1426,7 @@
         "checked": false,
         "answer": "Related custom object records"
     }],
-    "answer": "B. C. D. \r\n",
+    "answer": "B. C. D. ",
     "choose": "choose 3",
     "isRadioButton": false
 }, {
@@ -1449,7 +1449,7 @@
         "checked": false,
         "answer": "The fields users see in reports and list views"
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -1472,7 +1472,7 @@
         "checked": false,
         "answer": "Campaign influence"
     }],
-    "answer": "C. \r\n",
+    "answer": "C. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -1495,7 +1495,7 @@
         "checked": false,
         "answer": "Documents"
     }],
-    "answer": "B. C. \r\n",
+    "answer": "B. C. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1522,7 +1522,7 @@
         "checked": false,
         "answer": "Add a grouping"
     }],
-    "answer": "A. B. E. \r\n",
+    "answer": "A. B. E. ",
     "choose": "choose 3",
     "isRadioButton": false
 }, {
@@ -1545,7 +1545,7 @@
         "checked": false,
         "answer": "Partners can download accounts and contacts to collaborate on sales deals"
     }],
-    "answer": "A. B. \r\n",
+    "answer": "A. B. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1568,7 +1568,7 @@
         "checked": false,
         "answer": "To post customer ideas by logging cases on the Ideas tab of the portal"
     }],
-    "answer": "A. B. \r\n",
+    "answer": "A. B. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1585,13 +1585,13 @@
     }, {
         "ca": "C.",
         "checked": false,
-        "answer": "Note not associated to a record**"
+        "answer": "Note not associated to a record"
     }, {
         "ca": "D.",
         "checked": false,
-        "answer": "Emails not associated to a record.**"
+        "answer": "Emails not associated to a record."
     }],
-    "answer": "A. D. \r\n",
+    "answer": "A. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1614,7 +1614,7 @@
         "checked": false,
         "answer": "Read/write"
     }],
-    "answer": "B. D. \r\n",
+    "answer": "B. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1637,7 +1637,7 @@
         "checked": false,
         "answer": "Send a refresh notification to users with access to the dashboard."
     }],
-    "answer": "B. D. \r\n",
+    "answer": "B. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1660,7 +1660,7 @@
         "checked": false,
         "answer": "Each account must not have related contacts"
     }],
-    "answer": "A. \r\n",
+    "answer": "A. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -1687,7 +1687,7 @@
         "checked": false,
         "answer": "When records are updated by a workflow rule"
     }],
-    "answer": "A. C. D. \r\n",
+    "answer": "A. C. D. ",
     "choose": "choose 3",
     "isRadioButton": false
 }, {
@@ -1710,7 +1710,7 @@
         "checked": false,
         "answer": "Public Groups"
     }],
-    "answer": "A. D. \r\n",
+    "answer": "A. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1733,7 +1733,7 @@
         "checked": false,
         "answer": "Salesforce content"
     }],
-    "answer": "A. C. \r\n",
+    "answer": "A. C. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1756,7 +1756,7 @@
         "checked": false,
         "answer": "Any account created in the last 30 days"
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -1779,7 +1779,7 @@
         "checked": false,
         "answer": "Grouped line chart"
     }],
-    "answer": "A. D. \r\n",
+    "answer": "A. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1802,7 +1802,7 @@
         "checked": false,
         "answer": "The field is used in a page layout."
     }],
-    "answer": "B. \r\n",
+    "answer": "B. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -1825,7 +1825,7 @@
         "checked": false,
         "answer": "Gauge"
     }],
-    "answer": "B. C. \r\n",
+    "answer": "B. C. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1852,7 +1852,7 @@
         "checked": false,
         "answer": "Notes"
     }],
-    "answer": "A. C. D. \r\n",
+    "answer": "A. C. D. ",
     "choose": "choose 3",
     "isRadioButton": false
 }, {
@@ -1875,7 +1875,7 @@
         "checked": false,
         "answer": "Related list hover links"
     }],
-    "answer": "B. D. \r\n",
+    "answer": "B. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1884,11 +1884,11 @@
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "A product can have a different list price in different pricebooks **"
+        "answer": "A product can have a different list price in different pricebooks"
     }, {
         "ca": "B.",
         "checked": false,
-        "answer": "A standard and list price for product can be listed in multiple currencies**"
+        "answer": "A standard and list price for product can be listed in multiple currencies"
     }, {
         "ca": "C.",
         "checked": false,
@@ -1898,7 +1898,7 @@
         "checked": false,
         "answer": "Price Books that contain assets cannot contain products."
     }],
-    "answer": "A. B. \r\n",
+    "answer": "A. B. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1921,12 +1921,12 @@
         "checked": false,
         "answer": "Console user"
     }],
-    "answer": "A. C. \r\n",
+    "answer": "A. C. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
     "id": 83,
-    "question": "Universal Containers requires that the organization-wide default for opportunities be set to public read/write. However, sales users are complaining that opportunity reports return too many results, making it difficult to find their team’s opportunities in the report results.\r\nHow can the system administrator address this problem?",
+    "question": "Universal Containers requires that the organization-wide default for opportunities be set to public read/write. However, sales users are complaining that opportunity reports return too many results, making it difficult to find their team’s opportunities in the report results.How can the system administrator address this problem?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -1944,7 +1944,7 @@
         "checked": false,
         "answer": "Move the opportunity reports into a folder with restricted access"
     }],
-    "answer": "A. \r\n",
+    "answer": "A. ",
     "choose": "choose 1",
     "isRadioButton": true
 }, {
@@ -1967,7 +1967,7 @@
         "checked": false,
         "answer": "Calculate the sum of a number field displayed in a list view"
     }],
-    "answer": "A. B. \r\n",
+    "answer": "A. B. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -1990,7 +1990,7 @@
         "checked": false,
         "answer": "Transfer access for leads, accounts, contact and opportunities"
     }],
-    "answer": "A. B. \r\n",
+    "answer": "A. B. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -2013,7 +2013,7 @@
         "checked": false,
         "answer": "Knowledge uses data categories and roles to make articles visible to specific users 1."
     }],
-    "answer": "A. D. \r\n",
+    "answer": "A. D. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -2036,7 +2036,7 @@
         "checked": false,
         "answer": "Sharing rules grant read/write or delete access to records"
     }],
-    "answer": "A. B. \r\n",
+    "answer": "A. B. ",
     "choose": "choose 2",
     "isRadioButton": false
 }, {
@@ -2063,7 +2063,7 @@
         "checked": false,
         "answer": "Tracks how often content is viewed or downloaded."
     }],
-    "answer": "A. D. E. \r\n",
+    "answer": "A. D. E. ",
     "choose": "choose 3",
     "isRadioButton": false
 }, {
@@ -2098,7 +2098,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What should a system administrator use to disable access to a custom application for a group of users?\r\nChoose one answer\r\n",
+    "question": "What should a system administrator use to disable access to a custom application for a group of users?Choose one answer",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2121,7 +2121,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers needs to track the manufacturer and model for specific car companies.\r\nHow can the system administrator ensure that the manufacturer selected influences the values available\r\nfor the model?\r\nChoose one answer\r\n",
+    "question": "Universal Containers needs to track the manufacturer and model for specific car companies.How can the system administrator ensure that the manufacturer selected influences the values availablefor the model?Choose one answer",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2144,7 +2144,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Sales representatives at Universal Containers need assistance from product managers when selling\r\ncertain products. Product managers do not have access to opportunities, but need to gain access when\r\nthey are assisting with a specific deal.\r\nHow can a system administrator accomplish this?\r\nChoose one answer\r\n",
+    "question": "Sales representatives at Universal Containers need assistance from product managers when sellingcertain products. Product managers do not have access to opportunities, but need to gain access whenthey are assisting with a specific deal.How can a system administrator accomplish this?Choose one answer",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2167,7 +2167,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What should a system administrator consider before importing a set of records into Salesforce?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What should a system administrator consider before importing a set of records into Salesforce?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2190,7 +2190,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement about custom summary formulas in reports is true?\r\nChoose two answers\r\n",
+    "question": "Which statement about custom summary formulas in reports is true?Choose two answers",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2213,7 +2213,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "How can a user customize his or her view in Saleforce? (Select 2)\r\n",
+    "question": "How can a user customize his or her view in Saleforce? (Select 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2236,7 +2236,7 @@
     "answer": "A. B. C. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "The Company Information page can tell you which of the following? \r\n**(Select 3)**\r\n\r\n",
+    "question": "The Company Information page can tell you which of the following?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2263,7 +2263,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which of the following actions cannot be completed on the Company Information page? (Select 2)\r\n",
+    "question": "Which of the following actions cannot be completed on the Company Information page? (Select 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2290,7 +2290,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Locale settings control which of the following? (Select 1)\r\n",
+    "question": "Locale settings control which of the following? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2313,7 +2313,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Once enabled, which of the following features cannot be disabled? (Select 1)\r\n",
+    "question": "Once enabled, which of the following features cannot be disabled? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2340,7 +2340,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which step should a system administrator take to remove an active user from Salesforce? (Select 1)\r\n",
+    "question": "Which step should a system administrator take to remove an active user from Salesforce? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2363,7 +2363,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which of the following fields can you expect to find on user's record detail page? (Select 2)\r\n",
+    "question": "Which of the following fields can you expect to find on user's record detail page? (Select 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2390,7 +2390,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Who has the permission to edit a chatter profile? (Select 2)\r\n",
+    "question": "Who has the permission to edit a chatter profile? (Select 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2413,7 +2413,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "You have a handful of users who don't have Salesforce licenses but need access to all Chatter groups. They don't need to access any other Salesforce information. What Chatter license should they have? (Select 1)\r\n",
+    "question": "You have a handful of users who don't have Salesforce licenses but need access to all Chatter groups. They don't need to access any other Salesforce information. What Chatter license should they have? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2436,7 +2436,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "If a Salesforce object is a table, then each row represents what? (Select 1)\r\n",
+    "question": "If a Salesforce object is a table, then each row represents what? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2459,7 +2459,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "All of the following are advantages of Force.com objects except:\r\n",
+    "question": "All of the following are advantages of Force.com objects except:",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2482,7 +2482,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What's the difference between standard and custom objects?\r\n",
+    "question": "What's the difference between standard and custom objects?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2501,7 +2501,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Objects can have all of the following types of custom fields, except:\r\n",
+    "question": "Objects can have all of the following types of custom fields, except:",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2524,7 +2524,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which of these types of relationship fields can you define in Force.com?\r\n",
+    "question": "Which of these types of relationship fields can you define in Force.com?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2547,7 +2547,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "1. How can a user have full access to a record? (Select 2)\r\n\r\n",
+    "question": "1. How can a user have full access to a record? (Select 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2574,7 +2574,7 @@
     "answer": "E. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "2. Which of the following can be used to grant full access to a user? (Select 1)\r\n",
+    "question": "2. Which of the following can be used to grant full access to a user? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2601,7 +2601,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What is the only feature that can be used to restrict record access? (Select 1)\r\n\r\n",
+    "question": "What is the only feature that can be used to restrict record access? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2628,7 +2628,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which of the following approaches to sharing is flexible but only allows for one record at a time to be shared? (Select 1)\r\n",
+    "question": "Which of the following approaches to sharing is flexible but only allows for one record at a time to be shared? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2655,7 +2655,7 @@
     "answer": "B. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Moving from the opportunity object to the account object is an example of what type of relationship? (Select 2)\r\n\r\n",
+    "question": "Moving from the opportunity object to the account object is an example of what type of relationship? (Select 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2682,7 +2682,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which of the following features can be used to assign different picklist values for different business processes? (Select 1)\r\n",
+    "question": "Which of the following features can be used to assign different picklist values for different business processes? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2709,7 +2709,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "AW Computing wants their sales reps to see the sum of the total opportunities on each account that they own. What feature can be used to display this information? (Select 1)\r\n\r\n",
+    "question": "AW Computing wants their sales reps to see the sum of the total opportunities on each account that they own. What feature can be used to display this information? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2736,7 +2736,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which of the following features can be used to make a field required? (Select 2)\r\n\r\n",
+    "question": "Which of the following features can be used to make a field required? (Select 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2763,7 +2763,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "An admin needs to keep track of all the changes made to the stage, amount, and close date on opportunities. (Select 1)\r\n\r\n",
+    "question": "An admin needs to keep track of all the changes made to the stage, amount, and close date on opportunities. (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2790,7 +2790,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which of the following data import tools can import up to 50,000 records at a time, and provides a simple interface to specify the configuration parameters, data sources, and the field mappings that map the field names in your import file with the field names in Salesforce? (Select 1)\r\n",
+    "question": "Which of the following data import tools can import up to 50,000 records at a time, and provides a simple interface to specify the configuration parameters, data sources, and the field mappings that map the field names in your import file with the field names in Salesforce? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2813,7 +2813,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which of the following data import tools can import up to five million records at a time, of any data type, either from files or a database connection, and can be operated either through the user interface or the command line. (Select 1)\r\n\r\n",
+    "question": "Which of the following data import tools can import up to five million records at a time, of any data type, either from files or a database connection, and can be operated either through the user interface or the command line. (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2836,7 +2836,7 @@
     "answer": "A. B. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Regardless of the data import tool used, the number of records you can import depends which of the following? (Select 3).\r\n\r\n",
+    "question": "Regardless of the data import tool used, the number of records you can import depends which of the following? (Select 3).",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2859,7 +2859,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What type of data import tool would you use if you want to automate the data import process? (Select 1)\r\n\r\n",
+    "question": "What type of data import tool would you use if you want to automate the data import process? (Select 1)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2882,7 +2882,7 @@
     "answer": "B. C. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "A folder is a place where you can store which of the following? (Select 3)\r\n\r\n",
+    "question": "A folder is a place where you can store which of the following? (Select 3)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2905,7 +2905,7 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What permissions are needed to be able to delete or change a read-only folder? (Select 2)\r\n\r\n",
+    "question": "What permissions are needed to be able to delete or change a read-only folder? (Select 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2928,7 +2928,7 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Universal Containers wants to ensure that users complete the standard Industry field when creating a new account record. To address this concern, the administrator set the Industry field as required. However, some users are still able to create a new account record without completing the Industry field. What should an administrator do to troubleshoot the issue?(Choose 2)\r\n \r\n",
+    "question": "Universal Containers wants to ensure that users complete the standard Industry field when creating a new account record. To address this concern, the administrator set the Industry field as required. However, some users are still able to create a new account record without completing the Industry field. What should an administrator do to troubleshoot the issue?(Choose 2) ",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2951,7 +2951,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What type of record access can an Administrator grant through sharing rules?(Choose 2)\r\n",
+    "question": "What type of record access can an Administrator grant through sharing rules?(Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2974,7 +2974,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which functionality is available when enhanced lists are enabled? (choose 2)\r\n",
+    "question": "Which functionality is available when enhanced lists are enabled? (choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -2997,7 +2997,7 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What can a marketing user do using the Manage Members button on a campaign record? (Choose 2)\r\n",
+    "question": "What can a marketing user do using the Manage Members button on a campaign record? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3020,7 +3020,7 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What level of access can be set when sharing a document folder with users?(Choose 2)\r\n",
+    "question": "What level of access can be set when sharing a document folder with users?(Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3043,7 +3043,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers uses a private sharing model for opportunities. The sales team wants sales engineers to be involved in specific opportunities to help sales representatives close deals faster. How can an administrator meet this request?\r\n",
+    "question": "Universal Containers uses a private sharing model for opportunities. The sales team wants sales engineers to be involved in specific opportunities to help sales representatives close deals faster. How can an administrator meet this request?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3066,7 +3066,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Sales executives at Universal Containers need to view a chart that displays opportunities grouped by stage and then by region. What chart type can a system administrator use to accomplish this?\r\n",
+    "question": "Sales executives at Universal Containers need to view a chart that displays opportunities grouped by stage and then by region. What chart type can a system administrator use to accomplish this?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3089,7 +3089,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What does the controlling field determine when field dependencies are being created?\r\n",
+    "question": "What does the controlling field determine when field dependencies are being created?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3112,7 +3112,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A user receives an error message when attempting to login to Salesforce. What is the first step the Salesforce administrator should take to troubleshoot the problem?\r\n",
+    "question": "A user receives an error message when attempting to login to Salesforce. What is the first step the Salesforce administrator should take to troubleshoot the problem?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3135,7 +3135,7 @@
     "answer": "A. B. C. D. E. ",
     "choose": "Choose 5",
     "isRadioButton": false,
-    "question": "Criteria-based sharing rules can be created for which objects?\r\n",
+    "question": "Criteria-based sharing rules can be created for which objects?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3162,7 +3162,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which permission is required to convert a lead? (Choose 2)\r\n",
+    "question": "Which permission is required to convert a lead? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3185,7 +3185,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "When using sharing rules, what can records be shared with?(Choose 2)\r\n",
+    "question": "When using sharing rules, what can records be shared with?(Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3208,7 +3208,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers requires that its Salesforce account data, including attachments, be backed up weekly. Which tool should a system administrator use to accomplish this?\r\n",
+    "question": "Universal Containers requires that its Salesforce account data, including attachments, be backed up weekly. Which tool should a system administrator use to accomplish this?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3231,7 +3231,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "When importing data, what happens if some records do NOT meet the data validation criteria?\r\n",
+    "question": "When importing data, what happens if some records do NOT meet the data validation criteria?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3254,7 +3254,7 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "When should a system administrator consider using the Salesforce AppExchange? (Choose 2)\r\n",
+    "question": "When should a system administrator consider using the Salesforce AppExchange? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3277,7 +3277,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A marketing user has received a file of leads to import into Salesforce. What is the best way to avoid duplicating records?\r\n",
+    "question": "A marketing user has received a file of leads to import into Salesforce. What is the best way to avoid duplicating records?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3300,7 +3300,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Sales management at Universal Containers is requesting better visibility into specific types of sales deals. They need to be notified when opportunities worth a large amount are close to closing. They would also like to receive a list of opportunities that are still open past the close date. Which feature can a system administrator use to accomplish this? (Choose 2)\r\n",
+    "question": "Sales management at Universal Containers is requesting better visibility into specific types of sales deals. They need to be notified when opportunities worth a large amount are close to closing. They would also like to receive a list of opportunities that are still open past the close date. Which feature can a system administrator use to accomplish this? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3323,7 +3323,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What should a system administrator consider when setting up Mobile Lite? (Choose 2)\r\n",
+    "question": "What should a system administrator consider when setting up Mobile Lite? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3346,7 +3346,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which type of chart can be used to display summary values from two different levels of grouping in a report?(Choose 2)\r\n",
+    "question": "Which type of chart can be used to display summary values from two different levels of grouping in a report?(Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3369,7 +3369,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which accounts are automatically synchronized on Salesforce Classic Lite?\r\n",
+    "question": "Which accounts are automatically synchronized on Salesforce Classic Lite?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3392,7 +3392,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which permission is required to install and uninstall packages from Salesforce AppExchange?\r\n",
+    "question": "Which permission is required to install and uninstall packages from Salesforce AppExchange?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3415,7 +3415,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What user interface setting must be enabled for users to edit records in a list view?(Choose 2)\r\n",
+    "question": "What user interface setting must be enabled for users to edit records in a list view?(Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3438,7 +3438,7 @@
     "answer": "A. D. E. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Which task can a delegated administrator perform? (Choose 3)\r\n",
+    "question": "Which task can a delegated administrator perform? (Choose 3)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3465,7 +3465,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which schedule type can be defined for a product? (Choose 2)\r\n",
+    "question": "Which schedule type can be defined for a product? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3488,7 +3488,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "How can a sales user relate an opportunity to a campaign? (Choose 2)\r\n",
+    "question": "How can a sales user relate an opportunity to a campaign? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3511,7 +3511,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers set the Organization-Wide Defaults for accounts to public read/write. The sales management team is importing a new set of account records and needs to limit access to them. Access should be restricted to the account owner and members of a public group. How can this be accomplished?\r\n",
+    "question": "Universal Containers set the Organization-Wide Defaults for accounts to public read/write. The sales management team is importing a new set of account records and needs to limit access to them. Access should be restricted to the account owner and members of a public group. How can this be accomplished?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3534,7 +3534,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers is capturing a percentage discount directly on an opportunity record. Sales management needs to include the discounted opportunity amount in pipeline reports. How can the system administrator make the discounted amount available?\r\n",
+    "question": "Universal Containers is capturing a percentage discount directly on an opportunity record. Sales management needs to include the discounted opportunity amount in pipeline reports. How can the system administrator make the discounted amount available?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3557,7 +3557,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which setting can a system administrator control in the Salesforce user interface? (Choose 2)\r\n\r\n",
+    "question": "Which setting can a system administrator control in the Salesforce user interface? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3584,7 +3584,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers has set the organization-wide default settings for accounts to private. Amy and bob are on separate sales teams, but are assigned tot he same role in the hierarchy. Amy is a member of the \"Sales West\" public group and needs access to all accounts owned by Bob, a member of the \"Sales East\" group. How would an administrator grant Amy access to only Bob's accounts?\r\n",
+    "question": "Universal Containers has set the organization-wide default settings for accounts to private. Amy and bob are on separate sales teams, but are assigned tot he same role in the hierarchy. Amy is a member of the \"Sales West\" public group and needs access to all accounts owned by Bob, a member of the \"Sales East\" group. How would an administrator grant Amy access to only Bob's accounts?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3607,7 +3607,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which record type can be updated when converting a lead? (Choose 2)\r\n",
+    "question": "Which record type can be updated when converting a lead? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3630,7 +3630,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which functionality is available when customizing tasks? (Choose 2)\r\n",
+    "question": "Which functionality is available when customizing tasks? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3653,7 +3653,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What can an administrator assign to both Ideas and Answers?\r\n\r\n",
+    "question": "What can an administrator assign to both Ideas and Answers?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3676,7 +3676,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement about formula fields is true? (Choose 2)\r\n",
+    "question": "Which statement about formula fields is true? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3699,7 +3699,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement about public groups is true? (Choose 2)\r\n",
+    "question": "Which statement about public groups is true? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3722,7 +3722,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Universal Technology sells software and consulting services. The software sales team uses a different set of sales stages than the consulting services team. How can a system administrator set up the process? (Choose 2)\r\n",
+    "question": "Universal Technology sells software and consulting services. The software sales team uses a different set of sales stages than the consulting services team. How can a system administrator set up the process? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3745,7 +3745,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "A system administrator at Universal containers incorrectly imported a set of records and needs to remove them from Salesforce. Which tool should the administrator use to complete the task? (Choose 2)\r\n",
+    "question": "A system administrator at Universal containers incorrectly imported a set of records and needs to remove them from Salesforce. Which tool should the administrator use to complete the task? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3768,7 +3768,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What determines whether a user can create a new record using a specific record type?\r\n",
+    "question": "What determines whether a user can create a new record using a specific record type?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3791,7 +3791,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Finance has segmented its customer base into two categories: High Wealth and Retirement. High Wealth accounts should be visible to High Wealth Sales team members only. Retirement accounts should be visible to all sales users. How can a system administrator meet this requirement?\r\n",
+    "question": "Universal Finance has segmented its customer base into two categories: High Wealth and Retirement. High Wealth accounts should be visible to High Wealth Sales team members only. Retirement accounts should be visible to all sales users. How can a system administrator meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3814,7 +3814,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement about Mobile Lite is true? (Choose 2)\r\n",
+    "question": "Which statement about Mobile Lite is true? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3837,7 +3837,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A marketing user has received a file of leads to import into Salesforce. What is the best way to avoid duplicating records?\r\n",
+    "question": "A marketing user has received a file of leads to import into Salesforce. What is the best way to avoid duplicating records?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3860,7 +3860,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A marketing manager needs to view summary metrics across a set of related campaigns. How can this be accomplished?\r\n\r\n",
+    "question": "A marketing manager needs to view summary metrics across a set of related campaigns. How can this be accomplished?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3883,7 +3883,7 @@
     "answer": "A. B. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "What does the report type determine when a new report is created? (Choose 3)\r\n",
+    "question": "What does the report type determine when a new report is created? (Choose 3)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3910,7 +3910,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which is a capability of Chatter files? (Choose 2)\r\n",
+    "question": "Which is a capability of Chatter files? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3933,7 +3933,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Sales Representatives at Universal containers perform the initial steps in the lead qualification process and sales managers complete the final qualification steps. Universal Containers' requirements are listed below. Sales managers can access all Lead status values. Sales Representatives cannot access the final two lead status values. How can a system administrator meet these requirements?\r\n\r\n",
+    "question": "Sales Representatives at Universal containers perform the initial steps in the lead qualification process and sales managers complete the final qualification steps. Universal Containers' requirements are listed below. Sales managers can access all Lead status values. Sales Representatives cannot access the final two lead status values. How can a system administrator meet these requirements?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3956,7 +3956,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers populates the industry field on each account record. The Vice president of sales would like the industry information on related opportunity records and updated when the value is updated on the account record. How can a system administrator meet his requirement?\r\n\r\n",
+    "question": "Universal Containers populates the industry field on each account record. The Vice president of sales would like the industry information on related opportunity records and updated when the value is updated on the account record. How can a system administrator meet his requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -3979,7 +3979,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "How can a System Administrator restrict users from viewing certain fields in list views, searches and reports?\r\n",
+    "question": "How can a System Administrator restrict users from viewing certain fields in list views, searches and reports?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4002,7 +4002,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which is available when creating list views? (Choose 2)\r\n",
+    "question": "Which is available when creating list views? (Choose 2)",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4025,7 +4025,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "When doing a search for reports, what are the only two fields on which one can search?\r\n",
+    "question": "When doing a search for reports, what are the only two fields on which one can search?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4048,7 +4048,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "When advanced currency management is first enabled, the existing exchange rates\r\n\r\n",
+    "question": "When advanced currency management is first enabled, the existing exchange rates",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4071,7 +4071,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A company has two different sales divisions national sales and international sales. Some of \r\nthe processes are the same, but the internal sales organization has more requirements to \r\ngather during the sales process and there are more stages when trying to close deals.\r\n\r\nWhat would you use for separating flow\r\n\r\n",
+    "question": "A company has two different sales divisions national sales and international sales. Some of the processes are the same, but the internal sales organization has more requirements to gather during the sales process and there are more stages when trying to close deals.What would you use for separating flow",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4094,7 +4094,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "An administrator is creating two picklist fields: Automobile Manufacturer (Nissan, Ford, \r\nMercedes‐Benz) and Automobile Model Mustang, S600.\r\nIs it possible to link the two fields together such that the Automobile Manufacturer field \r\ncould influence the choices available in the Automobile Model field?\r\n\r\n",
+    "question": "An administrator is creating two picklist fields: Automobile Manufacturer (Nissan, Ford, Mercedes‐Benz) and Automobile Model Mustang, S600.Is it possible to link the two fields together such that the Automobile Manufacturer field could influence the choices available in the Automobile Model field?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4117,7 +4117,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What does the presentation assembly feature do?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What does the presentation assembly feature do?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4140,7 +4140,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement is true regarding the capabilities of formula fields?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which statement is true regarding the capabilities of formula fields?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4163,7 +4163,7 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Dashboards give the user a snapshot of corporate metrics and key performance indicators. A \r\ndashboard\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Dashboards give the user a snapshot of corporate metrics and key performance indicators. A dashboard..",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4186,7 +4186,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What is the process for creating a Custom tab?\r\n\r\n",
+    "question": "What is the process for creating a Custom tab?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4209,7 +4209,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "In Salesforce, what does an administrator use to control a user's permissions?\r\n\r\n",
+    "question": "In Salesforce, what does an administrator use to control a user's permissions?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4232,7 +4232,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which objects cannot have sharing rules?\r\n\r\n",
+    "question": "Which objects cannot have sharing rules?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4255,7 +4255,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "When a user performs a dashboard refresh, the dashboard refreshes for \r\n\r\n",
+    "question": "When a user performs a dashboard refresh, the dashboard refreshes for ",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4278,7 +4278,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "After a record has been submitted for approval and locked, who may edit that record?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "After a record has been submitted for approval and locked, who may edit that record?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4301,7 +4301,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Public groups may be used to do all of the following EXCEPT\r\n\r\n",
+    "question": "Public groups may be used to do all of the following EXCEPT",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4324,7 +4324,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement is TRUE when an administrator installs an application from the \r\nAppExchange?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which statement is TRUE when an administrator installs an application from the AppExchange?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4347,7 +4347,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which is a custom object relationship type?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which is a custom object relationship type?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4370,7 +4370,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Where are the field level security settings located?\r\n",
+    "question": "Where are the field level security settings located?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4393,7 +4393,7 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which are affected by changing the organization locale setting?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which are affected by changing the organization locale setting?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4416,7 +4416,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "An administrator may create a lookup relationship between all of the following EXCEPT\r\n\r\n",
+    "question": "An administrator may create a lookup relationship between all of the following EXCEPT",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4439,7 +4439,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which statement is true when a label on a standard object, such as \"Accounts,\" is renamed?\r\n\r\n",
+    "question": "Which statement is true when a label on a standard object, such as \"Accounts,\" is renamed?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4462,7 +4462,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What does the primary object in a custom report type determine?\r\n\r\n",
+    "question": "What does the primary object in a custom report type determine?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4485,7 +4485,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What are default values for an opportunity record created upon lead conversion?\r\n\r\n",
+    "question": "What are default values for an opportunity record created upon lead conversion?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4512,7 +4512,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What can be done with a workflow task that cannot be done with a workflow alert?\r\n\r\n",
+    "question": "What can be done with a workflow task that cannot be done with a workflow alert?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4535,7 +4535,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which feature can be used to send sales management an email alert when a sales representative qualifies a large deal?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which feature can be used to send sales management an email alert when a sales representative qualifies a large deal?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4558,7 +4558,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What is required before an organization can be enabled for territory management?\r\n\r\n",
+    "question": "What is required before an organization can be enabled for territory management?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4581,7 +4581,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which of the following is not captured on the user record without the use of custom fields?\r\n\r\n",
+    "question": "Which of the following is not captured on the user record without the use of custom fields?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4604,7 +4604,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "The automated case user will be listed in the case history for all case actions except when the \r\ncase is\r\n\r\n",
+    "question": "The automated case user will be listed in the case history for all case actions except when the case is",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4627,7 +4627,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What must an administrator do to schedule and email reports?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What must an administrator do to schedule and email reports?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4650,7 +4650,7 @@
     "answer": "B. C. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Which object is a standard object?\r\n**Choose 3 answers **\r\n\r\n",
+    "question": "Which object is a standard object?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4673,7 +4673,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Person accounts and business accounts can be accessed via Accounts tab. To create a view that only displays person accounts, you must\r\n\r\n",
+    "question": "Person accounts and business accounts can be accessed via Accounts tab. To create a view that only displays person accounts, you must",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4696,7 +4696,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "When are active custom validation rules evaluated?\r\n\r\n",
+    "question": "When are active custom validation rules evaluated?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4719,7 +4719,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which statement is TRUE regarding how Salesforce allocates storage space?\r\n\r\n",
+    "question": "Which statement is TRUE regarding how Salesforce allocates storage space?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4746,7 +4746,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which method should be used to migrate 65.000 records from one organization to another, including accounts, contracts, lead, and opportunities?\r\n\r\n",
+    "question": "Which method should be used to migrate 65.000 records from one organization to another, including accounts, contracts, lead, and opportunities?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4769,7 +4769,7 @@
     "answer": "B. E. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which attributes can be used when matching similar opportunities?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which attributes can be used when matching similar opportunities?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4796,7 +4796,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which is not a step when creating a custom application?\r\n\r\n",
+    "question": "Which is not a step when creating a custom application?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4819,7 +4819,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "When a case is deleted, which related items are also deleted?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "When a case is deleted, which related items are also deleted?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4842,7 +4842,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "An administrator would like to export a report to a Microsoft Excel spreadsheet and maintain the report format. To do this, the administrator should click on which button?\r\n\r\n",
+    "question": "An administrator would like to export a report to a Microsoft Excel spreadsheet and maintain the report format. To do this, the administrator should click on which button?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4865,7 +4865,7 @@
     "answer": "A. C. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Which information is maintained on the user record and can be modified by the user?\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "Which information is maintained on the user record and can be modified by the user?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4888,7 +4888,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which validation rule validates that a custom date field, My_Date__c, contains a date within the current year?\r\n\r\n",
+    "question": "Which validation rule validates that a custom date field, My_Date__c, contains a date within the current year?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4911,7 +4911,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Assuming the recycle bin limits have not been reached, how long does a user have to recover deleted data from the recycle bin before it is permanently deleted?\r\n\r\n",
+    "question": "Assuming the recycle bin limits have not been reached, how long does a user have to recover deleted data from the recycle bin before it is permanently deleted?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4934,7 +4934,7 @@
     "answer": "B. C. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "When authenticating a user through the user interface, what does Salesforce validate before allowing a user to access the application?\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "When authenticating a user through the user interface, what does Salesforce validate before allowing a user to access the application?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4957,7 +4957,7 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Assuming only standard relationships, which option is available when customizing the mini‐view of the console? \r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Assuming only standard relationships, which option is available when customizing the mini‐view of the console? ",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -4980,7 +4980,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which option below gives an end user the ability to import leads for the organization and associate the leads to a campaign?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which option below gives an end user the ability to import leads for the organization and associate the leads to a campaign?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5003,7 +5003,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which statement is FALSE regarding object relationships?\r\n\r\n",
+    "question": "Which statement is FALSE regarding object relationships?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5026,7 +5026,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Users want to view report output for all opportunities that own and that are owned by users who report to them via the role hierarchy. To proceed they should verify that\r\n\r\n",
+    "question": "Users want to view report output for all opportunities that own and that are owned by users who report to them via the role hierarchy. To proceed they should verify that",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5049,7 +5049,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which Salesforce feature should be used to disable access to all objects in a custom application?\r\n\r\n",
+    "question": "Which Salesforce feature should be used to disable access to all objects in a custom application?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5072,7 +5072,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which statement about multi‐day and all‐day events is TRUE\r\n\r\n",
+    "question": "Which statement about multi‐day and all‐day events is TRUE",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5095,7 +5095,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "If the organization‐wide default on accounts is set to public read/write, what can be used to limit access to these records?\r\n\r\n",
+    "question": "If the organization‐wide default on accounts is set to public read/write, what can be used to limit access to these records?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5118,7 +5118,7 @@
     "answer": "B. C. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Currencies are defined at which level?\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "Currencies are defined at which level?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5141,7 +5141,7 @@
     "answer": "B. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "When a user with pending approval requests leaves an organization, what can administrator do with the pending requests?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "When a user with pending approval requests leaves an organization, what can administrator do with the pending requests?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5164,7 +5164,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "If a record has been manually shared with read/write access, the user will be able to do which of the following?\r\n\r\n",
+    "question": "If a record has been manually shared with read/write access, the user will be able to do which of the following?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5187,7 +5187,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which item cannot be stored in a folder?\r\n\r\n",
+    "question": "Which item cannot be stored in a folder?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5210,7 +5210,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "If a record that matches the criteria of a workflow rule is created on July 1 and the close date is July 30, the time‐dependent action is scheduled for July 23. However, what happens if the opportunity is edited before July 23 and no longer meets the criteria?\r\n\r\n",
+    "question": "If a record that matches the criteria of a workflow rule is created on July 1 and the close date is July 30, the time‐dependent action is scheduled for July 23. However, what happens if the opportunity is edited before July 23 and no longer meets the criteria?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5233,7 +5233,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which UI component allows easy access to recent tags?\r\n\r\n",
+    "question": "Which UI component allows easy access to recent tags?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5256,7 +5256,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement is TRUE regarding record types?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which statement is TRUE regarding record types?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5279,7 +5279,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Charting is a report option that can be used on\r\n\r\n",
+    "question": "Charting is a report option that can be used on",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5302,7 +5302,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Once category browsing has been enabled for an organization which permission is needed to add a category to a solution record?\r\n\r\n",
+    "question": "Once category browsing has been enabled for an organization which permission is needed to add a category to a solution record?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5325,7 +5325,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which function is available with standard fields?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which function is available with standard fields?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5348,7 +5348,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Lead assignment rules are used to \r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Lead assignment rules are used to ",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5371,7 +5371,7 @@
     "answer": "A. B. C. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Email templates (text, HTML with letterhead, and Custom HTML) may include which of the following?\r\n** Choose 3 answers**\r\n\r\n",
+    "question": "Email templates (text, HTML with letterhead, and Custom HTML) may include which of the following?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5394,7 +5394,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What of the following statements is True?\r\n\r\n",
+    "question": "What of the following statements is True?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5425,7 +5425,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Recent Items use the?\r\n\r\n",
+    "question": "Recent Items use the?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5448,7 +5448,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "____________are words or short phrases that users can associate with most Salesforce.com records to describe and organize their data in a personalized way?\r\n\r\n",
+    "question": "____________are words or short phrases that users can associate with most Salesforce.com records to describe and organize their data in a personalized way?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5475,7 +5475,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What happens when a user clicks on the Create New Apps option present in the List of Apps section?\r\n\r\n",
+    "question": "What happens when a user clicks on the Create New Apps option present in the List of Apps section?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5498,7 +5498,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "____________are a collection of Force.com components and applications that are made available to other\r\norganizations through the AppExchange.\r\n\r\n",
+    "question": "____________are a collection of Force.com components and applications that are made available to otherorganizations through the AppExchange.",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5525,7 +5525,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which is the new type of Dashboard Chart to make entry in Spring' 11 Release?\r\n\r\n",
+    "question": "Which is the new type of Dashboard Chart to make entry in Spring' 11 Release?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5552,7 +5552,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which of the following is used for automatically opening records by an administrator when they meet a data Trigger point?\r\n\r\n",
+    "question": "Which of the following is used for automatically opening records by an administrator when they meet a data Trigger point?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5575,7 +5575,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "In Spring' 11 salesforce.com release Dynamic Dashboards have been launched for which edition: To create, edit, and delete dynamic dashboards: \"Run Reports\" AND \"Manage Dynamic Dashboards\"\r\n\r\n",
+    "question": "In Spring' 11 salesforce.com release Dynamic Dashboards have been launched for which edition: To create, edit, and delete dynamic dashboards: \"Run Reports\" AND \"Manage Dynamic Dashboards\"",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5598,7 +5598,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which of the following events are allowed while writing a trigger on feeds item and feed Comment object?\r\n\r\n",
+    "question": "Which of the following events are allowed while writing a trigger on feeds item and feed Comment object?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5625,7 +5625,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "You can share the Dashboard components snapshot with everyone in the Company with chatter?\r\n\r\n",
+    "question": "You can share the Dashboard components snapshot with everyone in the Company with chatter?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5648,7 +5648,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which of the following are new features on Chatter tab?\r\n\r\n",
+    "question": "Which of the following are new features on Chatter tab?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5671,7 +5671,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which of the following is the new workflow feature of Spring' 11 Release?\r\n\r\n",
+    "question": "Which of the following is the new workflow feature of Spring' 11 Release?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5694,7 +5694,7 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which combination of objects is available when creating a custom report type for Chatter reports?\r\n**Choose 2 answers.**\r\n\r\n",
+    "question": "Which combination of objects is available when creating a custom report type for Chatter reports?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5717,7 +5717,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which of the following settings directly affects Date fields to display as MM/DD/YYYY?\r\n\r\n",
+    "question": "Which of the following settings directly affects Date fields to display as MM/DD/YYYY?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5740,7 +5740,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Where do you go to create a List View so that you can see it on the Console, under the Accounts object?\r\n\r\n",
+    "question": "Where do you go to create a List View so that you can see it on the Console, under the Accounts object?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5763,7 +5763,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which of the following statements are true about Data Validation?\r\n**Choose 2 answers.**\r\n\r\n",
+    "question": "Which of the following statements are true about Data Validation?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5794,7 +5794,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which type(s) of file(s) is accessible through Content?\r\n\r\n",
+    "question": "Which type(s) of file(s) is accessible through Content?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5825,7 +5825,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What is parallel approval Routing?\r\n\r\n",
+    "question": "What is parallel approval Routing?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5848,7 +5848,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Chatter Desktop is not available in which Salesforce Edition?\r\n\r\n",
+    "question": "Chatter Desktop is not available in which Salesforce Edition?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5879,7 +5879,7 @@
     "answer": "B. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which file types can you use when exporting reports?\r\n**Choose 2 answers.**\r\n\r\n",
+    "question": "Which file types can you use when exporting reports?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5902,7 +5902,7 @@
     "answer": "E. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A Standard profile that has Standard User Permissions and can manage published solutions and solution\r\ncategories\r\n\r\n",
+    "question": "A Standard profile that has Standard User Permissions and can manage published solutions and solutioncategories",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5929,7 +5929,7 @@
     "answer": "A. B. C. E. ",
     "choose": "Choose 4",
     "isRadioButton": false,
-    "question": "Which of the following are setting options for the User Interface?\r\n**Choose 4 answers.**\r\n\r\n",
+    "question": "Which of the following are setting options for the User Interface?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5956,7 +5956,7 @@
     "answer": "B. C. E. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Salesforce.com archives older activities according to which of the following conditions:\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "Salesforce.com archives older activities according to which of the following conditions:",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -5983,7 +5983,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "IF(ISPICKVAL(picklist_field)) has the same output as:\r\n\r\n",
+    "question": "IF(ISPICKVAL(picklist_field)) has the same output as:",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6006,7 +6006,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What is the maximum number of records to be printed in the Printable View of a list view?\r\n\r\n",
+    "question": "What is the maximum number of records to be printed in the Printable View of a list view?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6029,7 +6029,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Are custom object reports accessible when you add a custom object tab?\r\n\r\n",
+    "question": "Are custom object reports accessible when you add a custom object tab?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6048,7 +6048,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What is not found on a Company Profile?\r\n\r\n",
+    "question": "What is not found on a Company Profile?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6079,7 +6079,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "When are data Validation Rules enforced?\r\n\r\n",
+    "question": "When are data Validation Rules enforced?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6102,7 +6102,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "System Administrators have this permission by default.\r\n\r\n",
+    "question": "System Administrators have this permission by default.",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6125,7 +6125,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "The Salesforce Console is an example of what?\r\n\r\n",
+    "question": "The Salesforce Console is an example of what?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6148,7 +6148,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What is the click path to enable Enhance Profile Management?\r\n\r\n",
+    "question": "What is the click path to enable Enhance Profile Management?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6167,7 +6167,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which Salesforce editions provide option for customizing profiles?\r\n\r\n",
+    "question": "Which Salesforce editions provide option for customizing profiles?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6194,7 +6194,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "How many profiles can load in a single list view with Enhanced Profile Management enabled?\r\n\r\n",
+    "question": "How many profiles can load in a single list view with Enhanced Profile Management enabled?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6217,7 +6217,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What is the maximum number of condition highlighting per report?\r\n\r\n",
+    "question": "What is the maximum number of condition highlighting per report?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6240,7 +6240,7 @@
     "answer": "A. B. E. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Which is a capability of the new Service Cloud console?\r\n**Choose 3 answers.**\r\n\r\n",
+    "question": "Which is a capability of the new Service Cloud console?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6267,7 +6267,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "User A modifies a record. This modification triggers a workflow rule for immediate execution that includes a\r\nfield update on the current record. After the execution is complete, what user will be listed under the Last Modified\r\nfield of this record?\r\n\r\n",
+    "question": "User A modifies a record. This modification triggers a workflow rule for immediate execution that includes afield update on the current record. After the execution is complete, what user will be listed under the Last Modifiedfield of this record?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6290,7 +6290,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "How does Locale settings affect your exported CSV file?\r\n\r\n",
+    "question": "How does Locale settings affect your exported CSV file?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6313,7 +6313,7 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What are two sources from which cases can be created.\r\n**Choose 2 answers.**\r\n\r\n",
+    "question": "What are two sources from which cases can be created.",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6336,7 +6336,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which report format summarizes data in a grid against horizontal and vertical criteria and provides totals for\r\nboth rows and columns?\r\n\r\n",
+    "question": "Which report format summarizes data in a grid against horizontal and vertical criteria and provides totals forboth rows and columns?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6355,7 +6355,7 @@
     "answer": "B. C. E. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Which statements are true about Cloud Scheduler?\r\n**Choose 3 answers.**\r\n\r\n",
+    "question": "Which statements are true about Cloud Scheduler?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6394,7 +6394,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What happens when you convert a Lead and an existing account and contact have the same name as the one\r\nspecified on the lead?\r\n\r\n",
+    "question": "What happens when you convert a Lead and an existing account and contact have the same name as the onespecified on the lead?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6421,7 +6421,7 @@
     "answer": "E. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "This helps you manage the complete lifecycle of customer service,from logging cases to suggesting and\r\ndelivering solutions across multiple channels, including Web self-service and live agent support\r\n\r\n",
+    "question": "This helps you manage the complete lifecycle of customer service,from logging cases to suggesting anddelivering solutions across multiple channels, including Web self-service and live agent support",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6452,7 +6452,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "How many workflow rules can you create per entity?\r\n\r\n",
+    "question": "How many workflow rules can you create per entity?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6471,7 +6471,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What is the default report format for new reports created in report builder?\r\n\r\n",
+    "question": "What is the default report format for new reports created in report builder?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6490,7 +6490,7 @@
     "answer": "A. C. E. F. ",
     "choose": "Choose 4",
     "isRadioButton": false,
-    "question": "Which of the following is part of the Sales Cloud 2.\r\n**Choose 4 answers.**\r\n\r\n",
+    "question": "Which of the following is part of the Sales Cloud 2?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6544,7 +6544,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Universal Containers wants to create a custom object to capture account survey data. Users must be able to select an account from the survey record. Users also need the ability to view related surveys on the account record.\r\nHow should the system administrator meet these requirements.\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Universal Containers wants to create a custom object to capture account survey data. Users must be able to select an account from the survey record. Users also need the ability to view related surveys on the account record.How should the system administrator meet these requirements.",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6567,7 +6567,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What option is available when scheduling a dashboard refresh?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What option is available when scheduling a dashboard refresh?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6590,7 +6590,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which chart type can be used to display summary values from two different levels of grouping in a report?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which chart type can be used to display summary values from two different levels of grouping in a report?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6686,7 +6686,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "A sales user in Universal containers has updated the opportunity stage for an opportunity in the pipeline. What may be updated as a result of the stage change?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "A sales user in Universal containers has updated the opportunity stage for an opportunity in the pipeline. What may be updated as a result of the stage change?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6709,7 +6709,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Sales management at Universal Containers needs to display the information listed below on each account record. \r\n1. Amount of all closed won opportunities\r\n2. Amount of all open opportunities\r\nWhich feature should a system admin use to meet the requirement?\r\n\r\n",
+    "question": "Sales management at Universal Containers needs to display the information listed below on each account record. 1. Amount of all closed won opportunities2. Amount of all open opportunitiesWhich feature should a system admin use to meet the requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6732,7 +6732,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What is a capability of Salesforce Knowledge?\r\n**Choose 2 answers:**\r\n\r\n",
+    "question": "What is a capability of Salesforce Knowledge?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6755,7 +6755,7 @@
     "answer": "B. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What item appears in a user's My Unresolved items after synchronisation using Salesforce for outlook?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What item appears in a user's My Unresolved items after synchronisation using Salesforce for outlook?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6778,7 +6778,7 @@
     "answer": "B. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What should be considered when configuring the lead conversion process?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What should be considered when configuring the lead conversion process?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6801,7 +6801,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers requires that its Salesforce account data, including attachments, be backed up weekly. Which tool should a system administrator use to accomplish this?\r\n\r\n",
+    "question": "Universal Containers requires that its Salesforce account data, including attachments, be backed up weekly. Which tool should a system administrator use to accomplish this?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6824,7 +6824,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A user profile has login hour restrictions set to Monday through Friday 8:00 AM to 5:00 Pm. It is Tuesday and the user has logged in at 4:30PM and it is now 5:01PM Which behaviour of the application should the user expect? \r\n\r\n",
+    "question": "A user profile has login hour restrictions set to Monday through Friday 8:00 AM to 5:00 Pm. It is Tuesday and the user has logged in at 4:30PM and it is now 5:01PM Which behaviour of the application should the user expect? ",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6847,7 +6847,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What will occur when a system administrator creates a dynamic dashboard?\r\n\r\n",
+    "question": "What will occur when a system administrator creates a dynamic dashboard?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6893,7 +6893,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A universal containers has a private sharing model in which regional sales managers can view and edit opportunities in only their own regions. For reporting purposes they additionally need read only access to opportunities in other regions. \r\nWhat permission can a system administrator enable to meet this requirement in the regional sales managers custom profiles?\r\n\r\n",
+    "question": "A universal containers has a private sharing model in which regional sales managers can view and edit opportunities in only their own regions. For reporting purposes they additionally need read only access to opportunities in other regions. What permission can a system administrator enable to meet this requirement in the regional sales managers custom profiles?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6916,7 +6916,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What can users do with Mobile Lite?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What can users do with Mobile Lite?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6939,7 +6939,7 @@
     "answer": "B. C. E. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Which component can be included in a custom home page layout?\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "Which component can be included in a custom home page layout?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6966,7 +6966,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "How can Knowledge articles be used?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "How can Knowledge articles be used?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -6989,7 +6989,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "The marketing team at Universal Containers wants to send an email to each lead received from its website. The country of the incoming lead should determine the language of the email that will be sent to the lead.\r\n\r\n",
+    "question": "The marketing team at Universal Containers wants to send an email to each lead received from its website. The country of the incoming lead should determine the language of the email that will be sent to the lead.",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7012,7 +7012,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "A system administrator at Universal containers needs to prevent sales representatives from editing fields on an opportunity once the opportunity has been moved to a closed stage.\r\n**Choose 2 answers.**\r\n\r\n",
+    "question": "A system administrator at Universal containers needs to prevent sales representatives from editing fields on an opportunity once the opportunity has been moved to a closed stage.",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7035,7 +7035,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "When the multiple currencies feature is enabled, which currency is used as the basics for all currency conversion rates?\r\n\r\n",
+    "question": "When the multiple currencies feature is enabled, which currency is used as the basics for all currency conversion rates?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7058,7 +7058,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A marketing user needs to create a new campaign, but the New Button is NOT visible from the campaign home page. The system administrator has verified that the user has the \"Create\" profile permission for the campaign object. \r\nHow should the system admin resolve the issue?\r\n\r\n",
+    "question": "A marketing user needs to create a new campaign, but the New Button is NOT visible from the campaign home page. The system administrator has verified that the user has the \"Create\" profile permission for the campaign object. How should the system admin resolve the issue?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7081,7 +7081,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "When are validation rules applied when using Salesforce for Outlook?\r\n\r\n",
+    "question": "When are validation rules applied when using Salesforce for Outlook?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7104,7 +7104,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which option is available when using process Visualizer?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which option is available when using process Visualizer?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7127,7 +7127,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal containers has a marketing team set up as a public group. A sales representative would like to engage the marketing team on one opportunity. \r\nWhat should the sales representative do to ensure the marketing team can access the opportunity?\r\n\r\n",
+    "question": "Universal containers has a marketing team set up as a public group. A sales representative would like to engage the marketing team on one opportunity. What should the sales representative do to ensure the marketing team can access the opportunity?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7146,7 +7146,7 @@
     "answer": "A. C. E. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "What can be modified on standard object fields?\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "What can be modified on standard object fields?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7196,7 +7196,7 @@
     "answer": "B. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What is the purpose of the Service Cloud(customer) portal?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What is the purpose of the Service Cloud(customer) portal?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7219,7 +7219,7 @@
     "answer": "B. C. E. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Criteria-based sharing rules can be created for which objects?\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "Criteria-based sharing rules can be created for which objects?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7246,7 +7246,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "If two objects have a parent-child relationship, how can a user access the child record from the parent record.\r\n\r\n",
+    "question": "If two objects have a parent-child relationship, how can a user access the child record from the parent record.",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7269,7 +7269,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "A system administrator at Universal Containers created a new account record type. However, sales users are unable to select the new record type when creating new account records. \r\nWhat is possible reason for it?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "A system administrator at Universal Containers created a new account record type. However, sales users are unable to select the new record type when creating new account records. What is possible reason for it?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7292,7 +7292,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "How can a system administrator restrict users from viewing certain fields in list view, searches, page layouts and reports?\r\n\r\n",
+    "question": "How can a system administrator restrict users from viewing certain fields in list view, searches, page layouts and reports?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7315,7 +7315,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What should an administrator consider when configuring workflow rules?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What should an administrator consider when configuring workflow rules?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7338,7 +7338,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "When importing data, what happens if some records do NOT meet the data validation criteria?\r\n\r\n",
+    "question": "When importing data, what happens if some records do NOT meet the data validation criteria?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7361,7 +7361,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "How can a system administrator add users to a salesforce organization using Chatter Free?\r\n*Choose 2 answers*\r\n\r\n",
+    "question": "How can a system administrator add users to a salesforce organization using Chatter Free?*Choose 2 answers*",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7384,7 +7384,7 @@
     "answer": "A. B. E. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "What is an option when customuzing a report?\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "What is an option when customuzing a report?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7411,7 +7411,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement about Chatter posts and comments is true?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which statement about Chatter posts and comments is true?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7434,7 +7434,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "When using sharing rules, what users can records be shared with?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "When using sharing rules, what users can records be shared with?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7457,7 +7457,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Universal Containers wants to ensure that users complete the standard industry field when creating a new account record. To address this concern, the administrator set the Industry field as required. However, some users are still able to create a new account record without completing the industry field.\r\nWhat should an administrator do to troubleshoot the issue?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Universal Containers wants to ensure that users complete the standard industry field when creating a new account record. To address this concern, the administrator set the Industry field as required. However, some users are still able to create a new account record without completing the industry field.What should an administrator do to troubleshoot the issue?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7480,7 +7480,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Sales representatives at Universal Containers should not be able to create leads, delete their own accounts, or send mass emails.\r\nHow can an administrator meet these requirements?\r\n\r\n",
+    "question": "Sales representatives at Universal Containers should not be able to create leads, delete their own accounts, or send mass emails.How can an administrator meet these requirements?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7503,7 +7503,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "How can a system administrator grant users access to dashboards?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "How can a system administrator grant users access to dashboards?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7526,7 +7526,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What does a custom report type determine?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What does a custom report type determine?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7549,7 +7549,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "The sales team at Universal Containers wants an easy solution to gather customer requirements and share presentations with their customers.\r\nWhat should an administrator do to help the sales team achieve this goal?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "The sales team at Universal Containers wants an easy solution to gather customer requirements and share presentations with their customers.What should an administrator do to help the sales team achieve this goal?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7572,7 +7572,7 @@
     "answer": "B. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "How an a sales user relate an opportunity to a campaign?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "How an a sales user relate an opportunity to a campaign?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7595,7 +7595,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers requires that the organization-wide default for opportunities be set to public read/write. However, sales users are complaining that reports return too many results, making it difficult to find their team's opportunities in the report results.\r\nHow can the system administrator address this problem?\r\n\r\n",
+    "question": "Universal Containers requires that the organization-wide default for opportunities be set to public read/write. However, sales users are complaining that reports return too many results, making it difficult to find their team's opportunities in the report results.How can the system administrator address this problem?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7618,7 +7618,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "The marketing team at Universal Containers uses a web-to-lead form to capture leads from its website and a lead assignment rule to assign the leads to the appropriate sales representatives.\r\nHow can a system administrator ensure that all leads are handled even when they do not meet the assignment criteria?\r\n\r\n",
+    "question": "The marketing team at Universal Containers uses a web-to-lead form to capture leads from its website and a lead assignment rule to assign the leads to the appropriate sales representatives.How can a system administrator ensure that all leads are handled even when they do not meet the assignment criteria?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7641,7 +7641,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What does the controlling field determine when field dependencies are being created?\r\n\r\n",
+    "question": "What does the controlling field determine when field dependencies are being created?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7664,7 +7664,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What will happen when a user attempts to log in to salesforce from an IP address that is outside the login IP range on the User's profile within the organization-wide trusted IP range?\r\n\r\n",
+    "question": "What will happen when a user attempts to log in to salesforce from an IP address that is outside the login IP range on the User's profile within the organization-wide trusted IP range?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7714,7 +7714,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A sales executive at Universal containers wants to be notified whenever high-value opportunities are created for hot accounts.\r\nHow should an administrator meet this requirement?",
+    "question": "A sales executive at Universal containers wants to be notified whenever high-value opportunities are created for hot accounts.How should an administrator meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7737,7 +7737,7 @@
     "answer": "A. B. C. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "Universal Containers needs to use cases to manage both customer support issue and internal change requests.\r\nWhich functionality should a system admin use to meet this requirement?",
+    "question": "Universal Containers needs to use cases to manage both customer support issue and internal change requests.Which functionality should a system admin use to meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7764,7 +7764,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "When case assignment rules are being set up, cases can be assigned to whom? \r\n**Choose 2 answers**\r\n\r\n",
+    "question": "When case assignment rules are being set up, cases can be assigned to whom? ",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7787,7 +7787,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which privilege can be granted to members of a content library (workspace) without modifying user permissions?\r\n**Choose 2 answers:**\r\n\r\n",
+    "question": "Which privilege can be granted to members of a content library (workspace) without modifying user permissions?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7810,7 +7810,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A user responsible for managing and creating campaigns is unable to create a new campaign, even though the user's profile has the \"Create: profile permission for Campaigns.\r\nHow should a system administrator grant the correct access to the user?\r\n\r\n",
+    "question": "A user responsible for managing and creating campaigns is unable to create a new campaign, even though the user's profile has the \"Create: profile permission for Campaigns.How should a system administrator grant the correct access to the user?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7833,7 +7833,7 @@
     "answer": "B. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What is a method for adding content to Salesforce CRM Content?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What is a method for adding content to Salesforce CRM Content?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7856,7 +7856,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which dashboard component can display data from the summary rows of a report?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which dashboard component can display data from the summary rows of a report?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7879,7 +7879,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A user at Universal Containers reports an error message when attempting to log in. The administrator checks the user's login history, but there's no record of the attempted login.\r\nWhat could be the cause of the issue?\r\n\r\n",
+    "question": "A user at Universal Containers reports an error message when attempting to log in. The administrator checks the user's login history, but there's no record of the attempted login.What could be the cause of the issue?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7902,7 +7902,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers currently assigns its users from the facilities and IT teams to the same profile. Universal Containers recently created a custom object to track company cars and wants only users from The facilities team to have access to this new object.\r\n\r\nHow can an administrator meet this requirement?\r\n",
+    "question": "Universal Containers currently assigns its users from the facilities and IT teams to the same profile. Universal Containers recently created a custom object to track company cars and wants only users from The facilities team to have access to this new object.How can an administrator meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7925,7 +7925,7 @@
     "answer": "A. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement is true regarding an approval process?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which statement is true regarding an approval process?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7948,7 +7948,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What must an administrator do when creating a record type?\r\n\r\n",
+    "question": "What must an administrator do when creating a record type?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7971,7 +7971,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What type of field allows users to input text, images, and links? \r\n\r\n",
+    "question": "What type of field allows users to input text, images, and links? ",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -7994,7 +7994,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What should a system administrator consider when setting up Mobile Lite?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What should a system administrator consider when setting up Mobile Lite?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8017,7 +8017,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers set the organisation-wide defaults for cases to private. When a case is escalated, case ownership changes to a Tier 2.\r\nHow can a system administrator give the sales operations team read/write access to all escalated cases?\r\n\r\n",
+    "question": "Universal Containers set the organisation-wide defaults for cases to private. When a case is escalated, case ownership changes to a Tier 2.How can a system administrator give the sales operations team read/write access to all escalated cases?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8040,7 +8040,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers needs to synchronise data between Salesforce and external financial system.\r\nHow can a system administrator accomplish this?\r\n\r\n",
+    "question": "Universal Containers needs to synchronise data between Salesforce and external financial system.How can a system administrator accomplish this?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8063,7 +8063,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "The cloud scheduler has which capability?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "The cloud scheduler has which capability?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8086,7 +8086,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement about Chatter posts and comments is true?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "Which statement about Chatter posts and comments is true?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8109,7 +8109,7 @@
     "answer": "B. C. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "When can a validation rule be used to prevent invalid data? \r\n**Choose 3 answers.**\r\n\r\n",
+    "question": "When can a validation rule be used to prevent invalid data? ",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8136,7 +8136,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What is affected by changing the default locale setting for an organization?\r\n\r\n",
+    "question": "What is affected by changing the default locale setting for an organization?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8159,7 +8159,7 @@
     "answer": "C. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Where can conditional highlighting be used? \r\n**Choose 2 answers.**\r\n\r\n",
+    "question": "Where can conditional highlighting be used? ",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8182,7 +8182,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "When converting a lead, how can an admin capture custom lead data on the converted contact?\r\n\r\n",
+    "question": "When converting a lead, how can an admin capture custom lead data on the converted contact?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8205,7 +8205,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "The Support team at Universal Container wants to be more proactive about renewing support plans with customers. They would like the Support Rep dedicated to each account to be notified a month before the account's support plan expires.\r\nWhat should an admin configure to meet this requirement?\r\n\r\n",
+    "question": "The Support team at Universal Container wants to be more proactive about renewing support plans with customers. They would like the Support Rep dedicated to each account to be notified a month before the account's support plan expires.What should an admin configure to meet this requirement?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8228,7 +8228,7 @@
     "answer": "B. C. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "What setting is controlled by a user's profile?\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "What setting is controlled by a user's profile?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8255,7 +8255,7 @@
     "answer": "B. C. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "What should a system administrator consider when deleting a custom field?\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "What should a system administrator consider when deleting a custom field?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8278,7 +8278,7 @@
     "answer": "B. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What setting can a system administrator enable in the Salesforce user interface?\r\n**Choose 2 answers**\r\n\r\n",
+    "question": "What setting can a system administrator enable in the Salesforce user interface?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8301,7 +8301,7 @@
     "answer": "A. C. E. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "What can an administrator configure for users on the search result page?\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "What can an administrator configure for users on the search result page?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8328,7 +8328,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Container is using a private sharing model. The U.S. sales director needs full access to all records owned by the U.S. sales representatives. How can this be accomplished?\r\n\r\n",
+    "question": "Universal Container is using a private sharing model. The U.S. sales director needs full access to all records owned by the U.S. sales representatives. How can this be accomplished?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8351,7 +8351,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What is the capability of Service Cloud \\ Customer portal?\r\n**Choose 2 answers.**\r\n\r\n",
+    "question": "What is the capability of Service Cloud \\ Customer portal?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8374,7 +8374,7 @@
     "answer": "B. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "What does a page layout allow an administrator to control?\r\n\r\n",
+    "question": "What does a page layout allow an administrator to control?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8397,7 +8397,7 @@
     "answer": "B. C. D. ",
     "choose": "Choose 3",
     "isRadioButton": false,
-    "question": "What standard object has a one-to-many relationship with the account object?\r\n**Choose 3 answers**\r\n\r\n",
+    "question": "What standard object has a one-to-many relationship with the account object?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8424,7 +8424,7 @@
     "answer": "B. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which level of access can be set when sharing a document folder with users?\r\n**Choose 2 answers.**\r\n\r\n",
+    "question": "Which level of access can be set when sharing a document folder with users?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8447,7 +8447,7 @@
     "answer": "C. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Universal Containers set the organization-wide default for opportunities to private.\r\nWhich record will an opportunity pipeline report return?\r\n\r\n",
+    "question": "Universal Containers set the organization-wide default for opportunities to private.Which record will an opportunity pipeline report return?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8470,7 +8470,7 @@
     "answer": "A. D. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement about sharing rules is true?\r\n**Choose 2 answers.**\r\n\r\n",
+    "question": "Which statement about sharing rules is true?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8493,7 +8493,7 @@
     "answer": "A. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "Which feature allows a user to group campaigns within a specific marketing program or initiative?\r\n\r\n",
+    "question": "Which feature allows a user to group campaigns within a specific marketing program or initiative?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8516,7 +8516,7 @@
     "answer": "A. B. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "What user interface setting should be enabled for users to edit records in a list view?\r\n**Choose 2 answers.**\r\n\r\n",
+    "question": "What user interface setting should be enabled for users to edit records in a list view?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8539,7 +8539,7 @@
     "answer": "D. ",
     "choose": "Choose 1",
     "isRadioButton": true,
-    "question": "A marketing user has received a file of leads to import into Salesforce. What tool can be used to avoid duplicate lead records?\r\n",
+    "question": "A marketing user has received a file of leads to import into Salesforce. What tool can be used to avoid duplicate lead records?",
     "answers": [{
         "ca": "A.",
         "checked": false,
@@ -8562,7 +8562,7 @@
     "answer": "B. C. ",
     "choose": "Choose 2",
     "isRadioButton": false,
-    "question": "Which statement about Community experts is true?\r\n**Choose 2 answers.**\r\n\r\n",
+    "question": "Which statement about Community experts is true?",
     "answers": [{
         "ca": "A.",
         "checked": false,
