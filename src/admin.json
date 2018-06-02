@@ -5521,33 +5521,6 @@
         "answer": "Visual Force Page"
     }]
 }, {
-    "id": 246,
-    "answer": "C. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Which is the new type of Dashboard Chart to make entry in Spring' 11 Release?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "Waterfall Chart"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "Organization Chart"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "Scatter"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "Gauge"
-    }, {
-        "ca": "E.",
-        "checked": false,
-        "answer": "Metric"
-    }]
-}, {
     "id": 247,
     "answer": "B. ",
     "choose": "Choose 1",
@@ -5569,29 +5542,6 @@
         "ca": "D.",
         "checked": false,
         "answer": "None of the Above"
-    }]
-}, {
-    "id": 248,
-    "answer": "C. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "In Spring' 11 salesforce.com release Dynamic Dashboards have been launched for which edition: To create, edit, and delete dynamic dashboards: \"Run Reports\" AND \"Manage Dynamic Dashboards\"",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "Developer Edition"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "Professional Edition"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "Enterprise Edition"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "Unlimited Edition"
     }]
 }, {
     "id": 249,
@@ -5665,29 +5615,6 @@
         "ca": "D.",
         "checked": false,
         "answer": "All of the Above"
-    }]
-}, {
-    "id": 254,
-    "answer": "B. ",
-    "choose": "Choose 1",
-    "isRadioButton": true,
-    "question": "Which of the following is the new workflow feature of Spring' 11 Release?",
-    "answers": [{
-        "ca": "A.",
-        "checked": false,
-        "answer": "Workflow Rules"
-    }, {
-        "ca": "B.",
-        "checked": false,
-        "answer": "Flows"
-    }, {
-        "ca": "C.",
-        "checked": false,
-        "answer": "Field Update"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "Outbound messages"
     }]
 }, {
     "id": 256,
