@@ -5949,27 +5949,15 @@
     }, {
         "ca": "C.",
         "checked": false,
-        "answer": "You can automatically see the New Meeting Request button on all eligible contact, lead, and person account"
+        "answer": "You can automatically see the New Meeting Request button on all eligible contact, lead, and person account detail pages."
     }, {
         "ca": "D.",
         "checked": false,
-        "answer": "tail pages."
+        "answer": "Meeting organizers can not use Cloud Scheduler to request meetings with customers, and have customers select preferred times before confirming the meeting."
     }, {
         "ca": "E.",
         "checked": false,
-        "answer": "Meeting organizers can not use Cloud Scheduler to request meetings with customers, and have customers"
-    }, {
-        "ca": "E.",
-        "checked": false,
-        "answer": "lect preferred times before confirming the meeting."
-    }, {
-        "ca": "E.",
-        "checked": false,
-        "answer": "Administrators can add or remove the New Meeting Request button on multiple page layouts using the new"
-    }, {
-        "ca": "E.",
-        "checked": false,
-        "answer": "oud Scheduler quick setup method."
+        "answer": "Administrators can add or remove the New Meeting Request button on multiple page layouts using the new Cloud Scheduler quick setup method."
     }]
 }, {
     "id": 294,
