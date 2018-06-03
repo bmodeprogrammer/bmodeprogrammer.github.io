@@ -5115,25 +5115,17 @@
     "answers": [{
         "ca": "A.",
         "checked": false,
-        "answer": "Tasks allow you to track the specific actions you plan to perform or have performed; Email Alerts cannot"
+        "answer": "Tasks allow you to track the specific actions you plan to perform or have performed; Email Alerts cannot track specific actions"
     }, {
         "ca": "B.",
         "checked": false,
-        "answer": "ack specific actions"
-    }, {
+        "answer": "Email Alerts allow you to track the specific actions you plan to perform or have performed, Tasks cannot track specific actions"
+    },{
         "ca": "C.",
-        "checked": false,
-        "answer": "Email Alerts allow you to track the specific actions you plan to perform or have performed, Tasks cannot"
-    }, {
-        "ca": "D.",
-        "checked": false,
-        "answer": "ack specific actions"
-    }, {
-        "ca": "E.",
         "checked": false,
         "answer": "Email Alerts and Tasks allow you to track the specific actions you plan to perform or have performed"
     }, {
-        "ca": "E.",
+        "ca": "D.",
         "checked": false,
         "answer": "Email Alerts and Tasks cannot track the specific actions you plan to perform or have performed"
     }]
